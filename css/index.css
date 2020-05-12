@@ -26,3 +26,39 @@ section .test {
 .content .card p {
   color: white;
 }
+svg {
+  position: relative;
+  z-index: 100;
+}
+nav {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 40px;
+  color: white;
+}
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav ul li {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav ul li:last-child {
+  margin: 0;
+}

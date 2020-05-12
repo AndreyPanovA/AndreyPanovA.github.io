@@ -31,3 +31,34 @@ section {
   }
   //   border: 2px solid red;
 }
+svg {
+  position: relative;
+  z-index: 100;
+}
+nav {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  color: white;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      margin-right: 10px;
+      padding: 10px 20px;
+      border-radius: 15px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
