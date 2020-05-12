@@ -1,0 +1,28 @@
+section {
+  background-color: white;
+  border: 2px solid red;
+  z-index: 100;
+}
+section .test {
+  background-color: white;
+  padding: 100px;
+  color: white;
+  min-height: 100vh !important;
+  border: 2px solid red;
+  z-index: 100;
+}
+.content {
+  height: 1000vh;
+  background-color: white;
+  padding: 20px 40px;
+}
+.content .card {
+  padding: 20px 40px;
+  background-color: black;
+  width: 50vw;
+  border-radius: 15px;
+  margin: auto;
+}
+.content .card p {
+  color: white;
+}
