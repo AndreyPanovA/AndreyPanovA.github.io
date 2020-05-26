@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+.modalClose {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  // background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  cursor: pointer;
+}
+body {
+  color: #fff;
+  background: #000;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url("../img/Larson_backgrounds/BACK2.jpg");
+  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  &:before {
+    background-image: url("../img/front-overlay.png");
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center top;
+  }
+  header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 10vh;
+    .logo {
+      min-width: 180px;
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 10%);
+    }
+  }
+  section {
+    display: flex;
+    justify-content: flex-end;
+    .container {
+      max-width: 1000px;
+      margin-right: 10vw;
+      position: relative;
+      z-index: 2;
+      padding: 20px 40px;
+      // Бургер меню Панов Андрей https://github.com/AndreyPanovA
+      .title {
+        font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        span {
+          font-weight: 150;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 115px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+          &:nth-child(1) {
+            font-size: 55px;
+          }
+        }
+        .little {
+          font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 200;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 105px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+        }
+        .huge {
+          font-weight: 600;
+        }
+      }
+      .wrapper {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-wrap: wrap;
+        .huge {
+          font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 200;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 105px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+          font-weight: 600;
+          margin: 0;
+          padding: 0;
+        }
+        .text__block {
+          margin-top: 20px;
+          flex-basis: 40%;
+          background: rgba(0, 0, 0, 0.7);
+          padding: 20px;
+          p {
+            font: normal 13px/20px "Helvetica Neue", Helvetica, Arial,
+              sans-serif;
+            text-align: justify;
+            margin-bottom: 10px;
+            // Бургер меню Панов Андрей https://github.com/AndreyPanovA
+          }
+        }
+      }
+    }
+  }
+  footer {
+    -webkit-box-shadow: 0px -1px 10px 15px white;
+    -moz-box-shadow: 0px -1px 10px 15px white;
+    box-shadow: 0px -1px 10px 15px white;
+    .fot_wrap {
+      position: relative;
+      padding: 10px 20px;
+      height: 48px;
+      align-items: center;
+      color: black;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      -webkit-box-shadow: -1px 7px 10px 0px white;
+      -moz-box-shadow: -1px 7px 10px 0px white;
+      box-shadow: -1px 7px 10px 0px white;
+      p {
+        margin-right: 10px;
+      }
+      .app-store {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 10px;
+          display: inline-block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            padding: 5px;
+            background-color: black;
+            border-radius: 5px;
+          }
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1370px) {
+  .modalClose {
+    display: block !important;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    // background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+    cursor: pointer;
+  }
+  span {
+    line-height: 55px !important;
+    font-size: 55px !important;
+  }
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    height: 100vh;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    // transform: translate(0, -200%) !important;
+    transform: translate(0, -200%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none !important;
+  }
+  #menuToggle span {
+    display: block !important;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 10000 !important;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle {
+    left: 0;
+    z-index: 10 !important;
+  }
+}
+@media (max-width: 992px) {
+  .text__block {
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 410px) {
+  .container {
+    margin-right: 0 !important;
+  }
+}
+// Бургер меню Панов Андрей https://github.com/AndreyPanovA
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  transform: translate(50%, 50%);
+}
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle span {
+  display: block;
+  display: none;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 10000 !important;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menu {
+  position: fixed;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding-left: 60px;
+  min-height: 150vh;
+  padding-top: 125px;
+  background: #ededed;
+  background: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(0, 0%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+#menu li {
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.links {
+  position: relative;
+  z-index: 5;
+  a {
+    width: 100%;
+    &:hover {
+      li {
+        border-bottom: 1px solid tomato;
+      }
+    }
+  }
+  li {
+    padding: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+.burger {
+  position: relative;
+
+  display: inline-block;
+  z-index: 20000;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+// .hovBtn:hover {
+//   cursor: pointer;
+//   span {
+//     &:first-child {
+//       transform: translateY(-100%);
+//     }
+//     &:last-child {
+//       transform: translateY(100%);
+//     }
+//   }
+// }
+.close {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  height: 100vh;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(0, -200%) !important;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+// .modalClose {
+//   position: fixed;
+//   width: 100vw;
+//   height: 100vh;
+//   // background-color: rgba(0, 0, 0, 0.3);
+//   z-index: 4;
+//   cursor: pointer;
+// }
+
+.first {
+  transform: translate(0%, 550%) rotate(45deg);
+}
+.second {
+  opacity: 0;
+}
+.third {
+  transform: translate(0%, -300%) rotate(45deg);
+}
+// span {
+//   &:first-child {
+//     // transform: translateY(550%) rotate(-45deg);
+//     transform: translate(0%, 550%) rotate(45deg);
+//   }
+//   &:nth-child(2) {
+//     opacity: 0;
+//   }
+//   &:last-child {
+//     transform: translate(0%, -300%) rotate(45deg);
+//   }
+// }
+.scroll {
+  overflow: hidden;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
