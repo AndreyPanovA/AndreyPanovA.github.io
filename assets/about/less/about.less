@@ -49,13 +49,20 @@ body {
     z-index: 1;
     display: flex;
     min-width: 10vh;
+    height: 200px;
+
     .logo {
       min-width: 180px;
       position: relative;
-      z-index: 1;
+      z-index: 9000;
       top: 0;
       left: 50%;
       transform: translate(-50%, 10%);
+      // border: 2px solid lime;
+      &:hover {
+        // border: 2px solid lime;
+        cursor: progress !important;
+      }
     }
   }
   section {
@@ -63,7 +70,8 @@ body {
     justify-content: flex-end;
     .container {
       max-width: 1000px;
-      margin-right: 10vw;
+      // margin-right: 10vw;
+      // border: 2px solid lime;
       position: relative;
       z-index: 2;
       padding: 20px 40px;
@@ -105,13 +113,13 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 0;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .huge {
           font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-weight: 200;
           display: block;
           text-indent: -0.02em;
-          font-size: 105px;
+          font-size: 85px;
           text-transform: uppercase;
           text-transform: uppercase;
           margin-bottom: 10px;
@@ -120,10 +128,11 @@ body {
           font-weight: 600;
           margin: 0;
           padding: 0;
+          margin-right: 10px;
         }
         .text__block {
           margin-top: 20px;
-          flex-basis: 40%;
+          flex-basis: 100%;
           background: rgba(0, 0, 0, 0.7);
           padding: 20px;
           p {
@@ -141,6 +150,11 @@ body {
     -webkit-box-shadow: 0px -1px 10px 15px white;
     -moz-box-shadow: 0px -1px 10px 15px white;
     box-shadow: 0px -1px 10px 15px white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
     .fot_wrap {
       position: relative;
       padding: 10px 20px;
@@ -185,8 +199,6 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-
-    // background-color: rgba(0, 0, 0, 0.3);
     z-index: 4;
     cursor: pointer;
   }
@@ -201,13 +213,13 @@ body {
     padding: 50px;
     height: 100vh;
     padding-top: 125px;
-    background: #ededed;
+    // background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     // transform: translate(0, -200%) !important;
     transform: translate(0, -200%);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
   #menuToggle input:checked ~ ul {
     transform: none !important;
@@ -218,12 +230,13 @@ body {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    // background: #cdcdcd;
     border-radius: 3px;
     z-index: 10000 !important;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    // анимация на переход кнопки
   }
   #menuToggle {
     left: 0;
@@ -236,8 +249,54 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .container {
+  }
+  span {
+    line-height: 35px !important;
+    font-size: 35px !important;
+  }
+  .wrapper {
+    flex-direction: column;
+    .huge {
+      // margin-right: 0px !important;
+    }
+  }
+  // #menuToggle {
+  //   transform: translate(0%, 0%) !important; // тут кнопка
+  // }
 }
-@media (max-width: 410px) {
+@media (max-width: 440px) {
+  footer {
+    .fot_wrap {
+      p {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+      .app-store {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 10px;
+          display: inline-block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            padding: 5px;
+            background-color: black;
+            border-radius: 5px;
+          }
+          img {
+            min-width: 100px;
+            &:first-child {
+              min-width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
   .container {
     margin-right: 0 !important;
   }
@@ -251,7 +310,8 @@ body {
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
-  transform: translate(50%, 50%);
+  transform: translate(50%, 50%); // тут кнопка
+  transform: translate(0%, 0%) !important; // тут кнопка
 }
 #menuToggle a {
   text-decoration: none;
@@ -260,7 +320,7 @@ body {
   transition: color 0.3s ease;
 }
 #menuToggle a:hover {
-  color: tomato;
+  // color: tomato;
 }
 
 #menuToggle span {
@@ -274,10 +334,9 @@ body {
   border-radius: 3px;
   z-index: 10000 !important;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+  //   background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-
 #menu {
   position: fixed;
   width: 300px;
@@ -285,16 +344,18 @@ body {
   padding-left: 60px;
   min-height: 150vh;
   padding-top: 125px;
-  background: #ededed;
-  background: rgba(0, 0, 0, 0.7);
+  // background: #ededed;
+  // background: rgba(0, 0, 0, 0.7); // тест
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(0, 0%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+  // анимация меню
 }
 #menu li {
-  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
   font-size: 15px;
   line-height: 15px;
 }
@@ -308,18 +369,23 @@ body {
     width: 100%;
     &:hover {
       li {
-        border-bottom: 1px solid tomato;
+        border-bottom: 1px solid white;
       }
     }
   }
+  .active {
+    background-color: white !important;
+    color: #000;
+    padding: 100px;
+  }
   li {
+    color: white;
     padding: 100px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 .burger {
   position: relative;
-
   display: inline-block;
   z-index: 20000;
   padding: 10px;
@@ -327,40 +393,11 @@ body {
     cursor: pointer;
   }
 }
-// .hovBtn:hover {
-//   cursor: pointer;
-//   span {
-//     &:first-child {
-//       transform: translateY(-100%);
-//     }
-//     &:last-child {
-//       transform: translateY(100%);
-//     }
-//   }
-// }
 .close {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  height: 100vh;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(0, -200%) !important;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translate(-100%, 0%) !important;
+  // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-// .modalClose {
-//   position: fixed;
-//   width: 100vw;
-//   height: 100vh;
-//   // background-color: rgba(0, 0, 0, 0.3);
-//   z-index: 4;
-//   cursor: pointer;
-// }
-
 .first {
   transform: translate(0%, 550%) rotate(45deg);
 }
@@ -370,22 +407,9 @@ body {
 .third {
   transform: translate(0%, -300%) rotate(45deg);
 }
-// span {
-//   &:first-child {
-//     // transform: translateY(550%) rotate(-45deg);
-//     transform: translate(0%, 550%) rotate(45deg);
-//   }
-//   &:nth-child(2) {
-//     opacity: 0;
-//   }
-//   &:last-child {
-//     transform: translate(0%, -300%) rotate(45deg);
-//   }
-// }
 .scroll {
   overflow: hidden;
 }
-
 .blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);

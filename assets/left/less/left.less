@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
 
+@lightbrow: rgba(59, 47, 47, 0.7);
 * {
   margin: 0;
   padding: 0;
@@ -128,7 +129,7 @@ body {
           background: rgba(0, 0, 0, 0.7);
           padding: 20px;
           .little__text {
-            color: gray;
+            // color: gray;
           }
           p {
             font: normal 13px/20px "Helvetica Neue", Helvetica, Arial,
@@ -138,6 +139,25 @@ body {
             // Бургер меню Панов Андрей https://github.com/AndreyPanovA
           }
         }
+        .map {
+          margin-bottom: 50px;
+          flex-basis: 70%;
+          h1 {
+            margin-bottom: 10px;
+          }
+          .contacts__block {
+            margin-top: 20px;
+            display: flex;
+            p {
+              white-space: nowrap;
+              margin: 0;
+            }
+            .descr__left {
+              margin-right: 20px;
+            }
+            // justify-content: ;
+          }
+        }
       }
     }
   }
@@ -145,6 +165,11 @@ body {
     -webkit-box-shadow: 0px -1px 10px 15px white;
     -moz-box-shadow: 0px -1px 10px 15px white;
     box-shadow: 0px -1px 10px 15px white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
     .fot_wrap {
       position: relative;
       padding: 10px 20px;
@@ -189,18 +214,19 @@ body {
     font-size: 55px !important;
   }
   #menu {
+    // размер тут
     position: absolute;
     width: 300px;
     margin: -100px 0 0 -50px;
     padding: 50px;
     height: 100vh;
     padding-top: 125px;
-    background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(0, -200%);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transform: translate(-200%, 0%);
+
+    // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
   #menuToggle input:checked ~ ul {
     transform: none !important;
@@ -215,8 +241,8 @@ body {
     border-radius: 3px;
     z-index: 10000 !important;
     transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    //   background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
   #menuToggle {
     left: 0;
@@ -241,7 +267,22 @@ body {
 }
 @media (max-width: 767px) {
 }
-@media (max-width: 410px) {
+@media (max-width: 450px) {
+  .sectionContent {
+    justify-content: initial;
+  }
+  .map {
+    margin-right: 0;
+    h1 {
+      font-size: 15px;
+    }
+    .contacts__block {
+      p {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+  }
   .container {
     margin-right: 0 !important;
   }
@@ -255,17 +296,21 @@ body {
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
-  transform: translate(50%, 50%);
+  transform: translate(0%, 0%);
 }
 #menuToggle a {
   text-decoration: none;
   color: #232323;
-  color: rgba(255, 255, 255, 0.5);
-  transition: color 0.3s ease;
+  color: white;
+  // transition: color 0.1s ease;
 }
 #menuToggle a:hover {
-  color: tomato;
+  color: black;
 }
+#menuToggle a li:hover {
+  background-color: #cdcdcd;
+}
+
 #menuToggle span {
   display: block;
   display: none;
@@ -277,28 +322,35 @@ body {
   border-radius: 3px;
   z-index: 10000 !important;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  // кнопка
 }
 #menu {
-  position: fixed;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding-left: 60px;
-  min-height: 150vh;
-  padding-top: 125px;
-  background: #ededed;
+  margin-top: -100px;
+  // margin: -100px 0 0 -50px;
+  // border: 2px solid red !important;
+  // background-color: red;
   background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 250px;
+  padding-top: 125px;
+  // padding-left: 60px;
+  // тут отступ слева
+  padding-right: 0;
+  min-height: 150vh;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(0, 0%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 #menu li {
   padding: 10px 0;
+  padding: 10px 20px;
   font-size: 15px;
   line-height: 15px;
+  border-left: 2px solid white;
 }
 #menuToggle input:checked ~ ul {
   transform: none;
@@ -308,9 +360,12 @@ body {
   z-index: 50;
   a {
     width: 100%;
+    &:first-child {
+      border-top: 2px solid white;
+    }
     &:hover {
       li {
-        border-bottom: 1px solid tomato;
+        border-bottom: 1px solid white;
       }
     }
   }
@@ -318,10 +373,14 @@ body {
     padding: 100px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
+  .active {
+    background-color: white !important;
+    color: #000;
+    padding: 100px;
+  }
 }
 .burger {
   position: relative;
-
   display: inline-block;
   z-index: 20000;
   padding: 10px;
@@ -330,18 +389,8 @@ body {
   }
 }
 .close {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  height: 100vh;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(0, -200%) !important;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translate(-200%, 0%) !important;
 }
 .modalClose {
   display: none;
