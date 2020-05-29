@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
 });
 setTimeout(() => {
   document.querySelector("body").classList.add("loaded");
-}, 3000);
+}, 8000);
 
 function mediaQuery() {
   size = window.innerWidth;
