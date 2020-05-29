@@ -107,6 +107,9 @@ body .bg .logoBG .keysImg .key .logger img {
   width: 100%;
   max-width: 300px;
 }
+body .bg .logoBG .keysImg .key .mers {
+  max-width: 180px !important;
+}
 body .bg .imgBG {
   width: 50vw;
 }
@@ -194,57 +197,19 @@ body .panorama .pano_cont .fr iframe {
     min-height: 100vh;
     color: white;
   }
-  body .container .wrapper {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   body .bg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100vh;
-    position: absolute;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
   }
   body .bg .logoBG {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-    width: 100%;
   }
   body .bg .logoBG .keysImg {
-    width: 100%;
     height: 100%;
-    top: 0;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,16 +227,6 @@ body .panorama .pano_cont .fr iframe {
   body .bg .logoBG .keysImg .key {
     margin-right: 0px !important;
     width: 50vw;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
   body .bg .logoBG .keysImg .key h2 {
     font-size: 15px;
@@ -291,6 +246,9 @@ body .panorama .pano_cont .fr iframe {
   body .bg .logoBG .keysImg .key .logger img {
     width: 100%;
     max-width: 100px;
+  }
+  body .bg .logoBG .keysImg .key .mers {
+    max-width: 80px !important;
   }
   body .panorama {
     width: 100vw;
