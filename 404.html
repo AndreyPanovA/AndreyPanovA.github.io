@@ -8,8 +8,12 @@
         height: 100%;
       }
       body {
-        background: url(your_image.jpg) no-repeat;
+        background: black;
+        background: url("./assets/img/Larson_backgrounds/About.png") no-repeat;
         background-size: cover; /* Масштабирует картинку сохраняя пропорции */
+      }
+      a {
+        text-decoration: none;
       }
       .over {
         background: rgba(0, 0, 0, 0.7); /* Цвет фона и значение прозрачности */
@@ -45,16 +49,35 @@
       }
       .logo {
         width: 300px;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+
+        width: 100vw;
+      }
+      img {
+        width: 300px;
+      }
+
+      span {
+        color: #938de9 !important;
       }
     </style>
   </head>
   <body>
-    <div class="logo"><img src="./assets/img/larson-white.svg" alt="" /></div>
+    <div class="logo">
+      <img src="./assets/img/larson-white.svg" alt="Логотип" />
+    </div>
     <div class="over"></div>
     <div class="four0">404</div>
+    <!-- <img src="./assets/img/larson-white.svg" alt="" /> -->
     <div class="notfound">
-      страница еще не готова<br />
-      <a href="./index.html"> перейти на главную страницу..</a>
+      страница еще не готова !<br />
+      <a href="./index.html">
+        Вы можете перейти на <span>главную страницу...</span></a
+      >
     </div>
   </body>
 </html>
