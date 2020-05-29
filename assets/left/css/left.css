@@ -461,6 +461,7 @@ body footer .fot_wrap .app-store a img {
   height: 150px;
   margin: -75px 0 0 -75px;
   border: 3px solid transparent;
+  border-top-color: white;
   border-radius: 100%;
   -webkit-animation: spin 2s linear infinite;
   animation: spinner 2s linear infinite;
