@@ -455,7 +455,6 @@ body footer .fot_wrap .app-store a img {
 #loader {
   display: block;
   position: relative;
-  background: url("../../img/larson-white.svg") center center / cover;
   top: 50%;
   left: 50%;
   width: 150px;
