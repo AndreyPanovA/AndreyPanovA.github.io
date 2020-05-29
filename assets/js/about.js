@@ -8,6 +8,10 @@ let line3 = document.querySelector(".line3");
 let sectionContent = document.querySelector(".sectionContent");
 let logo = document.querySelector(".logo");
 
+window.addEventListener("load", function () {
+  document.querySelector("body").classList.add("loaded");
+});
+
 function mediaQuery() {
   size = window.innerWidth;
   if (size < "1370") {

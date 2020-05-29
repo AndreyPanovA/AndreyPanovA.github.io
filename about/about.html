@@ -28,10 +28,12 @@
       background-image: url("../assets/img/Larson_backgrounds/About.png");
     }
   </style>
-  <body
-    style="visibility: hidden;"
-    onload="setTimeout ('document.body.style.visibility = \'visible\'', 0)"
-  >
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
     <div class="modalClose"></div>
     <header>
       <div class="logo">
