@@ -11,8 +11,10 @@ a {
   -webkit-transform: 0.2s;
           transform: 0.2s;
 }
-a:hover {
-  color: gold;
+a:hover h2 {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  text-align: center;
 }
 body {
   position: relative;
@@ -192,9 +194,6 @@ body .panorama .pano_cont .fr iframe {
 }
 @media (max-width: 1200px) {
   body {
-    position: relative;
-    background-color: black;
-    min-height: 100vh;
     color: white;
   }
   body .bg {
@@ -324,19 +323,6 @@ body .panorama .pano_cont .fr iframe {
   }
   .key {
     margin-bottom: 10px !important;
-    margin-right: 0px;
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
   }
   .key:nth-child(2) {
     margin: 0;
