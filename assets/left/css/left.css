@@ -467,9 +467,6 @@ body footer .fot_wrap .app-store a img {
   animation: spinner 2s linear infinite;
   z-index: 1001;
 }
-body {
-  border: 2px solid red;
-}
 #loader:before {
   content: "";
   position: absolute;
