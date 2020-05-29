@@ -454,8 +454,28 @@ body footer .fot_wrap .app-store a img {
   border: 3px solid transparent;
   border-radius: 100%;
   -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  animation: spinner 2s linear infinite;
   z-index: 1001;
+}
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 @-webkit-keyframes spin {
   0% {
