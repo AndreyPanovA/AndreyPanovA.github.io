@@ -11,6 +11,9 @@ let logo = document.querySelector(".logo");
 window.addEventListener("load", function () {
   document.querySelector("body").classList.add("loaded");
 });
+setInterval(() => {
+  document.querySelector("body").classList.add("loaded");
+}, 3000);
 
 function mediaQuery() {
   size = window.innerWidth;
