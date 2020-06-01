@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  footer {
+    -webkit-box-shadow: 0px -1px 10px 15px white;
+    -moz-box-shadow: 0px -1px 10px 15px white;
+    box-shadow: 0px -1px 10px 15px white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    .fot_wrap {
+      position: relative;
+      padding: 10px 20px;
+      height: 48px;
+      align-items: center;
+      color: black;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      -webkit-box-shadow: -1px 7px 10px 0px white;
+      -moz-box-shadow: -1px 7px 10px 0px white;
+      box-shadow: -1px 7px 10px 0px white;
+      p {
+        margin-right: 10px;
+      }
+      .app-store {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 10px;
+          display: inline-block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            padding: 5px;
+            background-color: black;
+            border-radius: 5px;
+          }
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  footer {
+    .fot_wrap {
+      p {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+      .app-store {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 10px;
+          display: inline-block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            padding: 5px;
+            background-color: black;
+            border-radius: 5px;
+          }
+          img {
+            min-width: 100px;
+            &:first-child {
+              min-width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// // Загрузка
+// #loader-wrapper {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1000;
+// }
+// #loader {
+//   // border: 2px solid red;
+//   display: block;
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   width: 150px;
+//   height: 150px;
+//   margin: -75px 0 0 -75px;
+//   border: 3px solid transparent;
+//   // border-top-color: white;
+//   border-radius: 100%;
+//   -webkit-animation: spin 2s linear infinite;
+//   animation: spinner 2s linear infinite;
+//   z-index: 1001;
+// }
+
+// @keyframes spinner {
+//   0% {
+//     transform: scale(1);
+//   }
+//   50% {
+//     transform: scale(1.5);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
+
+// @-webkit-keyframes spin {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @keyframes spin {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     -ms-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     -ms-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+
+// #loader-wrapper .loader-section {
+//   position: fixed;
+//   top: 0;
+//   background: #333;
+//   width: 51%;
+//   height: 100%;
+//   z-index: 1000;
+// }
+
+// #loader-wrapper .loader-section.section-left {
+//   left: 0;
+// }
+// #loader-wrapper .loader-section.section-right {
+//   right: 0;
+// }
+
+// /* Loaded Styles */
+// .loaded #loader-wrapper .loader-section.section-left {
+//   transform: translateX(-100%);
+//   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+// }
+// .loaded #loader-wrapper .loader-section.section-right {
+//   transform: translateX(100%);
+//   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+// }
+// .loaded #loader {
+//   opacity: 0;
+//   transition: all 0.3s ease-out;
+// }
+// .loaded #loader-wrapper {
+//   visibility: hidden;
+//   transform: translateY(-100%);
+//   transition: all 0.3s 1s ease-out;
+// }

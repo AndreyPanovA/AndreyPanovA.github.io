@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body footer {
+  -webkit-box-shadow: 0px -1px 10px 15px #ffffff;
+  box-shadow: 0px -1px 10px 15px #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+body footer .fot_wrap {
+  position: relative;
+  padding: 10px 20px;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -1px 7px 10px 0px #ffffff;
+  box-shadow: -1px 7px 10px 0px #ffffff;
+}
+body footer .fot_wrap p {
+  margin-right: 10px;
+}
+body footer .fot_wrap .app-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer .fot_wrap .app-store a {
+  margin-right: 10px;
+  display: inline-block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer .fot_wrap .app-store a:first-child {
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+body footer .fot_wrap .app-store a img {
+  max-width: 100px;
+}
+@media (max-width: 440px) {
+  footer .fot_wrap p {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  footer .fot_wrap .app-store {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .fot_wrap .app-store a {
+    margin-right: 10px;
+    display: inline-block;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .fot_wrap .app-store a:first-child {
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  footer .fot_wrap .app-store a img {
+    min-width: 100px;
+  }
+  footer .fot_wrap .app-store a img:first-child {
+    min-width: 10px;
+  }
+}
