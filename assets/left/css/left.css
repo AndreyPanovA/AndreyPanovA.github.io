@@ -164,6 +164,7 @@ body section .container .wrapper .map .contacts__block {
   display: flex;
 }
 body section .container .wrapper .map .contacts__block p {
+  color: white !important;
   margin: 0;
 }
 body section .container .wrapper .map .contacts__block .descr__left {
