@@ -22,9 +22,17 @@ function mediaQuery() {
   } else {
     menu.classList.remove("close");
   }
+  burgerBtn.classList.remove("burgActive");
+  line1.classList.remove("first");
+  line2.classList.remove("second");
+  line3.classList.remove("third");
+  document.body.classList.remove("scroll");
+  sectionContent.classList.remove("blur");
+  logo.classList.remove("blur");
 }
 burgerBtn.addEventListener("click", () => {
   menu.classList.toggle("close");
+  burgerBtn.classList.toggle("burgActive");
   //   burgerBtn.classList.toggle("hovBtn");
   line1.classList.toggle("first");
   line2.classList.toggle("second");
@@ -42,10 +50,11 @@ window.onresize = function (event) {
 };
 modalClose.addEventListener("click", () => {
   mediaQuery();
-  line1.classList.remove("first");
-  line2.classList.remove("second");
-  line3.classList.remove("third");
-  document.body.classList.remove("scroll");
-  sectionContent.classList.remove("blur");
-  logo.classList.remove("blur");
+  // burgerBtn.classList.remove("burgActive");
+  // line1.classList.remove("first");
+  // line2.classList.remove("second");
+  // line3.classList.remove("third");
+  // document.body.classList.remove("scroll");
+  // sectionContent.classList.remove("blur");
+  // logo.classList.remove("blur");
 });
