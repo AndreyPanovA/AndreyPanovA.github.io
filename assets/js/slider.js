@@ -7,11 +7,11 @@ const options = document.querySelectorAll(".option");
 var index = 1;
 var op_index = 0;
 var size = slides[index].clientWidth;
+
 update();
 
 function update() {
   slider.style.transform = "translateX(" + -size * index + "px)";
-
   backgrounds.forEach((img) => img.classList.remove("show"));
   backgrounds[op_index].classList.add("show");
 
@@ -58,6 +58,10 @@ slider.addEventListener("transitionend", () => {
     index = slides.length - 2;
     slider.style.transform = "translateX(" + -size * index + "px)";
   } else if (slides[index].id === "last") {
+    slider.style.transition = "none";
+    index = 1;
+    slider.style.transform = "translateX(" + -size * index + "px)";
+  } else if (slides[index].id > 10) {
     slider.style.transition = "none";
     index = 1;
     slider.style.transform = "translateX(" + -size * index + "px)";

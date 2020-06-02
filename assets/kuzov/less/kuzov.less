@@ -100,6 +100,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  line-height: 1.5;
+  font-size: 18px;
+  width: 100vw;
+}
 
 .container {
   width: 100vw;
@@ -152,14 +157,13 @@
 .img {
   position: relative;
   overflow: hidden;
-}
-
-.img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
 }
 
 .content {
@@ -171,7 +175,6 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-
 .btn {
   position: absolute;
   top: 50%;
@@ -187,10 +190,9 @@
   opacity: 0.5;
   transition: 0.3s;
   font-size: 21px;
-}
-
-.btn:hover {
-  opacity: 0.8;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 #prev {
@@ -200,12 +202,10 @@
     color: white;
   }
 }
-
 #next {
   right: 5%;
   &::before {
     content: ">";
-
     color: white;
   }
 }
@@ -217,19 +217,17 @@ ul {
   bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
-}
+  li {
+    margin: 0.3rem;
+    width: 18px;
+    height: 18px;
 
-ul li {
-  margin: 0.3rem;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 2.5px solid #2ecc71;
-  cursor: pointer;
-}
-
-ul li.colored {
-  background-color: #2ecc71;
+    // border: 2.5px solid #2ecc71;
+    cursor: pointer;
+  }
+  .colored {
+    background-color: #2ecc71;
+  }
 }
 
 .content:before {
@@ -244,25 +242,30 @@ ul li.colored {
 
 .background {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
+  // border: 20px solid red;
+  // z-index: 1000;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  .bg {
+    position: absolute;
+    // width: 120%;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .show {
+    opacity: 1;
+  }
 }
 
-.background .bg {
-  position: absolute;
-  width: 120%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.bg.show {
-  opacity: 1;
-}
 //
 .icons {
   background-color: white;
@@ -270,7 +273,130 @@ ul li.colored {
 }
 .option {
   width: 150px;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  li {
+  }
 }
 img {
   width: 100%;
+}
+
+.icon_sl {
+  width: 45px;
+}
+//
+.header_top {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  p {
+    color: white;
+  }
+}
+//
+.bmw_section {
+  height: 100vh;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  .bmw_left {
+    float: left;
+    width: 55%;
+    height: 100%;
+    shape-outside: polygon(0 0, 0 200px, 100% 400px, 100% 100%, 0 100%);
+  }
+  .bmw_right {
+    position: relative;
+    z-index: 10;
+    flex-basis: 60%;
+    text-align: right !important;
+    padding: 0 40px;
+    top: 20%;
+    position: relative;
+    font-family: "ProximaNovaRegular";
+    margin-left: 20vw;
+    p {
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+  }
+  .left_icon {
+    float: left;
+    width: 55%;
+    height: 100%;
+    shape-outside: polygon(0 0, 0 200px, 100% 400px, 100% 100%, 0 100%);
+  }
+  .bmw_img {
+    background-image: url(img/bmw-left.png);
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    width: 963px;
+    height: 666px;
+    right: 50%;
+    bottom: -10vh;
+    z-index: 10;
+    position: absolute;
+  }
+}
+//
+.opportunity_section {
+  // border: 2px solid red;
+  margin-bottom: 50vh;
+  overflow: hidden;
+  height: 100vh;
+  background-color: white;
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+  position: relative;
+
+  .opr_left {
+    padding: 0 40px;
+    top: 5%;
+    position: relative;
+    font-family: "ProximaNovaRegular";
+    // border: 2px solid lime;
+    // flex-basis: 60%;
+    position: relative;
+    z-index: 10;
+    top: 10%;
+    .polygon-right {
+      float: right;
+      // float: left;
+      height: 100vh;
+      width: 50% !important;
+      shape-outside: polygon(100% 0, 0 100%, 0 16%);
+      // clip-path: polygon(100% 0, 0 100%, 0 16%);
+      // background: linear-gradient(to top right, #86f7cc, #67d7f5);
+    }
+    // left: 10%;
+    // right: 0;
+
+    margin-left: 30px;
+    p {
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+  }
+  .opr_img {
+    background-repeat: no-repeat;
+    // transform: translateX(20%);
+    // height: 100vh;
+    width: 963px;
+    // border: 2px solid red;
+    left: 50%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    img {
+      // border: 2px solid red;
+      // width: 100vw;
+      // height: 100vh;
+    }
+  }
 }
