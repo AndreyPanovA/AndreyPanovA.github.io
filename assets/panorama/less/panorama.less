@@ -1,3 +1,6 @@
+@green: #00d200;
+@blue: #3600ff;
+@purple: #ff00ff;
 // Panorama
 .flex {
   display: flex;
@@ -19,17 +22,45 @@
 .flex_container {
   position: relative;
   .flex;
-  border: 2px solid lime;
   margin-bottom: 20px;
+}
+.circle_1 {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 100%;
+    background-color: @green;
+  }
+}
+.circle_2 {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 100%;
+    background-color: @blue;
+  }
+}
+.circle_3 {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 100%;
+    background-color: @purple;
+  }
 }
 //
 main {
-  border: 2px solid pink;
   max-width: 70vw;
   padding: 20px 35px;
   margin: auto;
   .panorama {
-    z-index: 99999;
+    // z-index: 99999;
     .pano_cont {
       flex-basis: 49%;
       text-align: center;
@@ -49,14 +80,12 @@ main {
   }
   .card__block {
     flex-basis: 50%;
-    border: 2px solid pink;
     h4 {
       margin: 20px 0;
     }
     small {
       display: block;
       margin-bottom: 5px;
-      border: 2px solid purple;
     }
     .video {
       margin-left: 23px;
