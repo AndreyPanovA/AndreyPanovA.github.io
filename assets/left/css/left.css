@@ -230,6 +230,34 @@ body footer .fot_wrap .app-store a:first-child {
 body footer .fot_wrap .app-store a img {
   max-width: 100px;
 }
+.bonus__rules {
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 100;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bonus__rules p {
+  margin-bottom: 10px;
+}
+.black {
+  max-width: 870px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
 @media (max-width: 1370px) {
   span {
     line-height: 55px !important;
