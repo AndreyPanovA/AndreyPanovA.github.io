@@ -1,0 +1,67 @@
+// Panorama
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  padding: 30px 40px;
+  flex-basis: 49%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-self: stretch;
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.flex_container {
+  position: relative;
+  .flex;
+  border: 2px solid lime;
+  margin-bottom: 20px;
+}
+//
+main {
+  border: 2px solid pink;
+  max-width: 70vw;
+  padding: 20px 35px;
+  margin: auto;
+  .panorama {
+    z-index: 99999;
+    .pano_cont {
+      flex-basis: 49%;
+      text-align: center;
+      padding-top: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      iframe {
+        min-height: 30vh;
+        width: 100%;
+        margin-bottom: -2px;
+        border: none;
+      }
+      p {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .card__block {
+  }
+}
+
+@media (max-width: 992px) {
+  .flex_container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 470px) {
+  main {
+    padding: 0px;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
