@@ -151,34 +151,10 @@ section:last-child {
   padding: 20px 40px;
   border-radius: 5px;
   position: relative;
-  background-color: #333;
-  -webkit-box-shadow: 4px 4px 4px -4px -4px -4px;
-          box-shadow: 4px 4px 4px -4px -4px -4px;
-}
-.tab_container:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
   cursor: pointer;
-}
-.tab_container:hover::before {
-  content: "\2716";
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%) rotate(0deg);
-          transform: translate(-50%, -50%) rotate(0deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .tab_container::before {
   -webkit-transition: 0.3s ease-in-out;
@@ -188,8 +164,8 @@ section:last-child {
   top: 50%;
   width: 50px;
   height: 50px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #333333;
+  color: #ffffff;
   font-size: 25px;
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -228,6 +204,26 @@ section:last-child {
 }
 .tab_container .content .all_content p {
   margin-bottom: 10px;
+}
+.tab_container .content .all_content .image_conent {
+  overflow: auto;
+}
+.tab_container .content .all_content .image_conent .image_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.tab_container .content .all_content .image_conent .image_line .img {
+  margin-right: 25px;
+  width: 300px;
 }
 .bmw_section {
   height: 100vh;
@@ -279,7 +275,6 @@ section:last-child {
   position: absolute;
 }
 .opportunity_section {
-  margin-bottom: 50vh;
   overflow: hidden;
   height: 100vh;
   background-color: white;

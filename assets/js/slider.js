@@ -40,6 +40,7 @@ function tabOpen(elem) {
   let i = 0;
   const element = document.querySelector(`.${elem}`);
   element.addEventListener("click", () => {
+    // const before = document.querySelector(`.${elem} .tab_container::before`);
     const content = document.querySelector(`.${elem} .content`);
     const all_content = document.querySelector(`.${elem} .all_content`);
     console.log(content);
@@ -51,6 +52,7 @@ function tabOpen(elem) {
       i++;
       content.style.height = all_content.offsetHeight + "px";
     }
+    // before.background = "red";
   });
 }
 tabOpen("audi");
