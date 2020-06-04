@@ -57,3 +57,6 @@ function tabOpen(elem) {
 }
 tabOpen("audi");
 tabOpen("skoda");
+tabOpen("range_white");
+tabOpen("volvo_xc70");
+tabOpen("porsche_macan");
