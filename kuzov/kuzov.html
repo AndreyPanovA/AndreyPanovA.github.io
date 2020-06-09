@@ -167,11 +167,14 @@
         </div>
         <div class="bmw_right">
           <div class="polygon-left"></div>
+          <p>БЕЗУПРЕЧНОЕ КАЧЕСТВО</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consectetur sapiente consequatur ad culpa corporis beatae id ipsam
-            esse cum enim et aliquam nulla provident quo nam natus dolorem
-            quisquam aperiam distinctio, amet quidem perspiciatis. Aut.
+            В марте 2016 года свои двери открыл «Кузовной центр Larson»,
+            расположенный на территории Бизнес-Центра «Нагатинский» в районе
+            метро «Коломенская». Вооружившись новейшим оборудованием, объединив
+            команду настоящих профессионалов кузовного дела, и сосредоточив весь
+            наш опыт в автомобильном бизнесе, нам удалось создать мастерскую,
+            работа которой по-настоящему может быть оценена на «отлично».
           </p>
         </div>
       </section>
@@ -979,8 +982,8 @@
     <script src="./slider/slider.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3,
-        spaceBetween: 10,
+        // slidesPerView: 10,
+        // spaceBetween: 10,
         loop: true,
         pagination: {
           el: ".swiper-pagination",
@@ -996,6 +999,15 @@
         },
         effect: "coverflow",
         grabCursor: true,
+        breakpoints: {
+          1025: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+        },
+
         // centeredSlides: true,
         // slidesPerView: "auto",
         // coverflowEffect: {
