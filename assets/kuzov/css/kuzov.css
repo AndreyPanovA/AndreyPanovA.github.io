@@ -254,12 +254,16 @@ section:last-child {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  overflow: hidden;
 }
 .bmw_section .bmw_left {
   float: left;
-  width: 55%;
+  width: 105%;
   height: 100%;
   shape-outside: polygon(0 0, 0 200px, 100% 400px, 100% 100%, 0 100%);
+  shape-outside: polygon(0 0, 0 200px, 300px 600px);
+  -webkit-clip-path: polygon(0 0, 0 200px, 300px 600px);
+          clip-path: polygon(0 0, 0 200px, 300px 600px);
 }
 .bmw_section .bmw_right {
   z-index: 10;
@@ -271,6 +275,14 @@ section:last-child {
   position: relative;
   font-family: "ProximaNovaRegular";
   margin-left: 20vw;
+}
+.bmw_section .bmw_right .polygon-left {
+  float: left;
+  height: 100vh;
+  width: 50% !important;
+  shape-outside: polygon(0 0, 68% 44%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 68% 44%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 68% 44%, 100% 100%, 0% 100%);
 }
 .bmw_section .bmw_right p {
   font-size: 25px;
@@ -329,8 +341,26 @@ section:last-child {
 main .pad {
   padding: 20px 40px;
 }
+@media (max-width: 1370px) {
+  .bmw_right p {
+    font-size: 18px !important;
+  }
+}
 @media (max-width: 992px) {
   max-width: 500px !important;
+}
+@media (max-width: 767px) {
+  .opr_left p {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 450px) {
+  .opr_left p {
+    font-size: 15px !important;
+  }
+  .bmw_right p {
+    font-size: 15px !important;
+  }
 }
 .show_left {
   -webkit-animation: appearLeft 0.5s ease-in-out !important;

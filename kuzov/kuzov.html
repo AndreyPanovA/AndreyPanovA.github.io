@@ -6,6 +6,9 @@
     <!-- <link rel="stylesheet" href="../assets/left/css/left.css" /> -->
     <link rel="stylesheet" href="../assets/kuzov/css/kuzov.css" />
     <link rel="stylesheet" href="../assets/footer/css/footer.css" />
+    <link rel="stylesheet" href="./slider/swiper.min.css" />
+    <link rel="stylesheet" href="./slider/style.css" />
+    <!-- <link rel="stylesheet" href="./slider/default-styles.css" /> -->
     <!-- <link rel="stylesheet" href="../assets/kuzov/css/kuzov.css" /> -->
     <title>Кузовной ремонт</title>
   </head>
@@ -55,8 +58,76 @@
       </div>
     </nav> -->
 
+    <!-- <div class="slider-container">
+      <div class="slider-top">
+        <h1>Слайдер</h1>
+        <div class="slider-buttons">
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        </div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card">
+            <img src="../assets/img/Larson_backgrounds/partsBg.jpg" alt="" />
+          </div>
+          <div class="swiper-slide card">
+            <img src="../assets/img/Larson_backgrounds/aboutBg.jpg" alt="" />
+          </div>
+          <div class="swiper-slide card"></div>
+          <div class="swiper-slide card"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div> -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="../assets/img/Larson_backgrounds/partsBg.jpg" alt="" />
+          </div>
+          <!-- <div class="details">
+            <h3>John Doe<br /><span>Web Designer</span></h3>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="../assets/img/Larson_backgrounds/aboutBg.jpg" alt="" />
+          </div>
+          <!-- <div class="details">
+            <h3>John Doe<br /><span>Web Designer</span></h3>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="../assets/img/Larson_backgrounds/blogBg.jpg" />
+          </div>
+          <!-- <div class="details">
+            <h3>John Doe<br /><span>Web Designer</span></h3>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="../assets/img/Larson_backgrounds/wheelsBg.jpg" alt="" />
+          </div>
+          <!-- <div class="details">
+            <h3>John Doe<br /><span>Web Designer</span></h3>
+          </div> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="../assets/img/Larson_backgrounds/aboutBg.jpg" alt="" />
+          </div>
+          <!-- <div class="details">
+            <h3>John Doe<br /><span>Web Designer</span></h3>
+          </div> -->
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     <main>
-      <div class="slider_container">
+      <!-- <div class="slider_container">
         <div class="slide_bg show">
           <img src="../assets/img/Larson_backgrounds/partsBg.jpg" alt="" />
         </div>
@@ -86,7 +157,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <section class="bmw_section">
         <div class="bmw_img">
           <img
@@ -95,6 +166,7 @@
           />
         </div>
         <div class="bmw_right">
+          <div class="polygon-left"></div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Consectetur sapiente consequatur ad culpa corporis beatae id ipsam
@@ -103,6 +175,7 @@
           </p>
         </div>
       </section>
+
       <section class="opportunity_section">
         <div class="opr_left">
           <div class="polygon-right"></div>
@@ -900,7 +973,71 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="../assets/js/about.js"></script> -->
+    <script src="../assets/js/about.js"></script>
     <script src="../assets/js/slider.js"></script>
+    <script src="./slider/swiper.min.js"></script>
+    <script src="./slider/slider.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "fraction",
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        // centeredSlides: true,
+        // slidesPerView: "auto",
+        // coverflowEffect: {
+        //   rotate: 20,
+        //   stretch: 0,
+        //   depth: 200,
+        //   modifier: 1,
+        //   loop: true,
+        //   slideShadows: true,
+        //   autoplay: {
+        //     delay: 5000,
+        //   },
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+      });
+    </script>
+    <script>
+      function tabOpen(elem) {
+        let i = 0;
+        const element = document.querySelector(`.${elem}`);
+        element.addEventListener("click", () => {
+          const content = document.querySelector(`.${elem} .content`);
+          const all_content = document.querySelector(`.${elem} .all_content`);
+          console.log(content);
+          console.log(i);
+          if (i > 0) {
+            i--;
+            content.style.height = 10 + "px";
+          } else {
+            i++;
+            content.style.height = all_content.offsetHeight + "px";
+          }
+        });
+      }
+      tabOpen("audi");
+      tabOpen("skoda");
+      tabOpen("range_white");
+      tabOpen("volvo_xc70");
+      tabOpen("porsche_macan");
+      tabOpen("toyota_RAV4");
+    </script>
   </body>
 </html>
