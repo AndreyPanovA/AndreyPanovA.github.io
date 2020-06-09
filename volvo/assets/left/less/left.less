@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+
+@lightbrow: rgba(59, 47, 47, 0.7);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  color: #fff;
+  background: #000;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-image: url("../img/Larson_backgrounds/BACK9.jpg");
+  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  &:before {
+    background-image: url("../../../assets/img/front-overlay.png");
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center top;
+  }
+  header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 10vh;
+    .logo {
+      min-width: 180px;
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 10%);
+    }
+  }
+  section {
+    display: flex;
+    justify-content: flex-end;
+    .container {
+      max-width: 1000px;
+      margin-right: 10vw;
+      position: relative;
+      z-index: 2;
+      padding: 20px 40px;
+      // Бургер меню Панов Андрей https://github.com/AndreyPanovA
+      .title {
+        font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        flex-basis: 50%;
+        span {
+          font-weight: 150;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 115px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+          &:nth-child(1) {
+            font-size: 55px;
+          }
+        }
+        .little {
+          font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 200;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 105px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+        }
+        .huge {
+          font-weight: 600;
+        }
+      }
+      .wrapper {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-wrap: wrap;
+        .huge {
+          font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-weight: 200;
+          display: block;
+          text-indent: -0.02em;
+          font-size: 105px;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          line-height: 115px;
+          display: block;
+          font-weight: 600;
+          margin: 0;
+          padding: 0;
+        }
+        .photo_block {
+          margin-top: 20px;
+          img {
+            border-top: 2px solid white;
+            padding-top: 20px;
+            border-bottom: 2px solid white;
+            padding-bottom: 20px;
+          }
+          flex-basis: 50%;
+        }
+        .text__block {
+          margin-top: 20px;
+          flex-basis: 40%;
+          margin-bottom: 50px;
+          background: rgba(0, 0, 0, 0.7);
+          padding: 20px;
+          .little__text {
+            // color: gray;
+          }
+          p {
+            font: normal 13px/20px "Helvetica Neue", Helvetica, Arial,
+              sans-serif;
+            text-align: justify;
+            margin-bottom: 10px;
+            // Бургер меню Панов Андрей https://github.com/AndreyPanovA
+          }
+        }
+        .map {
+          margin-bottom: 50px;
+          flex-basis: 70%;
+          h1 {
+            margin-bottom: 10px;
+          }
+          .contacts__block {
+            margin-top: 20px;
+            display: flex;
+            p {
+              color: white !important;
+              margin: 0;
+            }
+            .descr__left {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    -webkit-box-shadow: 0px -1px 10px 15px white;
+    -moz-box-shadow: 0px -1px 10px 15px white;
+    box-shadow: 0px -1px 10px 15px white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    .fot_wrap {
+      position: relative;
+      padding: 10px 20px;
+      height: 48px;
+      align-items: center;
+      color: black;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      -webkit-box-shadow: -1px 7px 10px 0px white;
+      -moz-box-shadow: -1px 7px 10px 0px white;
+      box-shadow: -1px 7px 10px 0px white;
+      p {
+        margin-right: 10px;
+      }
+      .app-store {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 10px;
+          display: inline-block;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            padding: 5px;
+            background-color: black;
+            border-radius: 5px;
+          }
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bonus__rules {
+  margin-bottom: 100px;
+
+  position: relative;
+  z-index: 100;
+
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin-bottom: 10px;
+  }
+}
+.black {
+  max-width: 870px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1370px) {
+  span {
+    line-height: 55px !important;
+    font-size: 55px !important;
+  }
+  #menu {
+    // размер тут
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    height: 100vh;
+    padding-top: 125px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-200%, 0%);
+
+    // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none !important;
+  }
+  #menuToggle span {
+    //Бургер
+    display: block !important;
+    width: 33px;
+    height: 4px;
+    position: absolute;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 10000 !important;
+    transform-origin: 4px 0px;
+    // transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    //   background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  #menuToggle {
+    position: relative;
+    left: 0;
+    z-index: 10 !important;
+  }
+  .modalClose {
+    // display: block !important;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    cursor: pointer;
+  }
+}
+.modalActive {
+  display: block !important;
+  // background-color: red;
+}
+@media (max-width: 992px) {
+  .text__block,
+  .map {
+    flex-basis: 100% !important;
+  }
+  .photo_block {
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 450px) {
+  .sectionContent {
+    justify-content: initial;
+  }
+  .text__block {
+    padding: 0;
+  }
+  .map {
+    margin-right: 0;
+    padding: 0;
+    h1 {
+      font-size: 15px;
+    }
+    .contacts__block {
+      p {
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+  }
+  .container {
+    margin-right: 0 !important;
+  }
+}
+// Бургер меню Панов Андрей https://github.com/AndreyPanovA
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  transform: translate(0%, 0%);
+  // &:before {
+  //   background-image: url("../../../assets/img/Larson_backgrounds/cardBg.jpg");
+  //   content: "";
+  //   position: fixed;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   z-index: -100;
+  //   background-size: cover;
+  //   background-position: center top;
+  // }
+}
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  color: white;
+  // transition: color 0.1s ease;
+}
+#menuToggle a:hover {
+  color: black;
+}
+#menuToggle a li:hover {
+  background-color: #cdcdcd;
+}
+#menu {
+  overflow: auto !important;
+  margin-top: -100px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 250px;
+  padding-top: 125px;
+  // padding-left: 60px;
+  // тут отступ слева
+  padding-right: 0;
+  min-height: 100vh;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(0, 0%);
+  transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+#menu li {
+  padding: 10px 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 15px;
+  border-left: 2px solid white;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.links {
+  position: relative;
+  z-index: 50;
+  a {
+    width: 100%;
+    &:first-child {
+      border-top: 2px solid white;
+    }
+    &:hover {
+      li {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  li {
+    padding: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .active {
+    background-color: white !important;
+    color: #000;
+    padding: 100px;
+  }
+}
+.burger {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  z-index: 20000;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  span {
+    transform-origin: center !important;
+    transition: 0.3s;
+    top: 50%;
+    left: 5;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.close {
+  transform-origin: 0% 0%;
+  transform: translate(-200%, 0%) !important;
+}
+.modalClose {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  cursor: pointer;
+}
+.first {
+  transform: translate(0%, 0%) rotate(45deg) !important;
+}
+.second {
+  opacity: 0;
+  transform: translate(0%, 0%) !important;
+}
+.third {
+  transform: translate(0%, 0%) rotate(-45deg) !important;
+}
+.scroll {
+  overflow: hidden;
+}
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.line1 {
+  transform: translate(0%, -180%);
+}
+.line3 {
+  transform: translate(0%, 180%);
+}
+// Загрузка
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  // background: url("../../img/larson-white.svg") center center/cover;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 3px solid transparent;
+  border-top-color: white;
+  border-radius: 100%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spinner 2s linear infinite;
+  z-index: 1001;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 3px solid transparent;
+  border-top-color: yellow;
+  border-radius: 100%;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 3px solid transparent;
+  border-top-color: orange;
+  border-radius: 100%;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  background: #333;
+  width: 51%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded Styles */
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+.burgActive {
+  transform: translate(400%, 0%);
+}
