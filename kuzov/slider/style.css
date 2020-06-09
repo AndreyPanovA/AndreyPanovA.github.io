@@ -47,11 +47,11 @@
   justify-content: center;
 }
 .swiper-slide .imgBx {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   width: 100%;
 
   overflow: hidden;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .swiper-slide .imgBx img {
   width: 100%;
