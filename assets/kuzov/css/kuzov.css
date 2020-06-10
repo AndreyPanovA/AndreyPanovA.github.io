@@ -12,6 +12,7 @@
           box-sizing: border-box;
 }
 body {
+  background-color: #333333;
   line-height: 1.5;
   font-size: 18px;
   width: 100vw;
@@ -366,6 +367,91 @@ main .pad {
   text-align: center;
   margin-bottom: 30px;
 }
+.panorama {
+  background-color: #333333;
+  width: 100vw;
+}
+.panorama .pano_cont {
+  width: 100vw;
+}
+.panorama .pano_cont .fr {
+  width: 100vw;
+}
+.panorama .pano_cont .fr iframe {
+  height: 50vh;
+  width: 100vw;
+}
+.fot_wrap {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}
+footer {
+  -webkit-box-shadow: 0px -1px 10px 15px rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0px -1px 10px 15px rgba(0, 0, 0, 0.8) !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+footer .fot_wrap {
+  position: relative;
+  padding: 10px 20px;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -1px 7px 10px 0px rgba(0, 0, 0, 0.8) !important;
+  box-shadow: -1px 7px 10px 0px rgba(0, 0, 0, 0.8) !important;
+}
+footer .fot_wrap p {
+  margin-right: 10px;
+}
+footer .fot_wrap .app-store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .fot_wrap .app-store a {
+  margin-right: 10px;
+  display: inline-block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .fot_wrap .app-store a:first-child {
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
+footer .fot_wrap .app-store a img {
+  max-width: 100px;
+}
+.bottom_description {
+  padding: 20px 40px;
+  color: white;
+}
+.bottom_description p {
+  margin-bottom: 20px;
+}
 @media (max-width: 1370px) {
   .bmw_right p {
     font-size: 15px !important;
@@ -395,6 +481,7 @@ main .pad {
 }
 @media (max-width: 450px) {
   .bmw_right {
+    padding-top: 35px !important;
     background-color: rgba(50, 50, 50, 0.55);
     width: 100vw;
     color: white;
@@ -405,6 +492,7 @@ main .pad {
         flex-basis: 100% !important;
   }
   .opr_left {
+    padding-top: 35px !important;
     background-color: rgba(50, 50, 50, 0.55);
     overflow: auto;
     width: 100vw;

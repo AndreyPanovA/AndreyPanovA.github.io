@@ -1,6 +1,7 @@
 @tab: #333;
 @white: white;
 @black: black;
+@mirrior: rgba(0, 0, 0, 0.8);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
 @font-face {
   font-family: "RalewayRegular";
@@ -15,6 +16,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: @tab;
   // border: 20px solid red;
   line-height: 1.5;
   font-size: 18px;
@@ -347,6 +349,82 @@ main {
   }
 }
 
+//
+.panorama {
+  // background-color: #313131;
+  background-color: @tab;
+  width: 100vw;
+  .pano_cont {
+    width: 100vw;
+    .fr {
+      width: 100vw;
+      iframe {
+        height: 50vh;
+        width: 100vw;
+      }
+    }
+  }
+}
+.fot_wrap {
+  background-color: @mirrior !important;
+  color: white !important;
+}
+footer {
+  -webkit-box-shadow: 0px -1px 10px 15px @mirrior !important;
+  -moz-box-shadow: 0px -1px 10px 15px @mirrior !important;
+  box-shadow: 0px -1px 10px 15px @mirrior !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  .fot_wrap {
+    position: relative;
+    padding: 10px 20px;
+    height: 48px;
+    align-items: center;
+    color: black;
+    background-color: @mirrior;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: -1px 7px 10px 0px @mirrior !important;
+    -moz-box-shadow: -1px 7px 10px 0px @mirrior !important;
+    box-shadow: -1px 7px 10px 0px @mirrior !important;
+    p {
+      margin-right: 10px;
+    }
+    .app-store {
+      display: flex;
+      align-items: center;
+      a {
+        margin-right: 10px;
+        display: inline-block;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child {
+          padding: 5px;
+          background-color: black;
+          border-radius: 5px;
+        }
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
+.bottom_description {
+  padding: 20px 40px;
+  // padding-bottom: 50px;
+
+  color: white;
+  p {
+    margin-bottom: 20px;
+  }
+}
+//
 @media (max-width: 1370px) {
   .bmw_right {
     p {
@@ -390,6 +468,7 @@ main {
 }
 @media (max-width: 450px) {
   .bmw_right {
+    padding-top: 35px !important;
     background-color: rgba(50, 50, 50, 0.55);
     // position: absolute;
 
@@ -401,6 +480,7 @@ main {
     flex-basis: 100% !important;
   }
   .opr_left {
+    padding-top: 35px !important;
     background-color: rgba(50, 50, 50, 0.55);
     // position: absolute;
     overflow: auto;
