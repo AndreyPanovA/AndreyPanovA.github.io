@@ -406,13 +406,18 @@ main .pad {
   }
   .opr_left {
     background-color: rgba(50, 50, 50, 0.55);
+    overflow: auto;
     width: 100vw;
     color: white;
     top: 0 !important;
     margin: 0 !important;
     left: 0;
+    height: 100%;
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
+  }
+  .polygon-right {
+    display: none;
   }
   .polygon-left {
     display: none;
