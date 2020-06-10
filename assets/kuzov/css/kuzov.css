@@ -185,35 +185,15 @@ section:last-child {
   border-radius: 5px;
   position: relative;
   background-color: #ffffff;
-  border: 2px solid #333;
+  border: 2px solid #333333;
   border-bottom: none;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
   cursor: pointer;
 }
-.tab_container::before {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  content: "\2716";
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
+.tab_container:hover {
   background-color: #333333;
-  color: #ffffff;
-  font-size: 25px;
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: white;
 }
 .tab_container p {
   text-align: center;
@@ -361,7 +341,7 @@ main .pad {
 }
 .works_wrapper {
   background-color: #fafafa;
-  padding-top: 30px;
+  padding: 30px 0px;
 }
 .works_wrapper h2 {
   text-align: center;
@@ -451,6 +431,7 @@ footer .fot_wrap .app-store a img {
 }
 .bottom_description p {
   margin-bottom: 20px;
+  color: white;
 }
 @media (max-width: 1370px) {
   .bmw_right p {
@@ -477,6 +458,15 @@ footer .fot_wrap .app-store a img {
   .polygon-right p {
     font-size: 15px !important;
     color: red;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  .image_conent {
+    padding: 0 !important;
+  }
+  .image_conent .img {
+    margin: 0 !important;
   }
 }
 @media (max-width: 450px) {
