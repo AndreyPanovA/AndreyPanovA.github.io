@@ -1,6 +1,14 @@
 @tab: #333;
 @white: white;
 @black: black;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../../kuzov");
+
+  font-style: normal;
+  font-weight: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +19,13 @@ body {
   line-height: 1.5;
   font-size: 18px;
   width: 100vw;
+  // font-family: "ProximaNovaRegular";
+  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  font-family: "ProximaNovaRegular", sans-serif;
 }
 img {
   width: 100%;
@@ -248,7 +263,8 @@ section {
       // border: 2px solid lime;
     }
     p {
-      font-size: 25px;
+      font-weight: 16px !important;
+      // font-size: 25px;
       margin: 0 0 10px;
     }
   }
@@ -289,6 +305,9 @@ section {
       height: 100vh;
       width: 50% !important;
       shape-outside: polygon(100% 0, 0 100%, 0 16%);
+      // shape-outside: polygon(100% 0, 0 100%, 0 36%);
+      clip-path: polygon(100% 0, 0 80%, 0 16%);
+      // background: linear-gradient(to top right, #fdb171, #fd987d);
     }
     margin-left: 30px;
     p {
@@ -331,32 +350,77 @@ main {
 @media (max-width: 1370px) {
   .bmw_right {
     p {
-      font-size: 18px !important;
+      font-size: 15px !important;
       // color: red !important;
       // margin: 0 0 10px;
     }
   }
-}
-
-@media (max-width: 992px) {
-  max-width: 500px !important;
-}
-@media (max-width: 767px) {
-  .opr_left {
+  .polygon-right {
+    // border: 2px solid red !important;
     p {
-      font-size: 18px !important;
+      font-size: 12px !important;
+      color: red;
     }
   }
-}
-@media (max-width: 450px) {
   .opr_left {
     p {
       font-size: 15px !important;
     }
   }
+}
+@media (max-width: 992px) {
+  max-width: 500px !important;
+}
+@media (max-width: 767px) {
+  .top-text {
+    font-size: 18px !important;
+  }
+  .opr_left {
+    p {
+      font-size: 15px !important;
+    }
+  }
+  .polygon-right {
+    // border: 2px solid red !important;
+    p {
+      font-size: 15px !important;
+      color: red;
+    }
+  }
+}
+@media (max-width: 450px) {
   .bmw_right {
-    // color: red !important;
+    background-color: rgba(50, 50, 50, 0.55);
+    // position: absolute;
+    width: 100vw;
+    color: white;
+    top: 0 !important;
+    margin: 0 !important;
+    left: 0;
+    flex-basis: 100% !important;
+  }
+  .opr_left {
+    background-color: rgba(50, 50, 50, 0.55);
+    // position: absolute;
+    width: 100vw;
+    color: white;
+    top: 0 !important;
+    margin: 0 !important;
+    left: 0;
+    flex-basis: 100% !important;
+  }
+  .polygon-left {
+    display: none;
+  }
 
+  //
+  .opr_left {
+    p {
+      // text-overflow: ellipsis
+      // font-size: 12px !important;
+    }
+  }
+  .bmw_right {
     p {
       font-size: 15px !important;
     }
@@ -418,4 +482,15 @@ main {
     opacity: 0;
     transform: translateX(100%);
   }
+}
+
+//
+.top-text {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #313131;
+  font-family: Ope;
+  font-weight: bold;
+  // font-family: "Open Sans", Arial, sans-serif;
+  font-family: "HelveticaNeueCyr", sans-serif;
 }

@@ -29,6 +29,25 @@
   margin: 0;
   padding: 0;
 } */
+.text_block {
+  /* display: flex;
+  justify-content: center; */
+  /* border: 2px solid red; */
+  margin-bottom: 30px;
+}
+.texter {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.center-text {
+  text-align: center;
+  color: white;
+
+  /* margin-bottom: 10px; */
+  font-family: "ProximaNovaRegular";
+  font-family: Arial, sans-serif;
+}
 .swiper-container {
   width: 100vw;
   padding-top: 100px;
