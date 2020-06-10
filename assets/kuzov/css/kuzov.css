@@ -486,6 +486,9 @@ footer .fot_wrap .app-store a img {
   .image_conent .img {
     margin: 0 !important;
   }
+  .text_content {
+    width: 60%;
+  }
 }
 @media (max-width: 450px) {
   .bmw_right {
