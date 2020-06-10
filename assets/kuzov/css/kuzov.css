@@ -180,6 +180,24 @@ img {
 section:last-child {
   margin-bottom: 100px;
 }
+.logo {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.logo a {
+  margin: auto;
+  display: block;
+  max-width: 170px !important;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:hover p span {
+  text-decoration: underline;
+}
+img {
+  width: 100%;
+}
 .tab_container {
   padding: 20px 40px;
   border-radius: 5px;
