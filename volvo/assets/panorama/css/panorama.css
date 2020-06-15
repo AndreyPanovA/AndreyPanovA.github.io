@@ -28,7 +28,21 @@
   -ms-flex-item-align: stretch;
       align-self: stretch;
 }
+.card:nth-child(even) {
+  -ms-flex-preferred-size: 59%;
+      flex-basis: 59%;
+}
 .card p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cardBG {
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+.cardBG p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -67,9 +81,11 @@
   background-color: #ff00ff;
 }
 main {
-  max-width: 70vw;
+  position: relative;
+  z-index: 100;
+  max-width: 90vw;
   padding: 20px 35px;
-  margin: auto;
+  margin-left: 15vw;
 }
 main .panorama .pano_cont {
   -ms-flex-preferred-size: 49%;
@@ -77,6 +93,10 @@ main .panorama .pano_cont {
   text-align: center;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.8);
+}
+main .panorama .pano_cont:nth-child(odd) {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 main .panorama .pano_cont iframe {
   min-height: 30vh;
@@ -89,8 +109,12 @@ main .panorama .pano_cont p {
   margin-bottom: 10px;
 }
 main .card__block {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+main .card__block:nth-child(odd) {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 main .card__block h4 {
   margin: 20px 0;
@@ -118,6 +142,9 @@ main .card__block .video iframe {
   }
 }
 @media (max-width: 992px) {
+  main {
+    margin-left: auto !important;
+  }
   .mr {
     margin-right: 0 !important;
     margin-bottom: 20px !important;

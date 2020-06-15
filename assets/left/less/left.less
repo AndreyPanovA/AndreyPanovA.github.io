@@ -14,7 +14,31 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+.cardBlack {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  // justify-content: space-between;
+}
+.promoImg {
+  // min-width: 170px;
+  max-width: 270px;
+  margin-right: 30px;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  // border: 2px solid red;
+}
+
+// main {
+//   border: 2px solid red !important;
+//   width: 2000px;
+// }
 body {
+  // border: 20px solid red !important;
   color: #fff;
   background: #000;
   background-size: cover;
@@ -211,10 +235,8 @@ body {
 
 .bonus__rules {
   margin-bottom: 100px;
-
   position: relative;
   z-index: 100;
-
   padding: 20px 40px;
   display: flex;
   justify-content: center;
@@ -344,6 +366,7 @@ body {
   //   background-position: center top;
   // }
 }
+
 #menuToggle a {
   text-decoration: none;
   color: #232323;
@@ -589,4 +612,12 @@ body {
 }
 .burgActive {
   transform: translate(400%, 0%);
+}
+
+// super
+.super_container {
+  // background-color: red;
+  width: 50vw;
+  position: absolute;
+  height: 100vh;
 }

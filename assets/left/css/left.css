@@ -16,6 +16,23 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
+.cardBlack {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promoImg {
+  max-width: 270px;
+  margin-right: 30px;
+}
+.promoImg img {
+  width: 100%;
+  border-radius: 5px;
+}
 body {
   color: #fff;
   background: #000;
@@ -617,4 +634,9 @@ body footer .fot_wrap .app-store a img {
 .burgActive {
   -webkit-transform: translate(400%, 0%);
           transform: translate(400%, 0%);
+}
+.super_container {
+  width: 50vw;
+  position: absolute;
+  height: 100vh;
 }
