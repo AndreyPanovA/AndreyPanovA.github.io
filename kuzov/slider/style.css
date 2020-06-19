@@ -52,7 +52,16 @@
   width: 100vw;
   padding-top: 100px;
   padding-bottom: 50px;
-  background: #262626;
+  /* background: #262626; */
+  background: url("../assets/img/kuzovBG.JPG") left top/cover;
+}
+.swiper-container::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  top: 0;
+  bottom: 0;
 }
 .swiper-slide {
   background-position: center;

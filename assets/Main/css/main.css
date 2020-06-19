@@ -2,15 +2,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 a {
   color: white;
   text-decoration: none;
-  transform: 0.2s;
+  -webkit-transform: 0.2s;
+          transform: 0.2s;
 }
 a:hover h2 {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   text-align: center;
 }
 body {
@@ -24,22 +27,41 @@ body {
 }
 body .container .wrapper {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 body .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   position: absolute;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .bg .logoBG {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 100%;
 }
@@ -48,23 +70,35 @@ body .bg .logoBG .imgBG {
 }
 body .bg .logoBG .keysImg {
   width: 100%;
-  top: 0;
-  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 body .bg .logoBG .keysImg .key {
   margin-bottom: 30px;
   margin-right: 30px;
-  flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 body .bg .logoBG .keysImg .key:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
 }
 body .bg .logoBG .keysImg .key .logger {
@@ -81,51 +115,11 @@ body .bg .imgBG {
   width: 50vw;
 }
 body .keys {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-}
-body footer {
-  -webkit-box-shadow: 0px -1px 10px 15px #ffffff;
-  -moz-box-shadow: 0px -1px 10px 15px #ffffff;
-  box-shadow: 0px -1px 10px 15px #ffffff;
-}
-body .fot_wrap {
-  z-index: 10000;
-  padding: 10px 20px;
-  position: relative;
-  z-index: 1000;
-  height: 48px;
-  align-items: center;
-  color: black;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  -webkit-box-shadow: -1px 7px 10px 0px #ffffff;
-  -moz-box-shadow: -1px 7px 10px 0px #ffffff;
-  box-shadow: -1px 7px 10px 0px #ffffff;
-}
-body .fot_wrap p {
-  margin-right: 10px;
-}
-body .fot_wrap .app-store {
-  display: flex;
-  align-items: center;
-}
-body .fot_wrap .app-store a {
-  margin-right: 10px;
-  display: inline-block;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .fot_wrap .app-store a:first-child {
-  padding: 5px;
-  background-color: black;
-  border-radius: 5px;
-}
-body .fot_wrap .app-store a img {
-  max-width: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 body .panorama {
   width: 100vw;
@@ -145,17 +139,31 @@ body .panorama .pano_cont .fr iframe {
     color: white;
   }
   body .bg {
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   body .bg .logoBG {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body .bg .logoBG .keysImg {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .bg .logoBG .keysImg .key {
     margin-right: 0px !important;
@@ -165,10 +173,12 @@ body .panorama .pano_cont .fr iframe {
     font-size: 15px;
   }
   body .bg .logoBG .keysImg .key:last-child:hover {
-    transform: scale(1.5) translateY(-30px);
+    -webkit-transform: scale(1.5) translateY(-30px);
+            transform: scale(1.5) translateY(-30px);
   }
   body .bg .logoBG .keysImg .key:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     cursor: pointer;
   }
   body .bg .logoBG .keysImg .key .logger {
@@ -199,44 +209,8 @@ body .panorama .pano_cont .fr iframe {
   h2 {
     font-size: 10px !important;
   }
-  footer {
-    position: relative;
-    z-index: 1;
-    height: 48px;
-    align-items: center;
-    color: black;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-  }
-  footer p {
-    font-size: 12px;
-  }
-  footer .app-store {
-    display: flex;
-    align-items: center;
-  }
-  footer .app-store a {
-    margin-right: 10px;
-    display: inline-block;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .app-store a:first-child {
-    padding: 5px;
-    background-color: black;
-    border-radius: 5px;
-  }
-  footer .app-store a img {
-    max-width: 100px;
-  }
 }
 @media (max-width: 440px) {
-  footer p {
-    display: none;
-  }
   .key {
     margin-bottom: 10px !important;
   }
@@ -244,7 +218,8 @@ body .panorama .pano_cont .fr iframe {
     margin: 0;
   }
   .key:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     cursor: pointer;
   }
   .key .logger {
@@ -307,24 +282,20 @@ body .panorama .pano_cont .fr iframe {
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -344,19 +315,26 @@ body .panorama .pano_cont .fr iframe {
 }
 /* Loaded Styles */
 .loaded #loader-wrapper .loader-section.section-left {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .loaded #loader-wrapper .loader-section.section-right {
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .loaded #loader {
   opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 .loaded #loader-wrapper {
   visibility: hidden;
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
