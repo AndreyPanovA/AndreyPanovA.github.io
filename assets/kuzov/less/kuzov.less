@@ -242,8 +242,35 @@ main {
   }
 }
 //Обложка слайдера
-.imgBx {
-  opacity: 0.5;
+// .imgBx {
+//   opacity: 0.5;
+// }
+// .swiper-slide-duplicate {
+//   opacity: ;
+
+// }
+
+.panoram {
+  border: 2px solid #333;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    // bottom: 0;
+    left: 0;
+    // right: 0;
+    z-index: 1000;
+  }
+}
+.main__title {
+  color: @white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-bottom: 50px;
+  font-size: 55px;
 }
 //
 

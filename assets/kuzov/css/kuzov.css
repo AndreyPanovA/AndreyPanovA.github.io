@@ -222,8 +222,26 @@ main .pad {
   margin-bottom: 20px;
   color: white;
 }
-.imgBx {
-  opacity: 0.5;
+.panoram {
+  border: 2px solid #333;
+}
+.panoram::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.main__title {
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  margin-bottom: 50px;
+  font-size: 55px;
 }
 .card__menu {
   padding: 20px;
