@@ -86,6 +86,7 @@ nav .links a:hover li {
   border-bottom: 1px solid white;
 }
 nav .links li {
+  border-left: 2px solid white;
   padding: 5px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
