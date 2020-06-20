@@ -263,7 +263,7 @@
 
          -->
         <div class="tab__active-container">
-          <div class="audi tab__item show__tab" data-index-number="1">
+          <div class="audi tab__item" data-index-number="1">
             <!-- Audi -->
             <p class="tab__title">Audi TT</p>
             <div class="content">
@@ -315,7 +315,7 @@
           <!-- Audi Конец -->
           <!-- Skoda Octavia -->
           <div class="skoda tab__item" data-index-number="2">
-            <p>Skoda Octavia</p>
+            <p class="tab__title">Skoda Octavia</p>
             <div class="content">
               <div class="all_content">
                 <div class="text_content">
@@ -486,12 +486,15 @@
       const itemsBtn = document.querySelectorAll(".card__menu-item");
       items.forEach((elem) => {
         elem.addEventListener("click", () => {
+          document.body.style.overflow = "visible";
           elem.classList.remove("show__tab");
         });
       });
 
       itemsBtn.forEach((Element, index) => {
         Element.addEventListener("click", () => {
+          document.body.style.overflow = "hidden";
+          // burg.style.border = "2px solid red";
           items.forEach((element, index) => {
             if (element.dataset.indexNumber == Element.dataset.indexNumber) {
               element.classList.add("show__tab");

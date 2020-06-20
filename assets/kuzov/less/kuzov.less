@@ -314,6 +314,8 @@ main {
   animation: 1s opacityer;
 }
 .tab__item {
+  overflow: auto;
+  max-height: 100vh;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -327,6 +329,9 @@ main {
 }
 .tab__title {
   text-align: center;
+  background-color: #333;
+  color: @white;
+  padding: 20px 40px;
   p {
     display: inline-block;
   }
@@ -340,9 +345,13 @@ main {
   // color: white;
   .all_content {
     padding: 20px 40px;
-
+    max-width: 80%;
+    margin: auto;
     .text_content {
       margin-bottom: 20px;
+      p {
+        text-align: justify;
+      }
     }
     .image_conent {
       // .center;

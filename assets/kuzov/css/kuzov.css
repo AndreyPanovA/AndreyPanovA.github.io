@@ -285,6 +285,8 @@ main .pad {
           animation: 1s opacityer;
 }
 .tab__item {
+  overflow: auto;
+  max-height: 100vh;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -293,6 +295,9 @@ main .pad {
 }
 .tab__title {
   text-align: center;
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px 40px;
   border-bottom: 2px solid #333;
 }
 .tab__title p {
@@ -305,9 +310,14 @@ main .pad {
 }
 .content .all_content {
   padding: 20px 40px;
+  max-width: 80%;
+  margin: auto;
 }
 .content .all_content .text_content {
   margin-bottom: 20px;
+}
+.content .all_content .text_content p {
+  text-align: justify;
 }
 .content .all_content .image_conent .image_line {
   -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
