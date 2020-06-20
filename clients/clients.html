@@ -63,10 +63,19 @@
         -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
         -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
         box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+        animation: 0.3s shake ease-in-out;
       }
       .goBack::before {
         content: "\21E6";
         margin-right: 10px;
+      }
+      @keyframes shake {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(-10px);
+        }
       }
     </style>
   </head>
