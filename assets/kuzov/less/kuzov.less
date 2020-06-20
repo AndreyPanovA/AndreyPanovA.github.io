@@ -232,8 +232,12 @@ main {
     }
   }
 }
-
+// Контакты снизу
 .bottom_description {
+  .contact__link {
+    text-align: center;
+    font-size: 25px;
+  }
   padding: 20px 40px;
   color: white;
   p {
@@ -241,6 +245,7 @@ main {
     color: white;
   }
 }
+// Контакты сницу конец
 //Обложка слайдера
 // .imgBx {
 //   opacity: 0.5;
@@ -280,7 +285,9 @@ main {
   padding: 20px;
   .center;
   flex-wrap: wrap;
+  align-items: flex-start;
   .card__menu-item {
+    width: 250px;
     border-radius: 5px;
     padding: 20px;
     -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
@@ -289,6 +296,8 @@ main {
     margin-right: 10px;
     margin-bottom: 40px;
     transition: 0.3s ease-in-out;
+    min-height: 300px;
+
     cursor: pointer;
     &:hover {
       // transform: scale(1.1) translateY(-20px);
@@ -301,6 +310,7 @@ main {
       text-align: center;
     }
     img {
+      width: 210px;
       border-radius: 5px;
     }
   }
@@ -309,6 +319,8 @@ main {
 
 // Центральная карточка сверху
 .show__tab {
+  cursor: cell;
+
   display: block !important;
   // opacity: 1 !important;
   animation: 1s opacityer;
@@ -333,7 +345,7 @@ main {
   color: @white;
   padding: 20px 40px;
   p {
-    display: inline-block;
+    // display: inline-block;
   }
   border-bottom: 2px solid #333;
 }
@@ -350,6 +362,8 @@ main {
     .text_content {
       margin-bottom: 20px;
       p {
+        text-indent: 45px;
+        margin-bottom: 15px;
         text-align: justify;
       }
     }
