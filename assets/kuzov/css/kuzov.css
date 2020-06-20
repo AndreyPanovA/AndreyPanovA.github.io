@@ -279,6 +279,56 @@ main .pad {
 .card__menu .card__menu-item img {
   border-radius: 5px;
 }
+.show__tab {
+  display: block !important;
+  -webkit-animation: 1s opacityer;
+          animation: 1s opacityer;
+}
+.tab__item {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: none;
+  z-index: 100;
+}
+.tab__title {
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+.tab__title p {
+  display: inline-block;
+}
+.content {
+  -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
+  background-color: #ffffff;
+}
+.content .all_content {
+  padding: 20px 40px;
+}
+.content .all_content .text_content {
+  margin-bottom: 20px;
+}
+.content .all_content .image_conent .image_line {
+  -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 40px;
+}
+.content .all_content .image_conent .image_line .img {
+  max-width: 170px;
+  margin-right: 10px;
+}
 @media (max-width: 1370px) {
   .bmw_right p {
     font-size: 15px !important;
@@ -360,4 +410,20 @@ main .pad {
   font-family: Ope;
   font-weight: bold;
   font-family: "HelveticaNeueCyr", sans-serif;
+}
+@-webkit-keyframes opacityer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
