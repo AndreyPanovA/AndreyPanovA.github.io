@@ -2,15 +2,13 @@
 @white: white;
 @black: black;
 @mirrior: rgba(0, 0, 0, 0.8);
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
-@font-face {
-  font-family: "RalewayRegular";
-  src: url("../../kuzov");
-
-  font-style: normal;
-  font-weight: normal;
-}
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+// @font-face {
+//   font-family: "RalewayRegular";
+//   src: url("../../kuzov");
+//   font-style: normal;
+//   font-weight: normal;
+// }
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +19,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   width: 100vw;
-  // font-family: "ProximaNovaRegular";
   font-family: "Open Sans", Arial, sans-serif;
   font-family: "Roboto", Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
@@ -39,34 +36,29 @@ img {
 }
 .flex {
   display: flex;
-  // justify-content: center;
 }
 .space {
   display: flex;
   justify-content: space-between;
 }
-
 .textSelect {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
 section {
   &:last-child {
     margin-bottom: 100px;
   }
 }
 // Tab
-
 .logo {
   transition: 0.3s;
   a {
     margin: auto;
     display: block;
     max-width: 170px !important;
-    // border: 2px solid red;
   }
   &:hover {
     p {
@@ -76,9 +68,6 @@ section {
     }
     opacity: 0.8;
   }
-}
-img {
-  width: 100%;
 }
 .tab_container {
   padding: 20px 40px;
@@ -195,15 +184,10 @@ img {
     }
   }
 }
-
 //
 main {
   .pad {
     padding: 0px 40px;
-    &:hover {
-      // background-color: @tab;
-    }
-    // отступы
   }
 }
 //
@@ -215,10 +199,8 @@ main {
     margin-bottom: 30px;
   }
 }
-
 //
 .panorama {
-  // background-color: #313131;
   background-color: @tab;
   width: 100vw;
   .pano_cont {
@@ -247,14 +229,6 @@ main {
 }
 // Контакты сницу конец
 //Обложка слайдера
-// .imgBx {
-//   opacity: 0.5;
-// }
-// .swiper-slide-duplicate {
-//   opacity: ;
-
-// }
-
 .panoram {
   border: 2px solid #333;
   &::after {
@@ -262,9 +236,7 @@ main {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    // bottom: 0;
     left: 0;
-    // right: 0;
     z-index: 1000;
   }
 }
@@ -277,11 +249,8 @@ main {
   margin-bottom: 50px;
   font-size: 55px;
 }
-//
-
 // Меню карточки
 .card__menu {
-  // background-color: #333;
   padding: 20px;
   .center;
   flex-wrap: wrap;
@@ -297,12 +266,9 @@ main {
     margin-bottom: 40px;
     transition: 0.3s ease-in-out;
     min-height: 300px;
-
     cursor: pointer;
     &:hover {
-      // transform: scale(1.1) translateY(-20px);
       border-top-left-radius: 20%;
-      // border: 2px solid @white;
       border-bottom-right-radius: 20%;
     }
     p {
@@ -316,13 +282,10 @@ main {
   }
 }
 // Меню карточки конец
-
 // Центральная карточка сверху
 .show__tab {
   cursor: cell;
-
   display: block !important;
-  // opacity: 1 !important;
   animation: 1s opacityer;
 }
 .tab__item {
@@ -332,11 +295,6 @@ main {
   top: 0%;
   left: 0%;
   display: none;
-  // opacity: 0;
-  // transition-delay: 0.2s;
-  // transition-duration: 1s;
-  // transition-property: opacity;
-
   z-index: 100;
 }
 .tab__title {
@@ -344,9 +302,6 @@ main {
   background-color: #333;
   color: @white;
   padding: 20px 40px;
-  p {
-    // display: inline-block;
-  }
   border-bottom: 2px solid #333;
 }
 .content {
@@ -354,7 +309,6 @@ main {
   -moz-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
   background-color: rgba(255, 255, 255, 1);
-  // color: white;
   .all_content {
     padding: 20px 40px;
     max-width: 80%;
@@ -368,10 +322,6 @@ main {
       }
     }
     .image_conent {
-      // .center;
-      // width: 100vw;
-      // flex-direction: row;
-      //
       .image_line {
         -webkit-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
         -moz-box-shadow: 0px 7px 14px 0px rgba(50, 50, 50, 0.75);
@@ -379,7 +329,6 @@ main {
         .center;
         flex-wrap: wrap;
         padding: 20px 40px;
-
         .img {
           max-width: 170px;
           margin-right: 10px;
@@ -425,7 +374,6 @@ main {
   .polygon-right {
     p {
       font-size: 15px !important;
-      color: red;
     }
   }
   .content {
@@ -433,15 +381,12 @@ main {
   }
   .image_conent {
     padding: 0 !important;
-    // align-items: center;
     .img {
       margin: 0 !important;
     }
   }
   .text_content {
     width: 60%;
-    p {
-    }
   }
 }
 @media (max-width: 450px) {
@@ -479,18 +424,14 @@ main {
     }
   }
 }
-
 //
 .top-text {
   text-transform: uppercase;
   font-size: 28px;
   color: #313131;
-  font-family: Ope;
   font-weight: bold;
-  // font-family: "Open Sans", Arial, sans-serif;
   font-family: "HelveticaNeueCyr", sans-serif;
 }
-
 @keyframes opacityer {
   0% {
     opacity: 0;
