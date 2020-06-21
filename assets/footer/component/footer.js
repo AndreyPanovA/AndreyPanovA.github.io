@@ -1,4 +1,10 @@
 let fot = document.querySelector("footer");
+const skew = document.querySelectorAll(".video");
+skew.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    elem.classList.toggle("skew");
+  });
+});
 Footer = ` 
 <div class="fot_wrap">
   <p>C «Larson Бонус» выгоднее! Наше приложение:</p>
