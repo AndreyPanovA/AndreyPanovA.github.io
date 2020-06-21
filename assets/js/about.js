@@ -59,11 +59,11 @@ setTimeout(() => {
 // document.addEventListener("DOMContentLoaded", () => {
 //   mediaQuery();
 // });
-// window.onresize = function (event) {
-//   size = window.innerWidth;
-//   mediaQuery();
-//   // modalClose.classList.remove("modalActive");
-// };
+window.onresize = function (event) {
+  size = window.innerWidth;
+  mediaQuery();
+  // modalClose.classList.remove("modalActive");
+};
 
 const burg = document.querySelector(".burger");
 const menue = document.querySelector("nav");
@@ -71,12 +71,12 @@ const closer = document.querySelector(".closer");
 burg.addEventListener("click", () => {
   menue.classList.toggle("menuActive");
   burg.classList.toggle("move");
-  closer.style.display = "block";
   burg.classList.toggle("xer");
+  closer.style.display = "block";
 });
 closer.addEventListener("click", () => {
   closer.style.display = "none";
   burg.classList.remove("move");
   menue.classList.remove("menuActive");
-  burg.classList.remove("xer");
+  // burg.classList.remove("xer");
 });
