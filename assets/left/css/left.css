@@ -214,6 +214,13 @@ body section .container .wrapper .map .contacts__block .descr__left {
   width: 50vw !important;
   height: 50vh !important;
 }
+.bigVideo {
+  height: 50% !important;
+}
+.bigVideo iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
 @media (max-width: 992px) {
   .text__block,
   .map {
