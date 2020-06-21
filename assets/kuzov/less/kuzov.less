@@ -2,23 +2,6 @@
 @white: white;
 @black: black;
 @mirrior: rgba(0, 0, 0, 0.8);
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
-// @font-face {
-//   font-family: "RalewayRegular";
-//   src: url("../../kuzov");
-//   font-style: normal;
-//   font-weight: normal;
-// }
-
-body {
-  background-color: @tab;
-  line-height: 1.5;
-  font-size: 18px;
-  width: 100vw;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-family: "Roboto", Arial, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-}
 
 .center {
   display: flex;
@@ -27,10 +10,6 @@ body {
 }
 .flex {
   display: flex;
-}
-.space {
-  display: flex;
-  justify-content: space-between;
 }
 .textSelect {
   -webkit-user-select: none;
@@ -44,37 +23,13 @@ section {
   }
 }
 // Tab
-.logo {
-  transition: 0.3s;
-  a {
-    margin: auto;
-    display: block;
-    max-width: 170px !important;
-  }
-  &:hover {
-    p {
-      span {
-        text-decoration: underline;
-      }
-    }
-    opacity: 0.8;
-  }
-}
-.tab_container {
-  padding: 20px 40px;
-  border-radius: 5px;
-  position: relative;
-  background-color: @white;
-  border: 2px solid @tab;
-  border-bottom: none;
-  cursor: pointer;
-  &:hover {
-    background-color: @tab;
-    color: white;
-  }
-  p {
-    text-align: center;
-  }
+
+.top-text {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #313131;
+  font-weight: bold;
+  font-family: "HelveticaNeueCyr", sans-serif;
 }
 // My style
 .bmw_section {
@@ -151,9 +106,7 @@ section {
       height: 100vh;
       width: 50% !important;
       shape-outside: polygon(100% 0, 0 100%, 0 16%);
-      // shape-outside: polygon(100% 0, 0 100%, 0 36%);
       clip-path: polygon(100% 0, 0 80%, 0 16%);
-      // background: linear-gradient(to top right, #fdb171, #fd987d);
     }
     margin-left: 30px;
     p {
@@ -168,20 +121,9 @@ section {
     right: 0;
     top: 0;
     position: absolute;
-    img {
-      // border: 2px solid red;
-      // width: 100vw;
-      // height: 100vh;
-    }
   }
 }
-//
-main {
-  .pad {
-    padding: 0px 40px;
-  }
-}
-//
+
 .works_wrapper {
   background-color: #fafafa;
   padding: 30px 0px;
@@ -190,21 +132,7 @@ main {
     margin-bottom: 30px;
   }
 }
-//
-.panorama {
-  background-color: @tab;
-  width: 100vw;
-  .pano_cont {
-    width: 100vw;
-    .fr {
-      width: 100vw;
-      iframe {
-        height: 50vh;
-        width: 100vw;
-      }
-    }
-  }
-}
+
 // Контакты снизу
 .bottom_description {
   .contact__link {
@@ -221,6 +149,11 @@ main {
 // Контакты сницу конец
 //Обложка слайдера
 .panoram {
+  position: absolute;
+  left: 70%;
+  top: 0;
+  width: 30%;
+  height: 200px;
   border: 2px solid #333;
   &::after {
     content: "";
@@ -333,21 +266,27 @@ main {
   .bmw_right {
     p {
       font-size: 15px !important;
-      // color: red !important;
-      // margin: 0 0 10px;
     }
   }
   .polygon-right {
-    // border: 2px solid red !important;
     p {
       font-size: 12px !important;
-      color: red;
     }
   }
   .opr_left {
     p {
       font-size: 15px !important;
     }
+  }
+}
+@media (max-width: 1000px) {
+  .main__title {
+    top: 16%;
+    font-size: 40px;
+  }
+  .panoram {
+    left: 50%;
+    width: 50%;
   }
 }
 @media (max-width: 992px) {
@@ -415,14 +354,7 @@ main {
     }
   }
 }
-//
-.top-text {
-  text-transform: uppercase;
-  font-size: 28px;
-  color: #313131;
-  font-weight: bold;
-  font-family: "HelveticaNeueCyr", sans-serif;
-}
+
 @keyframes opacityer {
   0% {
     opacity: 0;

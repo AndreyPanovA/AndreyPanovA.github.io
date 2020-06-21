@@ -62,28 +62,22 @@ nav {
   transition: 0.5s ease-in-out;
 }
 nav a {
-  text-decoration: none;
-  color: #232323;
   color: white;
 }
 nav .menuLogo {
   padding: 15px;
 }
 nav .menuLogo img {
-  max-width: 170px;
-}
-nav .menuLogo li {
-  border: none;
+  width: 170px;
 }
 nav .links a {
   font-family: "Open Sans", Arial, sans-serif;
   font-family: "Roboto", Arial, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  width: 100%;
 }
 nav .links a:hover li {
-  border-bottom: 1px solid white;
+  background-color: #fafafa;
+  color: black;
 }
 nav .links li {
   border-left: 2px solid white;
@@ -107,7 +101,11 @@ nav .links .active {
   display: none;
 }
 @media (max-width: 440px) {
+  .move {
+    -webkit-transform: translateX(50vw) rotate(360deg);
+            transform: translateX(50vw) rotate(360deg);
+  }
   nav {
-    width: 100vw !important;
+    max-width: 100vw !important;
   }
 }

@@ -18,7 +18,7 @@
       <div class="loader-section section-right"></div>
     </div>
     <div class="closer"></div>
-    <div class="burger hovBtn">
+    <div class="burger">
       <span class="line1"></span>
       <span class="line2"></span>
       <span class="line3"></span>
@@ -28,7 +28,7 @@
         <ul id="menu" class="links">
           <div class="menuLogo">
             <a href="../index.html">
-              <img src="../assets/img/larson-white.svg" alt="" />
+              <img src="../assets/img/larson-white.svg" alt="Larson" />
             </a>
           </div>
           <a href="#about"><li>О нас</li></a>
@@ -39,16 +39,12 @@
         </ul>
       </div>
     </nav>
-    <!--  -->
     <div class="swiper-container">
       <iframe
         class="panoram"
         src="https://yandex.ru/map-widget/v1/-/CCQh4GuthC"
-        width="30%"
-        height="200"
         frameborder="1"
         allowfullscreen="true"
-        style="position: absolute; left: 70%; top: 0;"
       ></iframe>
       <div class="text_block">
         <p class="main__title">Кузовной Центр</p>
@@ -82,13 +78,12 @@
       <!-- Add Pagination -->
       <!-- <div class="swiper-pagination"></div> -->
     </div>
-    <!--  -->
     <main>
       <section class="bmw_section" id="about">
         <div class="bmw_img">
           <img
             src="../assets/img/Larson_backgrounds/Images/bmw-left.png"
-            alt=""
+            alt="BMW"
           />
         </div>
         <div class="bmw_right">
@@ -587,11 +582,58 @@
             </div>
           </div>
           <!-- Porsche Macan 2019 Конец -->
+          <!-- Toyota RAV4 -->
+          <div class="tab__item" data-index-number="6">
+            <p class="tab__title">Toyota RAV4</p>
+
+            <div class="content">
+              <div class="all_content">
+                <div class="text_content">
+                  <p>
+                    Небольшие препятствия в виде парковочных столбиков не всегда
+                    опознаются вспомогательными датчиками парковки. В результате
+                    автомобиль получил повреждение крышки багажника. Для наших
+                    специалистов не составило труда спасти 5-ю дверь, а
+                    результат очень порадовал владельца.
+                  </p>
+                </div>
+                <div class="image_conent">
+                  <div class="image_line">
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/1.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/2.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/3.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/4.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/5.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/6.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/7.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/8.jpg" alt="" />
+                    </div>
+                    <div class="img">
+                      <img src="../assets/img/toyota_RAV4/9.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Toyota RAV4 Конец -->
         </div>
         <!--Volvo XC70  -->
-        <div class="tab__item" data-index-number="2">
-          <p class="tab__title">Skoda Octavia1</p>
-        </div>
       </div>
       <div class="bottom_description">
         <div class="contact__link" id="contacts">Контакы</div>
@@ -620,7 +662,6 @@
     </main>
     <footer></footer>
     <script src="../assets/footer/component/footer.js"></script>
-    <script src="../assets/js/slider.js"></script>
     <script src="./slider/swiper.min.js"></script>
     <script src="./slider/slider.js"></script>
     <script>
@@ -678,7 +719,6 @@
           elem.classList.remove("show__tab");
         });
       });
-
       itemsBtn.forEach((Element, index) => {
         Element.addEventListener("click", () => {
           document.body.style.overflow = "hidden";
@@ -718,327 +758,3 @@
     <script src="../assets/js/about.js"></script>
   </body>
 </html>
-
-<!-- <div class="works_wrapper">
-  <h2>Примеры работ</h2>
-  <div class="border">
-    <section class="audi pad">
-      <div class="tab_container">
-        <p>Audi TT</p>
-        <div class="content">
-          <div class="all_content">
-            <div class="text_content">
-              <p>
-                В процессе эксплуатации автомобилей с низким дорожным
-                просветом (клиренс) нередки случаи повреждения бамперов и
-                накладок порогов. Зачастую высота бордюров, “лежачих
-                полицейских”, а зимой сугробов и бруствера выше самой нижней
-                части обвеса. В результате даже незначительных тычков обвесы
-                слетают с креплений, деформируются, лакокрасочное покрытие
-                трескается и облупляется.
-              </p>
-              <p>
-                Не исключение и этот красавец — Audi TT — автомобиль со
-                спортивным характером и безусловно низким клиренсом.
-              </p>
-              <p>
-                В кузовном центре Larson выполнили ремонт и окрас переднего
-                бампера. Стоимость работ составила: 11880 руб.
-              </p>
-            </div>
-            <div class="image_conent">
-              <div class="image_line">
-                <div class="img">
-                  <img src="../assets/img/audi/1.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/audi/2.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/audi/3.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/audi/4.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/audi/5.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/audi/6.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="skoda pad">
-      <div class="tab_container">
-        <p>Skoda Octavia</p>
-        <div class="content">
-          <div class="all_content">
-            <div class="text_content">
-              <p>
-                Владелец Skoda Octavia обратился в Кузовной центр Larson для
-                устранения дефектов лакокрасочного покрытия (ЛКП). В
-                процессе эксплуатации на элементах кузова появились сколы и
-                очаги коррозии, потрескался лак.
-              </p>
-              <p>
-                При обнаружении следов коррозии на элементах кузова важно
-                выполнить ремонт на ранних этапах, не дожидаясь глубокого
-                проникновения ржавчины в металл. Поверхностную ржавчину
-                возможно удалить полностью, обработать протравливающим
-                грунтом и покрасить. Повторное возникновение ржавчины на
-                месте ремонта, при отсутствии механических повреждений в
-                процессе эксплуатации, практически исключается.
-              </p>
-              <p>
-                Проникшую же глубоко в поры металла коррозию полностью
-                вычистить не удастся. Защитные грунты замедлят процесс
-                корродирования на некоторое, возможно весьма продолжительное
-                (2-3 года), время. Тем не менее, ржавчина снова проступит
-                сквозь ЛКП, либо, “вспучив” краску, продолжит пробираться
-                вглубь металла до образования сквозной коррозии. Устранить
-                такие повреждения возможно будет только с помощью замены
-                детали — полностью или частично (например, в случае заднего
-                крыла автомобиля).
-              </p>
-              <p>
-                Выполнена дефектовка повреждений ЛКП. Все проблемные места
-                обнаружены, очаги коррозии зачищены и обработаны защитными
-                грунтами. После ремонтных работ, по просьбе владельца,
-                выполнена обработка защитным составом Willson Silane Guard.
-                Стоимость кузовного ремонта составила: 48780 руб. Стоимость
-                обработки защитным составом Willson Silane Guard с
-                предварительной полной глубокой восстановительной полировкой
-                кузова автомобиля: 29990 руб.
-              </p>
-            </div>
-            <div class="image_conent">
-              <div class="image_line">
-                <div class="img">
-                  <img src="../assets/img/octavia/1.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/2.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/3.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/4.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/5.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/6.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/7.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/8.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/9.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/10.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/octavia/11.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="range_white pad">
-      <div class="tab_container">
-        <p>Range Rover Evoque</p>
-        <div class="content">
-          <div class="all_content">
-            <div class="text_content">
-              
-              <p>
-                В кузовной центр Larson обратился владелец Range Rover
-                Evoque для устранения последствий небольшого
-                дорожно-транспортного происшествия.
-              </p>
-              <p>
-                Повреждения получил передний бампер и задняя левая дверь.
-                Выполнен ремонт деталей, установлена новая пластиковая
-                накладка.
-              </p>
-              <p>
-                Кстати, белый цвет считается одним из сложнейших как в
-                подборе (колористике), так и в нанесении. Он имеет множество
-                оттенков и “попасть в цвет” бывает затруднительно.
-                Специалистам Larson эта задача под силу.
-              </p>
-              <p>
-                Стоимость ремонта, включая запасные части составила: 35500
-                руб.
-              </p>
-            </div>
-            <div class="image_conent">
-              <div class="image_line">
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/1.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/2.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/3.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/4.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/5.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/6.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/7.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/rangeEvoque/8.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="volvo_xc70 pad">
-      <div class="tab_container">
-      
-      </div>
-    </section>
-    <section class="porsche_macan pad">
-      <div class="tab_container">
-        <p>Porsche Macan 2019</p>
-        <div class="content">
-          <div class="all_content">
-            <div class="text_content">
-              <p>
-                В кузовной центр Larson для нанесения защитного состава
-                Willson Silane Guard заехал Porsche Macan 2019 модельного
-                года очень интересного цвета Mamba Green Metallic.
-              </p>
-              <p>
-                Состояние лакокрасочного покрытия (ЛКП) на автомобиле в
-                идеальном состоянии, а защитить от внешнего воздействия и
-                сохранить блеск поможет нанесенный состав японского бренда
-                Willson. По заявлениям производителя эффект от защитного
-                покрытия сохраняется до 1 года, на практике же всё зависит
-                от условий эксплуатации (количество моек, пробег, условия
-                хранения и т. п.).
-              </p>
-              <p>
-                Willson Silane Guard – это: Высокоэффективная защита от
-                царапин, пагубного воздействия солевых реагентов и
-                ультрафиолетовых лучей; Существенные гидрофобные свойства.
-                Вода и грязь на глазах скатываются с поверхности автомобиля,
-                машина значительно дольше сохраняет чистый вид; Яркость
-                цвета автомобиля.
-              </p>
-              <p>
-                Так как автомобиль практически новый и ЛКП в отличном
-                состоянии, поэтому для процедуры нанесения защитного состава
-                не потребовалась полировка, только глубокое удаление грязи и
-                мельчайших голограмм.
-              </p>
-              <p>
-                Голограмма – незначительный дефект ЛКП, который выглядит как
-                радужно переливающиеся концентрические круги и эллипсы,
-                напоминающие голографический знак подлинности продукта.
-              </p>
-              <p>
-                Причиной появления голограмм может стать: Неправильная
-                полировка; Материалы для полировки низкого качества;
-                Вытирание пыли с сухой поверхности; Некачественная мойка.
-              </p>
-              <p>
-                Стоимость обработки защитным составом Willson Silane Guard
-                составила: 15000 руб.
-              </p>
-            </div>
-            <div class="image_conent">
-              <div class="image_line">
-                <div class="img">
-                  <img src="../assets/img/porsche/1.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/porsche/2.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/porsche/3.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/porsche/4.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="toyota_RAV4 pad">
-      <div class="tab_container">
-        <p>Toyota RAV4</p>
-        <div class="content">
-          <div class="all_content">
-            <div class="text_content">
-              <p>
-                Небольшие препятствия в виде парковочных столбиков не всегда
-                опознаются вспомогательными датчиками парковки. В результате
-                автомобиль получил повреждение крышки багажника. Для наших
-                специалистов не составило труда спасти 5-ю дверь, а
-                результат очень порадовал владельца.
-              </p>
-            </div>
-            <div class="image_conent">
-              <div class="image_line">
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/1.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/2.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/3.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/4.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/5.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/6.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/7.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/8.jpg" alt="" />
-                </div>
-                <div class="img">
-                  <img src="../assets/img/toyota_RAV4/9.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-</div> -->
