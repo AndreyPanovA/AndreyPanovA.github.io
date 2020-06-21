@@ -29,3 +29,24 @@ p {
 img {
   width: 100%;
 }
+
+.flex__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle__img-container {
+  width: 280px;
+  margin-right: 25px;
+}
+.middle__img-container img {
+  border-radius: 5px;
+  width: 270px;
+}
+
+@media (max-width: 767px) {
+  .flex__block {
+    flex-direction: column;
+  }
+}

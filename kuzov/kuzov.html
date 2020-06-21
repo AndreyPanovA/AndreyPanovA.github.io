@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./slider/swiper.min.css" />
     <link rel="stylesheet" href="./slider/style.css" />
     <link rel="stylesheet" href="../assets/nav/css/nav.css" />
+
     <title>Кузовной ремонт</title>
   </head>
   <body>
@@ -694,6 +695,12 @@
       });
     </script>
     <script>
+      window.addEventListener("load", function () {
+        document.querySelector("body").classList.add("loaded");
+      });
+      setTimeout(() => {
+        document.querySelector("body").classList.add("loaded");
+      }, 8000);
       const burg = document.querySelector(".burger");
       const menue = document.querySelector("nav");
       const closer = document.querySelector(".closer");
