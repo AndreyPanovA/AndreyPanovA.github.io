@@ -274,3 +274,18 @@ body section .container .wrapper .map .contacts__block .descr__left {
     opacity: 1;
   }
 }
+.modalClose {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  cursor: pointer;
+}
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
