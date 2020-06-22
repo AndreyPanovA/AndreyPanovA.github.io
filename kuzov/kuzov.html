@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./slider/swiper.min.css" />
     <link rel="stylesheet" href="./slider/style.css" />
     <link rel="stylesheet" href="../assets/nav/css/nav.css" />
-
     <title>Кузовной ремонт</title>
   </head>
   <body>
@@ -171,7 +170,7 @@
                 <img src="../assets/img/range_evoque_blue/1.jpg" alt="" />
               </div>
             </li>
-            <li class="card__menu-item" data-index-number="8">
+            <!-- <li class="card__menu-item" data-index-number="8">
               <p>BMW X1</p>
               <div class="img">
                 <img src="../assets/img/porsche/1.jpg" alt="" />
@@ -224,7 +223,7 @@
               <div class="img">
                 <img src="../assets/img/porsche/1.jpg" alt="" />
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- Audi TT -->
@@ -720,6 +719,7 @@
       // Tab
       const items = document.querySelectorAll(".tab__item");
       const itemsBtn = document.querySelectorAll(".card__menu-item");
+      const texter = document.querySelectorAll(".text_content");
       items.forEach((elem) => {
         elem.addEventListener("click", () => {
           document.body.style.overflow = "visible";
@@ -729,6 +729,9 @@
       itemsBtn.forEach((Element, index) => {
         Element.addEventListener("click", () => {
           document.body.style.overflow = "hidden";
+          // texter.forEach((el, idx) => {
+          //   el.classList.("text_content-open");
+          // });
           items.forEach((element, index) => {
             if (element.dataset.indexNumber == Element.dataset.indexNumber) {
               element.classList.add("show__tab");

@@ -318,7 +318,7 @@ section:last-child {
     margin: 0 !important;
   }
   .text_content {
-    width: 60%;
+    width: 100%;
   }
 }
 @media (max-width: 450px) {

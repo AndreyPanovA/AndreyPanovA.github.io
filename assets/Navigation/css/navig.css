@@ -104,10 +104,15 @@ nav .links .active {
   display: none;
 }
 @media (max-width: 1370px) {
+  .move {
+    -webkit-transform: translateX(30vw) rotate(360deg);
+            transform: translateX(30vw) rotate(360deg);
+  }
   .burger {
     display: block;
   }
   nav {
+    max-width: 30vw;
     left: -100%;
   }
 }
