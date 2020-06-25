@@ -141,8 +141,15 @@ form .suppliers-flex .suppliers-col label:hover {
     max-width: 700px;
   }
   .suppliers-flex {
+    margin-left: 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .size {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
