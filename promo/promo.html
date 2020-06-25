@@ -16,11 +16,22 @@
     .text__block {
       flex-basis: 60%;
     }
+    .little__text p {
+      margin-bottom: 25px;
+    }
     .flex__block {
       background-color: rgba(0, 0, 0, 0.8);
       margin-bottom: 20px;
       padding: 20px 40px;
       border-radius: 5px;
+    }
+    @media (max-width: 450px) {
+      .container {
+        padding: 0 !important;
+      }
+      .flex__block {
+        padding: 20px 10px !important;
+      }
     }
   </style>
   <body>
@@ -65,10 +76,48 @@
       <section class="sectionContent">
         <div class="container">
           <div class="title"></div>
+          <div class="flex__block">
+            <div class="middle__img-container">
+              <img
+                src="../assets/img/Larson_backgrounds/Images/promo-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text__block">
+              <div class="little__text">
+                <p>
+                  2000 бонусов при регистрации в приложении Larson Car!
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  За регистрацию в мобильном приложении Larson Car — 2000 баллов
+                  на бонусный счет.
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  Если Вы регистрируетесь через личный кабинет на сайте — 1000
+                  баллов.
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  Через наших Сотрудников по телефону или по приезде в сервис —
+                  0 баллов.
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  Приложение доступно в AppStore и GooglePlay.
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="flex__block propmo__inner">
             <div class="middle__img-container">
               <img
-                src="../assets/img/Larson_backgrounds/Images/car.jpeg"
+                src="../assets/img/Larson_backgrounds/Images/promo-1.png"
                 alt=""
               />
             </div>
@@ -96,13 +145,11 @@
           <div class="flex__block">
             <div class="middle__img-container">
               <img
-                src="../assets/img/Larson_backgrounds/Images/car.jpeg"
+                src="../assets/img/Larson_backgrounds/Images/promo-2.png"
                 alt=""
               />
             </div>
             <div class="text__block">
-              <!-- <h1>Акции</h1> -->
-              <!-- <br /> -->
               <div class="little__text">
                 <p>
                   Приведи друга - получи бонус!
@@ -130,6 +177,33 @@
               <div class="little__text">
                 <p>
                   Промокод действует на неограниченное количество друзей!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex__block">
+            <div class="middle__img-container">
+              <img
+                src="../assets/img/Larson_backgrounds/Images/promo-3.png"
+                alt=""
+              />
+            </div>
+            <div class="text__block">
+              <div class="little__text">
+                <p>
+                  До 15% бонусами по программе «Larson бонус». Присоединяйтесь!
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  До 15% начисляется на бонусный счёт при покупке запасных
+                  частей и аксессуаров в сертифицированном сервисе Larson.
+                </p>
+              </div>
+              <div class="little__text">
+                <p>
+                  Бонусами можно оплатить любые работы, выполняемые в Larson из
+                  расчета 1 балл = 1 рубль.
                 </p>
               </div>
             </div>
