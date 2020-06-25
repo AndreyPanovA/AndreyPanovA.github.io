@@ -10,13 +10,18 @@
   text-align: center;
   color: white;
 }
-.swiper-container {
-  width: 100vw;
-  padding-top: 300px;
-  padding-bottom: 50px;
+body {
   background: url("../assets/img/kuzovBG.JPG") left top/cover;
 }
-.swiper-container::before {
+.swiper-container {
+  /* width: 100vw; */
+  padding-top: 300px;
+  padding-bottom: 50px;
+
+  /* transform: translateX(30vw) !important; */
+  margin-left: 20vw;
+}
+body::before {
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
@@ -147,4 +152,12 @@
   visibility: hidden;
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
+}
+
+/*  */
+
+@media (max-width: 1370px) {
+  .swiper-container {
+    margin: 0 !important;
+  }
 }
