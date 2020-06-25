@@ -29,7 +29,16 @@ p {
 img {
   width: 100%;
 }
-
+button {
+  border: none;
+  padding: 10px 20px;
+}
+input {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+}
 .flex__block {
   display: flex;
   justify-content: space-between;

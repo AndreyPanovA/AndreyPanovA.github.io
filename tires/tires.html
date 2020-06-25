@@ -7,13 +7,10 @@
     <link rel="stylesheet" href="../assets/footer/css/footer.css" />
     <link rel="stylesheet" href="../assets/left/css/left.css" />
     <link rel="stylesheet" href="../assets/Navigation/css/navig.css" />
+    <link rel="stylesheet" href="../assets/tires/css/tires.css" />
     <title>Шиномонтаж</title>
   </head>
-  <style>
-    body {
-      background-image: url("../assets/img/Larson_backgrounds/bg-tires.png");
-    }
-  </style>
+
   <body>
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -53,62 +50,1019 @@
       </div>
     </nav>
     <div class="blur_container">
-      <section class="sectionContent">
-        <div class="container">
-          <div class="title"></div>
-          <div class="wrapper">
-            <div class="photo_block">
-              <img
-                src="../assets/img/Larson_backgrounds/Images/stuff.png"
-                alt="Шины"
+      <div class="tires_descr shad__form cnt">
+        <h1>Шины</h1>
+        <p>
+          Все шины поставляются официально с центральных складов производителей,
+          что сохраняет заводскую гарантию и исключает возможность приобретения
+          контрафактной продукции. На сайте представлен не весь список
+          доступного наличия.
+        </p>
+        <p>Для заказа звоните по многоканальному номеру +7 (495) 781-10-81.</p>
+      </div>
+      <form action="" class="form shad__form">
+        <div class="size">
+          <label
+            >Диаметр
+            <input type="number" class="param" name="diameter" />
+          </label>
+          <label
+            >Высота профиля в мм.
+            <input type="number" class="param" name="height" />
+          </label>
+          <label
+            >Ширина в мм.
+            <input type="number" class="param" name="width" />
+          </label>
+        </div>
+        <div class="filter-season">
+          <div class="filter_left">
+            Тип:
+            <label
+              ><input
+                type="checkbox"
+                class="param-click"
+                name="season[]"
+                value="1"
+                checked=""
               />
+              летняя</label
+            ><label
+              ><input
+                type="checkbox"
+                class="param-click"
+                name="season[]"
+                value="2"
+                checked=""
+              />
+              зимняя</label
+            ><label
+              ><input
+                type="checkbox"
+                class="param-click"
+                name="season[]"
+                value="3"
+                checked=""
+              />
+              всесезонная</label
+            >
+          </div>
+          <button type="button" id="tire-find">Найти</button>
+        </div>
+
+        <div class="suppliers">
+          <div class="brand-toggle">
+            Производители:
+            <label
+              ><input type="checkbox" class="brand-toggle-all" checked="" /> все
+            </label>
+          </div>
+          <!--  -->
+          <div class="brand-list suppliers-flex">
+            <div class="column-1 suppliers-col">
+              <label class="brand-item-wrap">
+                <input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Advance"
+                />
+                Advance
+              </label>
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Aeolus"
+                />
+                Aeolus</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Altenzo"
+                />
+                Altenzo</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Amtel"
+                />
+                Amtel</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="AVATYRE"
+                />
+                AVATYRE</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Barum"
+                />
+                Barum</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Belshina"
+                />
+                Belshina</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="BFGoodrich"
+                />
+                BFGoodrich</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Blacklion"
+                />
+                Blacklion</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Bridgestone"
+                />
+                Bridgestone</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="CACHLAND"
+                />
+                CACHLAND</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="CENTARA"
+                />
+                CENTARA</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Comforser"
+                />
+                Comforser</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Compasal"
+                />
+                Compasal</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Continental"
+                />
+                Continental</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="CONTYRE"
+                />
+                CONTYRE</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Cordiant"
+                />
+                Cordiant</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Crossleader"
+                />
+                Crossleader</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Delinte"
+                />
+                Delinte</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Delmax"
+                />
+                Delmax</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="DMack"
+                />
+                DMack</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Doublestar"
+                />
+                Doublestar</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Dunlop"
+                />
+                Dunlop</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Dunlop JP"
+                />
+                Dunlop JP</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Duraturn"
+                />
+                Duraturn</label
+              ><label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Falken"
+                />
+                Falken</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Fesite"
+                />
+                Fesite</label
+              >
             </div>
-            <div class="text__block">
-              <div class="little__text">
-                <p>
-                  Казалось бы, такое простое сезонное действие. Однако
-                  существует немало вопросов, неизменно возникающих каждую весну
-                  и осень — в сезон шиномонтажных работ.
-                </p>
-              </div>
-              <p>
-                Колёса — это скорость и управляемость автомобиля, а главное —
-                безопасность. Колёсные диски и шины — важный элемент конструкции
-                любого автомобиля. Даже важнее, чем кажется. Шины — это
-                сцепление с покрытием любой дороги, и правильный их выбор исходя
-                из условий эксплуатации — важная задача в борьбе за безопасность
-                и комфорт. Согласитесь, довольно нелепо выглядят видео с тестами
-                полноприводных автомобилей на шоссейных шинах, предназначенных
-                скорее для скоростного автобана, нежели для травы, гравия или
-                снега. Сейчас, в осенний сезон смены летних шин на зимние самый
-                популярный вопрос — шипы или нет. Лично я категорический
-                сторонник нешипованных шин. При этом, я, конечно, допускаю
-                существование шипованной резины, но для себя и своих друзей,
-                постоянно проживающих в Европейской части России, я рекомендую
-                использовать нешипованные шины.
-              </p>
-              <div class="little__text">
-                <p>
-                  Многочисленные тесты заверяют — шипованные шины так же
-                  устойчивы на сухом асфальте, как и любые другие шины, а при
-                  температуре ниже +7 градусов и вовсе справляются с задачей
-                  торможения лучше всех. Действительно, среднесуточная
-                  температура ниже +7 градусов Цельсия — это верный знак
-                  необходимости замены летних шин на зимние (и наоборот в
-                  весенний период, при повышении температуры). Однако, как
-                  человек, несколько связанный с этим, я утратил веру в
-                  справедливые научные исследования (в большинстве случаев нужно
-                  просто найти бенефициара и всё становится понятно, практически
-                  у любой статьи существует заказчик), что уж говорить о статьях
-                  в популярных коммерческих изданиях.
-                </p>
-              </div>
+            <div class="column-2 suppliers-col">
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Firestone"
+                />
+                Firestone</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Formula"
+                />
+                Formula</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="General"
+                />
+                General</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Gislaved"
+                />
+                Gislaved</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Goodride"
+                />
+                Goodride</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Goodyear"
+                />
+                Goodyear</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Gripmax"
+                />
+                Gripmax</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="GT Radial"
+                />
+                GT Radial</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="HABILEAD"
+                />
+                HABILEAD</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Hankook"
+                />
+                Hankook</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Hifly"
+                />
+                Hifly</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Imperial"
+                />
+                Imperial</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Infinity"
+                />
+                Infinity</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Jinyu"
+                />
+                Jinyu</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Joyroad"
+                />
+                Joyroad</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="KAPSEN"
+                />
+                KAPSEN</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Kelly"
+                />
+                Kelly</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Kingstar"
+                />
+                Kingstar</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Kleber"
+                />
+                Kleber</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Kormoran"
+                />
+                Kormoran</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Kumho"
+                />
+                Kumho</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="LANDSAIL"
+                />
+                LANDSAIL</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Lassa"
+                />
+                Lassa</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Laufenn"
+                />
+                Laufenn</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="LingLong"
+                />
+                LingLong</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Marshal"
+                />
+                Marshal</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Matador"
+                />
+                Matador</label
+              >
+            </div>
+            <div class="column-3 suppliers-col">
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Maxxis"
+                />
+                Maxxis</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Mazzini"
+                />
+                Mazzini</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Michelin"
+                />
+                Michelin</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Mickey Thompson"
+                />
+                Mickey Thompson</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Minerva"
+                />
+                Minerva</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Nexen"
+                />
+                Nexen</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Nankang"
+                />
+                Nankang</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Nitro"
+                />
+                Nitro</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="NITTO"
+                />
+                NITTO</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Nokian"
+                />
+                Nokian</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Nordman"
+                />
+                Nordman</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Orium"
+                />
+                Orium</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Ovation"
+                />
+                Ovation</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="OZ Racing"
+                />
+                OZ Racing</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Pirelli"
+                />
+                Pirelli</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="PowerTrac"
+                />
+                PowerTrac</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Premiorri"
+                />
+                Premiorri</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Roadstone"
+                />
+                Roadstone</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Rosava"
+                />
+                Rosava</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Rotalla"
+                />
+                Rotalla</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="SAILUN"
+                />
+                SAILUN</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Satoya"
+                />
+                Satoya</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Sava"
+                />
+                Sava</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Shinko"
+                />
+                Shinko</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Starmaxx"
+                />
+                Starmaxx</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="SUNFULL"
+                />
+                SUNFULL</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="SUNNY"
+                />
+                SUNNY</label
+              >
+            </div>
+            <div class="column-4 suppliers-col">
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Tigar"
+                />
+                Tigar</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="TopTrust"
+                />
+                TopTrust</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Tourador"
+                />
+                Tourador</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Toyo"
+                />
+                Toyo</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Tri-ace"
+                />
+                Tri-ace</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Triangle"
+                />
+                Triangle</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Trumptyre"
+                />
+                Trumptyre</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Tunga"
+                />
+                Tunga</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="UNIROYAL"
+                />
+                UNIROYAL</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Tyrex"
+                />
+                Tyrex</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Viatti"
+                />
+                Viatti</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Vredestein"
+                />
+                Vredestein</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Westlake"
+                />
+                Westlake</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Wideway"
+                />
+                Wideway</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Windforce"
+                />
+                Windforce</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Wolftyres"
+                />
+                Wolftyres</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Yokohama"
+                />
+                Yokohama</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Zeetex"
+                />
+                Zeetex</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Zeta"
+                />
+                Zeta</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Алтайшина"
+                />
+                Алтайшина</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="ВШЗ"
+                />
+                ВШЗ</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="Кама"
+                />
+                Кама</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="КШЗ"
+                />
+                КШЗ</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="ОШЗ"
+                />
+                ОШЗ</label
+              >
+              <label class="brand-item-wrap"
+                ><input
+                  type="checkbox"
+                  class="brand-item"
+                  name="brand[]"
+                  value="ЯШЗ"
+                />
+                ЯШЗ</label
+              >
             </div>
           </div>
         </div>
-      </section>
+      </form>
       <footer></footer>
     </div>
+    <script src="../assets/footer/component/footer.js"></script>
     <script src="../assets/js/about.js"></script>
   </body>
 </html>
