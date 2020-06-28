@@ -1,5 +1,5 @@
 // alert("cool");
-let body = document.querySelector(".scrollview");
+let review_body = document.querySelector(".scrollview");
 const url = "https://larsonv.ru/mobile.php";
 const data = { c: "Review", m: "getMore", from: "0" };
 async function getReviews() {
@@ -41,6 +41,6 @@ getReviews().then((res) => {
     //   }
 
     componentAll += component;
-    body.innerHTML = componentAll;
+    review_body.innerHTML = componentAll;
   });
 });

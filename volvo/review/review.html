@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../assets/cross.css" />
     <link rel="stylesheet" href="../../assets/footer/css/footer.css" />
     <link rel="stylesheet" href="../../assets/Navigation/css/navig.css" />
+    <link rel="stylesheet" href="../../assets/left/css/left.css" />
   </head>
   <style>
     html {
@@ -38,7 +39,7 @@
       margin: auto;
       padding: 40px;
     }
-    p {
+    .avg p {
       font-size: 20px;
       margin: 20px 0;
       font-weight: 800;
@@ -103,6 +104,11 @@
     }
   </style>
   <body>
+    <div id="loader-wrapper">
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div class="modalClose"></div>
     <nav role="navigation">
       <div id="menuToggle">
         <div class="burger">
@@ -127,70 +133,73 @@
         </ul>
       </div>
     </nav>
-    <div class="client__links flex">
-      <a onclick="javascript:history.back()" class="goBack">Назад</a>
-      <a href="../index.html">
-        <img src="../assets/img/larson-white.svg" alt="Larson" class="img" />
-      </a>
-    </div>
-    <div class="review__container flex" style="align-items: flex-start;">
-      <div
-        class="avg__count"
-        style="background-color: rgba(255, 255, 255, 0.11);"
-      >
-        <div class="avg">
-          <p>Средняя оценка</p>
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.90</li>
-            <li>Румянцево — 4.97</li>
-            <li>Кузовной — 5.0</li>
-          </ul>
-        </div>
-        <div class="avg">
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.90</li>
-            <li>Румянцево — 4.97</li>
-            <li>Кузовной — 5.0</li>
-          </ul>
-        </div>
-        <div class="avg">
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.88</li>
-            <li>Румянцево — 4.91</li>
-            <li>Кузовной — 5.00</li>
-          </ul>
-        </div>
-        <div class="avg">
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.91</li>
-            <li>Румянцево — 4.86</li>
-            <li>Кузовной — 4.88</li>
-          </ul>
-        </div>
-        <div class="avg">
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.90</li>
-            <li>Румянцево — 4.83</li>
-            <li>Кузовной — 4.80</li>
-          </ul>
-        </div>
-        <div class="avg">
-          <p>2020</p>
-          <ul>
-            <li>Коломенская — 4.83</li>
-            <li>Румянцево — 5.00</li>
-          </ul>
-        </div>
+    <div class="blur_container">
+      <div class="client__links flex">
+        <a onclick="javascript:history.back()" class="goBack">Назад</a>
+        <a href="../index.html">
+          <img src="../assets/img/larson-white.svg" alt="Larson" class="img" />
+        </a>
       </div>
-      <div class="scrollview"></div>
+      <div class="review__container flex" style="align-items: flex-start;">
+        <div
+          class="avg__count"
+          style="background-color: rgba(255, 255, 255, 0.11);"
+        >
+          <div class="avg">
+            <p>Средняя оценка</p>
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.90</li>
+              <li>Румянцево — 4.97</li>
+              <li>Кузовной — 5.0</li>
+            </ul>
+          </div>
+          <div class="avg">
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.90</li>
+              <li>Румянцево — 4.97</li>
+              <li>Кузовной — 5.0</li>
+            </ul>
+          </div>
+          <div class="avg">
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.88</li>
+              <li>Румянцево — 4.91</li>
+              <li>Кузовной — 5.00</li>
+            </ul>
+          </div>
+          <div class="avg">
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.91</li>
+              <li>Румянцево — 4.86</li>
+              <li>Кузовной — 4.88</li>
+            </ul>
+          </div>
+          <div class="avg">
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.90</li>
+              <li>Румянцево — 4.83</li>
+              <li>Кузовной — 4.80</li>
+            </ul>
+          </div>
+          <div class="avg">
+            <p>2020</p>
+            <ul>
+              <li>Коломенская — 4.83</li>
+              <li>Румянцево — 5.00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scrollview"></div>
+      </div>
+      <footer></footer>
     </div>
-    <footer></footer>
     <script src="../../assets/js/review.js"></script>
+    <script src="../../assets/js/about.js"></script>
     <script src="../../assets/footer/component/footer.js"></script>
   </body>
 </html>
