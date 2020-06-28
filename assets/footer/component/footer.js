@@ -1,8 +1,11 @@
 let fot = document.querySelector("footer");
 const skew = document.querySelectorAll(".video");
 skew.forEach((elem) => {
-  elem.addEventListener("click", () => {
+  elem.addEventListener("click", (event) => {
     elem.classList.toggle("skew");
+    if (event.target.className.indexOf("finOpen") !== -1) {
+      elem.classList.toggle("bigVideo");
+    }
   });
 });
 Footer = ` 

@@ -108,6 +108,11 @@ body section .container .wrapper .photo_block {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
+body section .container .wrapper .photo_block iframe {
+  width: 100%;
+  height: 100%;
+}
+body section .container .wrapper .photo_block iframe,
 body section .container .wrapper .photo_block img {
   border-top: 2px solid white;
   padding-top: 20px;
@@ -222,6 +227,9 @@ body section .container .wrapper .map .contacts__block .descr__left {
   height: 100% !important;
 }
 @media (max-width: 992px) {
+  iframe {
+    min-height: 50vh;
+  }
   .text__block,
   .map {
     -ms-flex-preferred-size: 100% !important;
