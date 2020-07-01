@@ -5,15 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/cross.css" />
     <link rel="stylesheet" href="../../assets/kuzov/css/kuzov.css" />
+    <!-- <link rel="stylesheet" href="../../assets/left/css/left.css" /> -->
     <link rel="stylesheet" href="../../assets/footer/css/footer.css" />
-    <link rel="stylesheet" href="./slider/swiper.min.css" />
-    <link rel="stylesheet" href="./slider/style.css" />
+    <!-- <link rel="stylesheet" href="./slider/swiper.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./slider/style.css" /> -->
     <link rel="stylesheet" href="../../assets/nav/css/nav.css" />
+
     <title>Кузовной ремонт</title>
   </head>
   <style>
+    body {
+      background-color: #fafafa;
+    }
     span {
       background-color: black !important;
+    }
+    .menuNav {
+      left: 0;
+    }
+    .burger {
+      display: none;
+    }
+    main {
+      max-width: 1170px;
+      margin-left: 20vw;
+    }
+    @media (max-width: 1000px) {
+      main {
+        margin-left: 0 !important;
+      }
+      .menuNav {
+        left: -100%;
+      }
+      .burger {
+        display: block !important;
+      }
     }
   </style>
   <body>
