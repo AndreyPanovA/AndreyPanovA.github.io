@@ -684,11 +684,14 @@
         elem.addEventListener("click", () => {
           document.body.style.overflow = "visible";
           elem.classList.remove("show__tab");
+          menue.style.display = "block";
         });
       });
       itemsBtn.forEach((Element, index) => {
         Element.addEventListener("click", () => {
           document.body.style.overflow = "hidden";
+          menue.style.display = "none";
+
           // texter.forEach((el, idx) => {
           //   el.classList.("text_content-open");
           // });
