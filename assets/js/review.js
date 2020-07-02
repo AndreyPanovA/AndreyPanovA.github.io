@@ -1,11 +1,12 @@
 // alert("cool");
 let review_body = document.querySelector(".scrollview");
 const url = "https://larsonv.ru/mobile.php";
+
 const data = { c: "Review", m: "getMore", from: "0" };
 async function getReviews() {
   const res = await fetch("https://larsonv.ru/mobile.php", {
     method: "POST",
-    body: JSON.stringify({ c: "Review", m: "getMore" }),
+    body: JSON.stringify({ c: "Review", m: "getMore", from: 0 }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
@@ -21,13 +22,24 @@ getReviews().then((res) => {
     console.log(res);
     // arr.push(fio);
     // if (elem.review == "") {
-    let component = `
-    <div class="shad__reviw">
-    Оценка: ${elem.rating}
-    — ${elem.f} ${elem.i} ${elem.o}
-     
-    </div>
-    `;
+    let component = "";
+    if (elem.review) {
+      component = `
+      <div class="shad__reviw">
+      Оценка: ${elem.rating}
+      — ${elem.f} ${elem.i} ${elem.o}
+       <div class="rev_text">${elem.review}</div>
+      </div>
+      `;
+    } else {
+      component = `
+      <div class="shad__reviw">
+      Оценка: ${elem.rating}
+      — ${elem.f} ${elem.i} ${elem.o}
+      </div>
+      `;
+    }
+
     // <div class="little">Отзыв: ${elem.review}<div/>
     // }
     // else {
@@ -38,6 +50,7 @@ getReviews().then((res) => {
     //       </div>
 
     //       `;
+
     //   }
 
     componentAll += component;
