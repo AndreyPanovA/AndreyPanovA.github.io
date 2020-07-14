@@ -1,84 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Larson</title>
-    <link rel="stylesheet" href="./assets/Main/css/main.css" />
-    <link rel="stylesheet" href="./assets/footer/css/footer.css" />
+    <title>Larson. Сертифицированный сервис.</title>
+    <link rel="stylesheet" href="./css/cross.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+      ym(65569669, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/65569669"
+          style="position: absolute; left: -9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="bg">
-          <div class="logoBG">
-            <img src="./assets/Main/img/larson-1.svg" alt="" class="imgBG" />
-            <div class="keysImg">
-              <a class="key" href="./kuzov/kuzov.html">
-                <div class="logger">
-                  <img src="./assets/Main/img/myKey1.png" alt="" />
-                </div>
-                <h2>Кузовной сервис</h2>
-              </a>
-              <a class="key" href="./volvo/about/about.html">
-                <div class="logger">
-                  <img src="./assets/Main/img/myKey2.png" alt="" />
-                </div>
-                <h2>Сервис «Вольво»</h2>
-              </a>
-              <a class="key" href="./about/about.html">
-                <div class="logger">
-                  <img src="./assets/Main/img/myKey3.png" alt="" class="mers" />
-                </div>
-                <h2>Сервис «Мерседс-Бенц»</h2>
-              </a>
-            </div>
-          </div>
+    <style>
+      /*  */
+      em {
+        font-style: normal !important;
+        color: #3a67fb;
+      }
+      .insta-pad {
+        /* padding: 100px; */
+      }
+      .justify {
+        text-align: justify;
+      }
+      /* .map__element {
+        flex-direction: columnd;
+      } */
+      .map__container {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      @media (max-width: 767px) {
+        .map__element {
+          padding: 0 !important;
+        }
+        .insta-pad {
+          /* padding: 50px !important; */
+        }
+      }
+    </style>
+    <header id="call">
+      <div class="header__container">
+        <div class="header__title">
+          <h1>Larson.</h1>
+          <h1>Сертифицированный</h1>
+          <h1>сервис Volvo</h1>
         </div>
-        <div class="border"></div>
-        <footer class="white">
-          <div class="fot_wrap whiteBG">
-            <p style="color: black;" class="fotter_text">
-              C «Larson Бонус» выгоднее! Наше приложение:
+        <div class="header__form">
+          <form action="">
+            <p>2000 баллов Larson Bonus в подарок!</p>
+            <p>
+              Заполните форму ниже и воспользуйтесь бонусными баллами для полной
+              или частичной оплаты в Larson: 1 балл = 1 рубль.
             </p>
-
-            <div class="app-store">
-              <a href="#top">
-                <img src="./assets/img/larson-white.svg" alt="" />
-              </a>
-              <a
-                href="https://itunes.apple.com/us/app/larson-car/id1190680675"
-                target="_blank"
-                class="app-apple"
-              >
-                <img
-                  src="./assets/img/apple.svg"
-                  alt=""
-                  href="https://itunes.apple.com/us/app/larson-car/id1190680675" /></a
-              ><a
-                href="https://play.google.com/store/apps/details?id=com.larson.car"
-                target="_blank"
-                class="app-google"
-              >
-                <img
-                  src="./assets/img/google.svg"
-                  alt=""
-                  href="https://itunes.apple.com/us/app/larson-car/id1190680675"
-              /></a>
+            <div class="label">
+              <input type="text" class="name autentific" id="name1" />
+              <label for="name1" class="nameL">Имя</label>
             </div>
-          </div>
-        </footer>
+            <div class="label">
+              <em>+7</em>
+              <input
+                type="text"
+                class="phone autentific phoneBefore"
+                id="phone"
+              />
+              <label for="phone" class="phoneL">Номер телефона</label>
+            </div>
+            <div class="label">
+              <input type="text" class="email autentific" id="E-mail" />
+              <label for="E-mail" class="emailL">E-mail</label>
+            </div>
+            <div class="label">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Комментарии*
+- это необязательное поле"
+                class="userText"
+              ></textarea>
+            </div>
+            <div class="btn__container" id="sendButton">
+              <a class="sender">Отправить</a>
+            </div>
+            <p class="justify">
+              Нажимая кнопку "Отправить", Вы даёте согласие на обработку и
+              хранение персональных данных в соответствии с действующим
+              законодательством.
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
-    <!-- <section class="panorama">
-      <div class="pano_cont">
-        <div id="frame" class="fr">
+    </header>
+    <section id="history" class="history">
+      <div class="container">
+        <div class="card__text open_text">
+          <p>
+            История Larson началась в 2011 году с открытия магазина запчастей
+            «Вольво» в Румянцево. Там же через год был открыт первый слесарный
+            сервис, а в 2014 году сервис на Коломенской.
+          </p>
+          <p>
+            Сегодня с нами разумные автовладельцы, которые по-настоящему любят
+            свой автомобиль и готовы по достоинству оценить качественный сервис
+            без ненужных переплат. Larson работает с оригинальным программным
+            обеспечением, позволяющим полноценно обслуживать весь модельный ряд.
+            У нас прекрасная логистика с центральным складом и высокая
+            периодичность поставок, поэтому все необходимые запасные части
+            попадают в наши сервисы максимально оперативно.
+          </p>
+          <p>
+            Мы всегда готовы решить любую поставленную задачу, потому что наша
+            цель состоит в том, чтобы после посещения Larson каждый клиент
+            чувствовал себя максимально уверенным в своем сервисе.
+          </p>
+        </div>
+        <div class="card__photos">
           <iframe
-            src="https://smart-360.ru/larson22/tour.html"
-            scrolling="no"
+            class="panoram pano_size"
+            src="https://yandex.ru/map-widget/v1/-/CCQh4GuthC"
+            frameborder="1"
+            allowfullscreen="true"
           ></iframe>
         </div>
       </div>
-    </section> -->
+    </section>
+    <section class="icons" id="service">
+      <div class="container">
+        <div class="icons__top">
+          <div class="icons__top-item">
+            <img src="./img/star.svg" alt="" />
+            <h1>ПРЕВОСХОДНЫЙ СЕРВИС</h1>
+            <p>
+              Средняя оценка автосервиса клиентами за 2020 год:
+            </p>
+            <p>Коломенская — 4.90</p>
+            <p>Можайка — 4.98</p>
+            <p>Кузовной — 5.00</p>
+          </div>
+          <div class="icons__top-item">
+            <img src="./img/ball.svg" alt="" />
+            <h1>ПРОГРАММА LARSON BONUS</h1>
+            <p>
+              История обслуживания автомобиля, он-лайн запись, информация о
+              доступных бонусах и многое другое для вашего удобства
+            </p>
+          </div>
+        </div>
+        <div class="icons__top" id="reviews">
+          <div class="icons__top-item">
+            <img src="./img/phone.svg" alt="" />
+            <h1>МОБИЛЬНОЕ ПРИЛОЖЕНИЕ LARSON CAR</h1>
+            <p>
+              1000 приветственных баллов за регистрацию в мобильном приложении и
+              до 15% от суммы последующих оплат запасных частей на ваш бонусный
+              счет, 1 балл = 1 рубль
+            </p>
+          </div>
+          <div class="icons__top-item">
+            <img src="./img/cup.svg" alt="" />
+            <h1>КОМФОРТНАЯ ЗОНА ОЖИДАНИЯ</h1>
+            <p>
+              Чай/кофе, Wi-Fi, 4K Smart TV и Sony PlayStation 4
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <!-- <div class="container"> -->
+      <div class="slider__aria"></div>
+      <div class="dots"></div>
+    </section>
+    <section class="instagram" id="insta">
+      <p>
+        Cледите за нами в Instagram
+        <a href="https://www.instagram.com/larsoncar/">@larsoncar</a> <br />Для
+        перехода нажмите на фото
+      </p>
+      <div class="container insta-pad">
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe
+          src="//lightwidget.com/widgets/24a30b049a705e8a88c0a12bfe142430.html"
+          scrolling="no"
+          allowtransparency="true"
+          class="lightwidget-widget"
+          style="width: 100%; border: 0; overflow: hidden;"
+        ></iframe>
+      </div>
+    </section>
+    <section class="map" id="contacts">
+      <div class="map__container">
+        <div class="map__element">
+          <h1>Контакты</h1>
+          <p class="bold">
+            Единый телефон: <a href="tel:+74957811081"> +7 (495) 781-10-81</a>
+          </p>
+          <p>Ежедневно с 9 до 20</p>
+          <p class="bold">Larson Коломенская</p>
+          <p>м. Коломенская</p>
+          <p>проспект Андропова, д.22, стр.2 (БЦ «Нагатинский»)</p>
+          <p><a href="https://larsonv.ru/contact">( Как добраться )</a></p>
+          <p class="bold">Larson Кузовной центр</p>
+          <p>м. Коломенская</p>
+          <p>проспект Андропова, д.22 (БЦ «Нагатинский»)</p>
+          <p><a href="https://larsonv.ru/contact">( Как добраться )</a></p>
+          <p class="bold">Larson Можайка</p>
+          <p>Внимание! Заезд с дублера МКАД</p>
+          <p>Можайское шоссе, вл. 167</p>
+          <p><a href="https://car.larsonv.ru/contact">( Как добраться )</a></p>
+
+          <div class="app-store">
+            <a
+              href="https://itunes.apple.com/us/app/larson-car/id1190680675"
+              target="_blank"
+              class="app-apple"
+            >
+              <img
+                src="./img/apple.svg"
+                alt=""
+                href="https://itunes.apple.com/us/app/larson-car/id1190680675" /></a
+            ><a
+              href="https://play.google.com/store/apps/details?id=com.larson.car"
+              target="_blank"
+              class="app-google"
+            >
+              <img
+                src="./img/google.svg"
+                alt=""
+                href="https://itunes.apple.com/us/app/larson-car/id1190680675"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer>
+      <div class="footer__line">
+        <div class="logo">
+          <img src="./img/larson-1.svg" alt="" />
+        </div>
+        <ul>
+          <li><a href="#call">Оставить заявку</a></li>
+          <li><a href="#history">История Larson</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#insta">Instargram</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </footer> -->
+    <script type="text/javascript">
+      function loadFrame() {
+        document.getElementById("frame").scrollTop = 310;
+        document.getElementById("frame").scrollLeft = 40;
+      }
+    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
