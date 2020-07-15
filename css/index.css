@@ -135,6 +135,30 @@ body {
   font-family: "Roboto", Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
+.userText::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 200;
+}
+.userText:-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 200;
+}
+.userText::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 200;
+}
+.userText::placeholder {
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 200;
+}
 .nonwrap {
   white-space: nowrap;
 }
