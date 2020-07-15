@@ -174,7 +174,7 @@ sendForm(reviews, (response) => {
       </div>`;
     }
   }
-  sliderAria.innerHTML = jsx;
+  // sliderAria.innerHTML = jsx;
   const left = document.querySelectorAll(".left-arrow");
   const right = document.querySelectorAll(".right-arrow");
   const revHeight = document.querySelectorAll(".userReview");
