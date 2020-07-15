@@ -135,6 +135,23 @@ body {
   font-family: "Roboto", Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #333;
+  text-align: center;
+  border: 2px solid #333;
+}
+.btn a {
+  color: white;
+}
+.btn:hover {
+  background-color: transparent;
+}
+.btn:hover a {
+  color: black;
+}
 .userText::-webkit-input-placeholder {
   color: black;
   font-size: 16px;
