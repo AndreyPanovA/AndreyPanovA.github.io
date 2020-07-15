@@ -950,6 +950,10 @@ a {
   margin: 0;
   margin-left: 20px;
 }
+.blueLink {
+  color: lightskyblue;
+  font-weight: 600;
+}
 section {
   padding-top: 15px;
   padding-bottom: 30px;
