@@ -135,22 +135,20 @@ body {
   font-family: "Roboto", Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
+.btn-1 {
+  width: 80%;
+  margin: auto;
+}
 .btn {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #333;
+  background-color: black;
   text-align: center;
-  border: 2px solid #333;
+  border: 2px solid black;
 }
 .btn a {
   color: white;
-}
-.btn:hover {
-  background-color: transparent;
-}
-.btn:hover a {
-  color: black;
 }
 .btn-white {
   padding: 10px 20px;
@@ -330,18 +328,13 @@ header .header__container .header__form form .btn__container .sender {
   text-align: center;
   display: inline-block;
   width: 100%;
-  background-color: #333;
-  border: 2px solid #333 !important;
+  background-color: black;
+  border: 2px solid black !important;
   color: white;
   border: none;
   font-size: 17px;
   padding: 10px 20px;
   border-radius: 10px;
-}
-header .header__container .header__form form .btn__container .sender:hover {
-  color: black;
-  border: 2px solid #333;
-  background-color: transparent;
 }
 .history {
   margin-top: 30px;
