@@ -286,15 +286,22 @@ header {
         }
         .btn__container {
           .sender {
+            cursor: pointer;
             text-align: center;
             display: inline-block;
             width: 100%;
-            background-color: black;
+            background-color: #333;
+            border: 2px solid #333 !important;
             color: white;
             border: none;
             font-size: 17px;
             padding: 10px 20px;
             border-radius: 10px;
+            &:hover {
+              color: black;
+              border: 2px solid #333;
+              background-color: transparent;
+            }
           }
           margin-bottom: 30px;
         }
