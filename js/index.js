@@ -13,16 +13,6 @@ let email = document.querySelector(".email");
 let phone = document.querySelector(".phone");
 let textAria = document.querySelector(".userText");
 
-// let autentific = document.querySelectorAll(".autentific"); // аутентификация
-// autentific.forEach((el, i) => {
-//   el.addEventListener("keyup", (e) => {
-
-//   });
-// });
-
-// let emailL = document.querySelector(".emailL");
-// emailL.style.backgroundColor = "pink";
-
 phone.addEventListener("focus", () => {
   plSeven.style.opacity = "1";
 });
@@ -41,13 +31,11 @@ let formObj = {
   // comment: textAria.value
 };
 function del(elem, label, type) {
-  //
   elem = document.querySelector(elem);
   label = document.querySelector(label);
   elem.addEventListener("keyup", () => {
     if (elem.value.trim().length > 0) {
       label.style.opacity = "0";
-    //   console.log(elem.value);
     } else {
       label.style.opacity = "1";
     }
@@ -99,24 +87,11 @@ function del(elem, label, type) {
       }
     }
   });
-  // elem.addEventListener("keyup", e => {
-
-  // });
 }
-// function EmailValid(elem, num) {
-//   elem.addEventListener("keyup", () => {
-//     if (elem == email) {
-//       alert("cool");
-//     }
-//   });
-// }
-
 del(".email", ".emailL", "email");
 del(".name", ".nameL", "name");
 del(".phone", ".phoneL", "phone");
-
 const sender = document.querySelector(".sender");
-
 function sendForm(body, cb) {
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "https://larsonv.ru/mobile.php");
@@ -130,7 +105,6 @@ function sendForm(body, cb) {
   });
   xhr.send(JSON.stringify(body));
 }
-
 sender.addEventListener("click", (e) => {
   const newPost = {
     c: "Review",
@@ -147,31 +121,24 @@ sender.addEventListener("click", (e) => {
   ) {
   } else {
     sendForm(newPost, (response) => {
-    //   console.log(response);
-	//   console.log(newPost);
-		response && (document.getElementById('sendButton').innerHTML = 'Спасибо за Ваше сообщение.');
+      response &&
+        (document.getElementById("sendButton").innerHTML =
+          "Спасибо за Ваше сообщение.");
     });
   }
 });
-
 const userReview = document.querySelectorAll(".userReview");
-
 const reviews = {
   c: "Review",
   m: "getMore",
   is_txt: true,
-  for: 'landing',
+  for: "landing",
 };
-
 sendForm(reviews, (response) => {
-  // -----------
-//   console.log(response[0]);
   let jsx = "";
   for (let i = 0; i < response.length; i++) {
     let o = response[i].o[0] + ".";
     let f = response[i].f[0] + ".";
-    // console.log(f);
-    // if (response[i].review.length < 120 && response[i].review.length > 30) {
     if (response[i].num.trim() < 2) {
       jsx += ` 
         <div class="slider__content">
@@ -202,17 +169,14 @@ sendForm(reviews, (response) => {
         </div>
       </div>`;
     }
-
-    // }
   }
   sliderAria.innerHTML = jsx;
   const left = document.querySelectorAll(".left-arrow");
   const right = document.querySelectorAll(".right-arrow");
-  // const dotContainer = document.querySelector(".dots");
+  const revHeight = document.querySelectorAll(".userReview");
   allSlides = document.querySelectorAll(".slider__content").length;
 
   // Точки
-
   for (let i = 0; i < allSlides; i++) {
     let div = document.createElement("div");
     div.classList.add("dot");
@@ -223,10 +187,17 @@ sendForm(reviews, (response) => {
     el.addEventListener("click", () => {
       currentValue -= 100;
       counter += 1;
+      // let newH = revHeight[counter].scrollHeight;
+
       if (counter > allSlides - 1) {
         counter = 0;
         currentValue = 0;
       }
+      revHeight.forEach((elem, idx) => {
+        elem.style.maxHeight = revHeight[counter].scrollHeight + "px";
+        console.log(revHeight[counter].scrollHeight, "cool");
+      });
+
       sliderAria.style.transform = `translateX(${currentValue}vw)`;
       for (let i = 0; i < dotsMas.length; i++) {
         if (counter == i) dotsMas[i].style.backgroundColor = "black";
@@ -234,19 +205,7 @@ sendForm(reviews, (response) => {
       }
     });
   });
-  // right.addEventListener("click", () => {
-  //   currentValue -= 100;
-  //   counter += 1;
-  //   if (counter > allSlides - 1) {
-  //     counter = 0;
-  //     currentValue = 0;
-  //   }
-  //   sliderAria.style.transform = `translateX(${currentValue}vw)`;
-  //   for (let i = 0; i < dotsMas.length; i++) {
-  //     if (counter == i) dotsMas[i].style.backgroundColor = "black";
-  //     else dotsMas[i].style.backgroundColor = "rgb(122, 122, 122)";
-  //   }
-  // });
+
   left.forEach((el, i) => {
     el.addEventListener("click", () => {
       currentValue += 100;
@@ -255,6 +214,10 @@ sendForm(reviews, (response) => {
         counter = allSlides - 1;
         currentValue *= -(allSlides - 1);
       }
+      revHeight.forEach((elem, idx) => {
+        elem.style.maxHeight = revHeight[counter].scrollHeight + "px";
+        console.log(revHeight[counter].scrollHeight, "cool");
+      });
       sliderAria.style.transform = `translateX(${currentValue}vw)`;
       for (let i = 0; i < dotsMas.length; i++) {
         if (counter == i) dotsMas[i].style.backgroundColor = "black";
@@ -262,19 +225,7 @@ sendForm(reviews, (response) => {
       }
     });
   });
-  // left.addEventListener("click", () => {
-  //   currentValue += 100;
-  //   counter -= 1;
-  //   if (counter < 0) {
-  //     counter = allSlides - 1;
-  //     currentValue *= -(allSlides - 1);
-  //   }
-  //   sliderAria.style.transform = `translateX(${currentValue}vw)`;
-  //   for (let i = 0; i < dotsMas.length; i++) {
-  //     if (counter == i) dotsMas[i].style.backgroundColor = "black";
-  //     else dotsMas[i].style.backgroundColor = "rgb(122, 122, 122)";
-  //   }
-  // });
+
   for (let i = 0; i < dotsMas.length; i++) {
     dotsMas[i].addEventListener("click", (event) => {
       dotsMas.forEach((el) => {
@@ -287,15 +238,3 @@ sendForm(reviews, (response) => {
     });
   }
 });
-
-// Картинки
-// const pictures = document.querySelectorAll(".picture");
-// console.log(pictures);
-// for (let i = 0; i < pictures.length; i++) {
-//   el.style.cursur = "pointer";
-//   el.style.position = "fixed";
-//   el.style.top = "0";
-//   el.style.left = "0";
-//   el.style.width = "100vw";
-//   el.style.height = "100vh";
-// }
