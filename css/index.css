@@ -965,10 +965,10 @@ section .container {
 }
 em {
   position: absolute;
-  top: 2%;
+  top: 0%;
   left: 0;
-  -webkit-transform: translate(10%, 100%);
-          transform: translate(10%, 100%);
+  -webkit-transform: translate(10%, 104%);
+          transform: translate(10%, 104%);
   opacity: 0;
   color: blue;
   font-size: 17px;
