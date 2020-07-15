@@ -488,6 +488,7 @@ header .header__container .header__form form .btn__container .sender {
   overflow-y: auto;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  text-align: center;
 }
 .slider .slider__aria .slider__content .inner_wrapper p {
   font-family: "Open Sans", Arial, sans-serif;
@@ -649,6 +650,9 @@ header .header__container .header__form form .btn__container .sender {
 }
 .map .map__container .map__element .app-store {
   margin-top: 25px;
+}
+.aval p {
+  margin: 5px !important;
 }
 footer {
   font-family: "Open Sans", Arial, sans-serif;
