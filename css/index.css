@@ -179,6 +179,9 @@ header .header__container .header__form {
   min-width: 150px;
   background-color: white;
 }
+header .header__container .header__form span {
+  white-space: nowrap !important;
+}
 header .header__container .header__form form {
   padding: 30px;
   display: -webkit-box;
@@ -964,6 +967,9 @@ em {
       flex-basis: 45%;
   text-align: center;
   margin-bottom: 25px;
+}
+.icons_flex .icons__top-item span {
+  white-space: nowrap;
 }
 .icons_flex .icons__top-item img {
   width: 150px;
