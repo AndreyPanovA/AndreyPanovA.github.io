@@ -67,6 +67,9 @@ function del(elem, label, type) {
     }
     // Проверка на телефон
     if (type == "phone") {
+      if (phone.value.length > 10) {
+        elem.value = elem.value.trim().slice(0, 10);
+      }
       if (phone.value.length > 0) {
         plSeven.style.color = "white";
       } else {
@@ -78,6 +81,7 @@ function del(elem, label, type) {
         (elem.value.trim().length < 10 && elem.value.trim().length > 1) ||
         (elem.value.trim().length > 10 && elem.value.trim().length > 1)
       ) {
+        // elem.value.trim().splice(0, 10);
         elem.style.backgroundColor = "#ff545c";
       } else if (elem.value.trim().length == 0) {
         elem.style.backgroundColor = "#f0f0f0";
