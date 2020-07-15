@@ -58,7 +58,7 @@ function del(elem, label, type) {
         /[.]/i.test(elem.value)
       ) {
         elem.style.borderLeft = "2px solid green";
-        elem.style.color = "white";
+        elem.style.color = "black";
       } else if (elem.value.trim().length == 0) {
         elem.style.backgroundColor = "#f0f0f0";
       } else {
