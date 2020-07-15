@@ -658,9 +658,12 @@ header .header__container .header__form form .btn__container .sender:hover {
 .map .map__container .map__element .app-store {
   margin-top: 25px;
 }
+.aval {
+  margin-top: 15px;
+}
 .aval p {
   text-align: center;
-  margin: 5px !important;
+  margin: 0px !important;
 }
 footer {
   font-family: "Open Sans", Arial, sans-serif;
