@@ -489,13 +489,13 @@ header .header__container .header__form form .btn__container .sender:hover {
   padding: 0;
   position: relative;
   width: 100vw;
-  padding: 20px 100px;
+  padding: 20px 50px;
 }
 .slider .slider__aria .slider__content .inner_wrapper .userReview {
   overflow-y: auto;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  text-align: center;
+  text-align: justify;
 }
 .slider .slider__aria .slider__content .inner_wrapper p {
   font-family: "Open Sans", Arial, sans-serif;
