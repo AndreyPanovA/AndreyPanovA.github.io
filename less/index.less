@@ -408,6 +408,8 @@ header {
         .userReview {
           padding: 20px 20px;
           overflow-y: auto;
+          // min-height: 10vh !important;
+          max-height: 100px;
         }
         position: relative;
         width: 100vw;
@@ -678,27 +680,12 @@ h1 {
   .pano_cont {
     flex-direction: column-reverse;
   }
-
-  // .pano_cont {
-  //   height: 50vh;
-  //   border: 2px solid red;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   z-index: 10000;
-
-  //   iframe {
-  //     // height: 50vh;
-  //     border: none;
-  //     width: 100%;
-  //     height: 100%;
-  //     border-radius: 15px !important;
-  //     overflow: hidden !important;
-  //   }
-  // }
 }
 
 @media (max-width: 992px) {
+  // .userReview {
+  //   max-height: 30vh !important;
+  // }
   .container {
     max-width: 750px;
   }

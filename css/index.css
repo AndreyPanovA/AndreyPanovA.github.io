@@ -446,6 +446,7 @@ header .header__container .header__form form .btn__container .sender {
 .slider .slider__aria .slider__content .inner_wrapper .userReview {
   padding: 20px 20px;
   overflow-y: auto;
+  max-height: 100px;
 }
 .slider .slider__aria .slider__content .inner_wrapper p {
   font-family: "Open Sans", Arial, sans-serif;
