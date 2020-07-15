@@ -757,7 +757,7 @@ h1 {
   }
   .header__container .header__title h1 {
     font-size: 2em !important;
-    text-align: center;
+    text-align: left !important;
   }
   .map__container {
     -webkit-box-orient: vertical;
