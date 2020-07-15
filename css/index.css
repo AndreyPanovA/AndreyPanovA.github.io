@@ -659,6 +659,7 @@ header .header__container .header__form form .btn__container .sender:hover {
   margin-top: 25px;
 }
 .aval p {
+  text-align: center;
   margin: 5px !important;
 }
 footer {
