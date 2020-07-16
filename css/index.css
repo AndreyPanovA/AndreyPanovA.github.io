@@ -1073,7 +1073,7 @@ section .container {
 }
 em {
   position: absolute;
-  top: 49%;
+  top: 48%;
   left: 0;
   -webkit-transform: translate(0, -80%);
           transform: translate(0, -80%);
