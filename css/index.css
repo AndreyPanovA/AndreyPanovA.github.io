@@ -1073,13 +1073,14 @@ section .container {
 }
 em {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 0;
-  -webkit-transform: translate(0, -59%);
-          transform: translate(0, -59%);
+  -webkit-transform: translate(0, -80%);
+          transform: translate(0, -80%);
   opacity: 0;
   color: blue;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 1px;
 }
 .open_text {
   max-height: 50vh !important;
