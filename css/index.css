@@ -261,7 +261,6 @@ header .header__container .header__form form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Open Sans", sans-serif;
-  border: 2px solid red;
 }
 header .header__container .header__form form p {
   margin-bottom: 30px;
