@@ -878,8 +878,8 @@ h1 {
 }
 @media (max-width: 767px) {
   .em {
-    -webkit-transform: translate(0, -10px) !important;
-            transform: translate(0, -10px) !important;
+    -webkit-transform: translate(0, -9px) !important;
+            transform: translate(0, -9px) !important;
   }
   .picSec {
     height: 35vh !important;
