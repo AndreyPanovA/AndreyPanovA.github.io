@@ -351,7 +351,7 @@ header .header__container .header__form form .btn__container .sender {
           justify-content: space-between;
 }
 .history .container .card__text {
-  text-align: justify;
+  text-align: left;
   -ms-flex-preferred-size: 49%;
       flex-basis: 49%;
   padding: 44px 20px;
@@ -1075,8 +1075,8 @@ em {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(0, -60%);
-          transform: translate(0, -60%);
+  -webkit-transform: translate(0, -59%);
+          transform: translate(0, -59%);
   opacity: 0;
   color: blue;
   font-size: 17px;
