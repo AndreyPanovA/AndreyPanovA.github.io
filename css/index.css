@@ -150,6 +150,10 @@ body {
 .btn a {
   color: white;
 }
+.miniSize {
+  font-weight: 500 !important;
+  font-family: "Open Sans", Arial, sans-serif;
+}
 .btn-white {
   padding: 10px 20px;
   cursor: pointer;
