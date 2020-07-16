@@ -5,8 +5,6 @@ let allSlides = 0;
 const dotContainer = document.querySelector(".dots");
 let currentValue = 0;
 let counter = 0;
-// Форма
-
 // форма
 let name = document.querySelector(".name");
 let email = document.querySelector(".email");
@@ -33,16 +31,7 @@ let formObj = {
 function del(elem, label, type) {
   elem = document.querySelector(elem);
   label = document.querySelector(label);
-  // phone.onfocus = () => {
-  //   if (elem.value.trim().length == 0) {
-  //     elem.value = 7;
-  //   }
-  // };
-
   elem.addEventListener("keyup", () => {
-    // if (elem.value.trim().length == 0) {
-    //   elem.value = 7;
-    // }
     if (elem.value.trim().length > 0) {
       label.style.opacity = "0";
     } else {
