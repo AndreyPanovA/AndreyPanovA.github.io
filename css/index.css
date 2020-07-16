@@ -389,11 +389,6 @@ header .header__container .header__form form .btn__container .sender {
   width: 100%;
   margin-bottom: 30px;
 }
-.history .card__photos img:active {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  z-index: 10;
-}
 .history .card__photos .card_photos-double {
   max-height: 400px;
   width: 100%;
@@ -408,10 +403,6 @@ header .header__container .header__form form .btn__container .sender {
   margin-right: 10px;
   width: 47%;
   height: 250px;
-}
-.history .card__photos .card_photos-double img:active {
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
 }
 .history .card__photos .card_photos-double img:last-child {
   margin: 0;
