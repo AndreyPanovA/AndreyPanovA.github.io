@@ -282,6 +282,7 @@ header .header__container .header__form form .relative p {
 }
 header .header__container .header__form form .relative input {
   height: 150%;
+  font-family: "Open Sans", Arial, sans-serif !important;
 }
 header .header__container .header__form form .label {
   position: relative;
