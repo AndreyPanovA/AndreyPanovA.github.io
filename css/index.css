@@ -169,24 +169,28 @@ body {
 }
 .userText::-webkit-input-placeholder {
   color: black;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 200;
 }
 .userText:-ms-input-placeholder {
   color: black;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 200;
 }
 .userText::-ms-input-placeholder {
   color: black;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 200;
 }
 .userText::placeholder {
   color: black;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 200;
