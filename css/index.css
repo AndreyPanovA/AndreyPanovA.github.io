@@ -167,12 +167,6 @@ body {
 .btn-white:hover a {
   color: white;
 }
-.relative {
-  border: 2px solid plum;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .userText::-webkit-input-placeholder {
   color: black;
   font-size: 16px;
@@ -277,8 +271,18 @@ header .header__container .header__form form p:first-child {
   font-family: "Open Sans", Arial, sans-serif;
   color: black;
   line-height: 15px;
-  -webkit-transform: translate(0, -8px);
-          transform: translate(0, -8px);
+  border-bottom: 2px solid transparent;
+}
+header .header__container .header__form form .relative {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__container .header__form form .relative p {
+  line-height: 50px;
+}
+header .header__container .header__form form .relative input {
+  height: 150%;
 }
 header .header__container .header__form form .label {
   position: relative;
@@ -308,7 +312,8 @@ header .header__container .header__form form .label input {
   transition: all 0.5s ease-in-out;
   width: 100%;
   line-height: 15px;
-  padding: 15px 25px;
+  padding-left: 25px;
+  height: 50px;
   outline: none;
   border: none;
   background-color: #f0f0f0;
@@ -877,10 +882,6 @@ h1 {
   }
 }
 @media (max-width: 767px) {
-  .em {
-    -webkit-transform: translate(0, -9px) !important;
-            transform: translate(0, -9px) !important;
-  }
   .picSec {
     height: 35vh !important;
   }

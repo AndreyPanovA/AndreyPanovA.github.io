@@ -33,7 +33,16 @@ let formObj = {
 function del(elem, label, type) {
   elem = document.querySelector(elem);
   label = document.querySelector(label);
+  // phone.onfocus = () => {
+  //   if (elem.value.trim().length == 0) {
+  //     elem.value = 7;
+  //   }
+  // };
+
   elem.addEventListener("keyup", () => {
+    // if (elem.value.trim().length == 0) {
+    //   elem.value = 7;
+    // }
     if (elem.value.trim().length > 0) {
       label.style.opacity = "0";
     } else {

@@ -185,10 +185,7 @@ body {
   }
 }
 // .
-.relative {
-  border: 2px solid plum;
-  align-items: center;
-}
+
 .userText::placeholder {
   color: black;
   // font-family: "Open Sans", Arial, sans-serif;
@@ -266,11 +263,23 @@ header {
             font-family: "Open Sans", Arial, sans-serif;
             color: black;
             line-height: 15px;
-            transform: translate(0, -8px);
+            border-bottom: 2px solid transparent;
+            // transform: translate(0, -8px);
 
             // font-weight: 700;
           }
         }
+        .relative {
+          align-items: center;
+          p {
+            line-height: 50px;
+          }
+          input {
+            height: 150%;
+            // padding-left: 500px;
+          }
+        }
+
         // .hid {
         //   padding-top: 50px;
         // }
@@ -308,7 +317,9 @@ header {
             transition: all 0.5s ease-in-out;
             width: 100%;
             line-height: 15px;
-            padding: 15px 25px;
+            // padding: 15px 25px;
+            padding-left: 25px;
+            height: 50px;
             outline: none;
             border: none;
             background-color: #f0f0f0;
@@ -831,7 +842,7 @@ h1 {
 }
 @media (max-width: 767px) {
   .em {
-    transform: translate(0, -9px) !important;
+    // transform: translate(50px, -9px) !important;
   }
   .picSec {
     height: 35vh !important;
@@ -1033,6 +1044,7 @@ section {
   position: relative;
   display: flex;
   align-items: center;
+
   p {
     opacity: 0;
     color: blue;
