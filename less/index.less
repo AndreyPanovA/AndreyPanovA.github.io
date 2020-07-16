@@ -79,6 +79,7 @@ td {
 p {
   line-height: 1.55;
 }
+
 main {
   overflow: hidden;
 }
@@ -183,6 +184,8 @@ body {
     }
   }
 }
+// .
+
 .userText::placeholder {
   color: black;
   font-family: "Open Sans", Arial, sans-serif;
@@ -246,6 +249,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         font-family: "Open Sans", sans-serif;
+        border: 2px solid red;
         p {
           margin-bottom: 30px;
           font-size: 13px;
@@ -260,12 +264,16 @@ header {
             font-weight: 700;
           }
         }
+        // .hid {
+        //   padding-top: 50px;
+        // }
         .label {
           position: relative;
           width: 100%;
           background-color: @inp;
           margin-bottom: 30px;
           white-space: nowrap;
+
           label {
             cursor: pointer;
             width: 100%;
@@ -281,7 +289,7 @@ header {
           }
           input {
             border-bottom: 2px solid transparent !important;
-            font-size: 17px;
+            font-size: 16px;
             &:focus {
               border-bottom: 2px solid blue !important;
             }
@@ -1013,16 +1021,33 @@ section {
 
 .relative {
   position: relative;
+  display: flex;
+  align-items: center;
+  p {
+    opacity: 0;
+    color: blue;
+    // font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    font-weight: 100;
+    transform: translate(0, -50%);
+    // font-family: "Roboto", Arial, sans-serif !important;
+    font-family: "Open Sans", Arial, sans-serif;
+  }
 }
 em {
-  position: absolute;
-  top: 48%;
-  left: 0;
-  transform: translate(0, -80%);
+  // position: absolute;
+  // top: 48%;
+  // left: 0;
+  // transform: translate(0, -80%);
   opacity: 0;
   color: blue;
   font-size: 16px;
   line-height: 1px;
+  font-weight: 300;
+  // font-family: "Roboto", Arial, sans-serif !important;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .pano_size {

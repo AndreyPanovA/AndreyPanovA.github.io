@@ -1,6 +1,6 @@
 const sl = document.querySelector(".csslider");
 const sliderAria = document.querySelector(".slider__aria");
-const plSeven = document.querySelector("em");
+const plSeven = document.querySelector(".em");
 let allSlides = 0;
 const dotContainer = document.querySelector(".dots");
 let currentValue = 0;

@@ -261,6 +261,7 @@ header .header__container .header__form form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Open Sans", sans-serif;
+  border: 2px solid red;
 }
 header .header__container .header__form form p {
   margin-bottom: 30px;
@@ -298,7 +299,7 @@ header .header__container .header__form form .label label span {
 }
 header .header__container .header__form form .label input {
   border-bottom: 2px solid transparent !important;
-  font-size: 17px;
+  font-size: 16px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   width: 100%;
@@ -1074,17 +1075,31 @@ section .container {
 }
 .relative {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.relative p {
+  opacity: 0;
+  color: blue;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  font-weight: 100;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-family: "Open Sans", Arial, sans-serif;
 }
 em {
-  position: absolute;
-  top: 48%;
-  left: 0;
-  -webkit-transform: translate(0, -80%);
-          transform: translate(0, -80%);
   opacity: 0;
   color: blue;
   font-size: 16px;
   line-height: 1px;
+  font-weight: 300;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 .open_text {
   max-height: 50vh !important;
