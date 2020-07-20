@@ -3,6 +3,12 @@
 // @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+@font-face {
+  font-family: "MBCorpoATitleCond-Regular-Web";
+  font-display: swap;
+  src: url("../fonts/MBCorpoATitleCond-Regular-Web.woff2") format("woff2"),
+    url("../fonts/MBCorpoATitleCond-Regular-Web.woff2") format("woff");
+}
 html {
   overflow: auto;
 } // полоса прокрутки
@@ -144,6 +150,8 @@ img {
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-family: "Roboto", Arial, sans-serif !important;
+  // font-family: MBCorpo Title, DaimlerCAC-Regular, serif;
+  font-family: "MBCorpoATitleCond-Regular-Web" !important;
   -webkit-font-smoothing: antialiased;
 }
 .btn-1 {
@@ -229,6 +237,7 @@ header {
         position: relative;
         z-index: 3;
         font-family: "Roboto", Arial, sans-serif;
+        // font-family: "MBCorpoATitleCond-Regular-Web";
         color: white;
         font-size: 68px;
         font-weight: 700 !important;
@@ -255,9 +264,11 @@ header {
           font-weight: normal;
           line-height: 20px;
           font-size: 300;
+          font-family: "MBCorpoATitleCond-Regular-Web" !important;
           &:first-child {
             font-size: 16px;
-            font-family: "Open Sans", Arial, sans-serif;
+            // font-family: "Open Sans", Arial, sans-serif;
+            font-family: "MBCorpoATitleCond-Regular-Web";
             color: black;
             line-height: 15px;
             border-bottom: 2px solid transparent;
@@ -364,7 +375,8 @@ header {
       p {
         line-height: 1.55;
         margin-bottom: 30px;
-        font-family: "Open Sans", sans-serif !important;
+        // font-family: "Open Sans", sans-serif !important;
+        font-family: "MBCorpoATitleCond-Regular-Web" !important;
       }
     }
   }
