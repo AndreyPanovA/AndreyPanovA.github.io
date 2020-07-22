@@ -2,15 +2,16 @@
 
 // @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700,900&display=swap");
+
 @font-face {
-  font-family: "MBCorpoATitleCond-Regular-Web";
-  font-display: swap;
-  src: url("../fonts/MBCorpoATitleCond-Regular-Web.woff2") format("woff2"),
-    url("../fonts/MBCorpoATitleCond-Regular-Web.woff2") format("woff");
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Black.otf") format("opentype");
 }
 html {
   overflow: auto;
+  // background: url("../fonts/SF-Pro-Display-Black.otf");
 } // полоса прокрутки
 html,
 body,
@@ -93,8 +94,6 @@ body {
   // position: relative;
   // border: 2px solid red;
   line-height: 1;
-  // background-color: #333;
-  // background-color: black;
   // z-index: 1000;
 }
 ol,
@@ -149,15 +148,15 @@ img {
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-family: "Roboto", Arial, sans-serif !important;
-  // font-family: MBCorpo Title, DaimlerCAC-Regular, serif;
-  // font-family: "MBCorpoATitleCond-Regular-Web" !important;
+  // font-family: "Open Sans", Arial, sans-serif;
+  // font-family: "Roboto", Arial, sans-serif !important;
+  font-family: "SF Pro Display" !important;
   -webkit-font-smoothing: antialiased;
 }
 .btn-1 {
   width: 80%;
   margin: 5px auto;
+  // align-items: stretch;
 }
 .btn {
   padding: 10px 20px;
@@ -166,6 +165,10 @@ body {
   background-color: black;
   text-align: center;
   border: 2px solid black;
+  font-weight: 100 !important;
+  // font-family: "Open Sans", Arial, sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
   a {
     color: white;
   }
@@ -209,6 +212,13 @@ body {
 .bold {
   font-weight: 600;
 }
+.logo_min {
+  max-width: 170px;
+  margin: auto;
+  img {
+    margin-bottom: 38px;
+  }
+}
 
 header {
   position: relative;
@@ -238,7 +248,6 @@ header {
         position: relative;
         z-index: 3;
         font-family: "Roboto", Arial, sans-serif;
-        // font-family: "MBCorpoATitleCond-Regular-Web";
         color: white;
         font-size: 68px;
         font-weight: 700 !important;
@@ -260,16 +269,14 @@ header {
         justify-content: space-between;
         font-family: "Open Sans", sans-serif;
         p {
-          margin-bottom: 10px;
+          margin-bottom: 30px;
           font-size: 13px;
           font-weight: normal;
           line-height: 20px;
           font-size: 300;
-          // font-family: "MBCorpoATitleCond-Regular-Web" !important;
           &:first-child {
             font-size: 16px;
-            // font-family: "Open Sans", Arial, sans-serif;
-            font-family: "MBCorpoATitleCond-Regular-Web";
+            font-family: "Open Sans", Arial, sans-serif;
             color: black;
             line-height: 15px;
             border-bottom: 2px solid transparent;
@@ -333,7 +340,6 @@ header {
           margin-bottom: 30px;
           resize: none;
           overflow: auto;
-          max-height: 100px;
         }
         .btn__container {
           .sender {
@@ -345,9 +351,10 @@ header {
             border: 2px solid black !important;
             color: white;
             border: none;
-            font-size: 17px;
+            font-size: 15px;
             padding: 10px 20px;
-            border-radius: 10px;
+            border-radius: 5px;
+            // font-weight: 600;
           }
           margin-bottom: 10px;
         }
@@ -359,27 +366,19 @@ header {
   margin-top: 30px;
   padding-top: 15px;
   padding-bottom: 30px;
-  background-color: #eeee;
-  // background-color: #333;
-  // background-color: black;
-
+  background-color: #eee !important;
   .container {
     display: flex;
     justify-content: space-between;
-    padding: 0 !important;
     .card__text {
       text-align: justify;
       flex-basis: 49%;
-      padding: 10px 20px;
+      padding: 44px 20px;
       background-color: white;
-      // background-color: #333;
-      // background-color: black;
-      // color: white;
       p {
         line-height: 1.55;
         margin-bottom: 30px;
-        // font-family: "Open Sans", sans-serif !important;
-        // font-family: "MBCorpoATitleCond-Regular-Web" !important;
+        font-family: "Open Sans", sans-serif !important;
       }
     }
   }
@@ -387,8 +386,8 @@ header {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     background-color: black;
+    padding: 20px;
     .picOne {
       min-height: 500px;
       background: url("../img/card_top.jpeg") center center/cover;
@@ -443,6 +442,8 @@ header {
 }
 .icons {
   background-color: white;
+  background-color: black;
+  color: white;
   .container {
     padding: 30px 50px;
     display: flex;
@@ -487,8 +488,7 @@ header {
   position: relative;
   overflow: hidden;
   background-color: #eee;
-  background-color: #333;
-  background-color: rgb(35, 34, 34);
+  background-color: black;
   color: white;
   padding-bottom: 20px;
 
@@ -504,11 +504,11 @@ header {
         align-items: center;
         padding: 0;
         .userReview {
-          margin-top: 25px;
-          // border: 2px solid red;
+          margin-top: 10px;
           overflow-y: auto;
           transition: 0.5s ease-in-out;
           text-align: left;
+          padding: 10px 0px;
         }
         position: relative;
         width: 100vw;
@@ -610,12 +610,8 @@ header {
 //Map
 .map {
   background-color: #eee;
-  background-color: #333;
   background-color: black;
   color: white;
-  a {
-    color: lightblue;
-  }
   font-family: "Open Sans", Arial, sans-serif;
   padding: 20px;
   .map__container {
@@ -727,10 +723,6 @@ p,
 h1 {
   font-weight: 300;
   font-family: 15px "Open Sans", sans-serif;
-}
-.logo_min {
-  max-width: 170px;
-  margin: auto;
 }
 // Медиа
 @media (max-width: 1200px) {
@@ -879,7 +871,7 @@ h1 {
 .bold {
   font-weight: 600 !important;
   font-family: "Roboto", sans-serif !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 25px !important;
 }
 @media (max-width: 420px) {
   .bold {
