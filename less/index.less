@@ -272,7 +272,7 @@ body {
 header {
   position: relative;
   padding: 100px 0;
-  // background: url("../img/aboutBg.jpg") center center/cover;
+  background: url("../img/aboutBg3.jpg") center center/cover;
   min-height: 800px;
   // Тут
   min-height: 800px;
@@ -438,12 +438,13 @@ header {
   padding-top: 15px;
   padding-bottom: 30px;
   background-color: #eee !important;
+  // background-color: black;
   .container {
     display: flex;
     justify-content: space-between;
     .card__text {
       text-align: justify;
-      flex-basis: 49%;
+      flex-basis: 100%;
       padding: 44px 20px;
       background-color: white;
       p {
@@ -813,6 +814,23 @@ h1 {
   font-weight: 300;
   font-family: 15px "Open Sans", sans-serif;
   // font-family: "SF Display" !important;
+}
+
+//
+.foto_liner {
+  background-color: black;
+  .flex_wrapper {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      max-width: 370px;
+      margin-right: 25px;
+      margin-bottom: 25px;
+    }
+  }
 }
 // Медиа
 @media (max-width: 1200px) {
