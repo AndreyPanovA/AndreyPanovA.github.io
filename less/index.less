@@ -152,7 +152,8 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  // border: 2px solid red;
+  // list-style: none;
 }
 blockquote,
 q {
@@ -470,19 +471,14 @@ header {
       padding: 44px 20px;
       background-color: white;
       background-color: #eee;
-      p {
+      ul {
+        list-style: circle;
+      }
+      li {
+        // position: relative;
+
         // text-indent: 25px;
-        span {
-          background-color: black;
-          border-radius: 1000%;
-          width: 7px;
-          height: 7px;
-          display: inline-block;
-          margin-right: 15px;
-        }
-        &:first-child {
-          text-indent: 0;
-        }
+
         line-height: 1.55;
         margin-bottom: 10px;
         font-family: "Open Sans", sans-serif !important;
