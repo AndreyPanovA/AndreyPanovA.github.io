@@ -471,20 +471,31 @@ header {
       padding: 44px 20px;
       background-color: white;
       background-color: #eee;
-      ul {
-        list-style: circle;
-      }
-      li {
-        // position: relative;
+      .ul {
+        display: flex;
+        align-items: center;
+        span {
+          min-width: 7px;
+          display: block;
+          width: 7px;
+          height: 7px;
+          border: 1px solid black;
+          border-radius: 100%;
+          margin-right: 15px;
+        }
 
-        // text-indent: 25px;
-
-        line-height: 1.55;
-        margin-bottom: 10px;
-        font-family: "Open Sans", sans-serif !important;
-        font-weight: 400;
-        // font-family: "SF Display" !important;
+        // list-style: circle;
       }
+
+      // position: relative;
+
+      // text-indent: 25px;
+
+      line-height: 1.55;
+      margin-bottom: 10px;
+      font-family: "Open Sans", sans-serif !important;
+      font-weight: 400;
+      // font-family: "SF Display" !important;
     }
   }
   .card__photos {
