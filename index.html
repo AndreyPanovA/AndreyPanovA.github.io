@@ -1,487 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Larson. Сертифицированный сервис.</title>
-    <link rel="stylesheet" href="./css/cross.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-      ym(65569669, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/65569669"
-          style="position: absolute; left: -9999px;"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </head>
-  <body>
-    <style>
-      /*  */
-      em {
-        font-style: normal !important;
-        color: #3a67fb;
-      }
-      .justify {
-        text-align: justify;
-      }
-      .map__container {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-      }
-      @media (max-width: 767px) {
-        .map__element {
-          padding: 0 !important;
-        }
-      }
-    </style>
-    <main>
-      <header id="call">
-        <div class="header__container">
-          <div class="header__title">
-            <!-- <h1>Larson.</h1> -->
-            <div class="header_logo">
-              <img src="./img/larson_white.svg" alt="" />
-            </div>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>rgbKinetciSlider | Demo 1</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<style>
+		.rgbKineticSlider {
+			position: absolute;
+		}
+		.tester {
+			position: absolute;
+			top:100vh;
+		}
+		body {
+			background-color: black;
+		}
+	</style>
+	<body class="demo-1 loading">
+		<main>
+			<div class="message">Some message for mobile (if needed).</div>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">rgbKineticSlider</h1>
+					<p class="frame__tagline">Demo 1</a></p>
+				</div>
+				<div class="frame__links">
+					<!-- <a href="https://github.com/hmongouachon/rgbKineticSlider">GitHub</a> -->
+				</div>
+				<div class="frame__demos">
+					<a href="index.html" class="frame__demo frame__demo--current">demo 1</a>
+					<a href="index2.html" class="frame__demo">demo 2</a>
+					<a href="index3.html" class="frame__demo">demo 3</a>
+				</div>
+			</div>
+			<div class="content">
+				<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+				<nav>
+			        <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
+			        <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
+                </nav>
+				<span class="notice">Swipe left... or right</span>
+				<p class="tester">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt suscipit beatae accusamus facilis aperiam maiores at, rerum quidem fugit, soluta repellat asperiores? Iure nam, ex omnis enim temporibus amet reprehenderit rerum pariatur dolorem voluptatibus qui, dignissimos provident ipsa laboriosam quidem vero autem eos unde quisquam ad? Dolorem soluta quo ratione nam expedita nulla eligendi id repellendus ab nihil vero et perspiciatis quasi, ea nemo dolor sequi quod quos corporis quam! Doloremque porro omnis error fugiat ut, molestiae vel eligendi obcaecati architecto nulla voluptatem est non maiores? Quibusdam repellat amet, suscipit qui molestias quisquam laudantium sequi voluptatum fuga. Qui libero voluptate nobis voluptates, tenetur labore dolorem! Quae quia voluptas fugiat dolorem atque totam praesentium consequuntur ullam fuga ad, nisi officia deserunt eaque soluta consequatur cum culpa ratione! Vitae cupiditate veniam blanditiis quasi dicta qui ipsum explicabo error pariatur doloremque eius quo dolorum, tenetur sit eaque earum soluta placeat dolore nesciunt iusto quisquam nisi a fuga provident! Incidunt quae doloribus quam et nobis quis laborum praesentium reiciendis quidem eveniet est quas debitis cupiditate at, maiores a illo quaerat excepturi deleniti iste atque nesciunt animi sequi nulla. Excepturi nisi corporis deserunt a saepe enim? Eum, quibusdam quae? Eveniet hic eius magnam sed, vitae nihil ad non eligendi rem mollitia laboriosam dolore, sunt, ipsam distinctio recusandae incidunt quasi delectus amet doloremque officia numquam. Minus, libero nobis. Voluptas iusto quos quod non vel reiciendis consequatur delectus officia adipisci sequi beatae voluptatem aspernatur fugit, obcaecati ut tempora eveniet consequuntur asperiores. Magni perspiciatis eveniet libero beatae sapiente sed quo. Non tempora, ut ullam voluptates commodi labore? Nesciunt odio fugit delectus dolor iure ipsa quasi animi ad officia ut. Ex laboriosam ipsa quo totam veritatis aliquid quasi sunt? Eius cum distinctio voluptas officiis, eligendi minus blanditiis, tenetur quidem nam, natus repellat in non! Exercitationem dolor, at veniam, quisquam ducimus officiis hic sint vel quis quos quod sed error nobis, aut animi corrupti magni corporis similique fugiat quae nam vero nostrum obcaecati! Nihil nam quod possimus ut mollitia aliquam, minima nobis obcaecati voluptatibus earum adipisci non eum numquam officia nisi ratione qui cumque, eius nulla quam maiores magni aliquid reiciendis. Facere molestias officia ratione, adipisci natus ipsum voluptates beatae enim, animi ducimus eaque blanditiis neque obcaecati quam est, unde voluptas sequi sunt? Hic rerum cumque laboriosam possimus nemo non nihil sunt quidem beatae, eos reiciendis veritatis ipsum. Cum, earum iure modi incidunt quos nihil eos excepturi unde atque, laudantium tenetur. Adipisci, aliquid iure eveniet magnam reprehenderit maiores reiciendis vel, deleniti odit omnis illo quis et nisi. Dolorum quibusdam reprehenderit vitae incidunt facere ab, nihil ipsam quia dicta, asperiores molestiae ratione in recusandae voluptates ex dolorem? Veritatis, quibusdam. Exercitationem debitis alias tempora voluptatum illum nemo natus mollitia rerum minima asperiores incidunt beatae quisquam magnam libero a velit, officiis cupiditate hic sequi nobis at reiciendis. Facilis blanditiis iure culpa tempora nesciunt, veniam vel rerum. Harum reiciendis ut, quisquam sapiente laboriosam ipsum at, in officiis aliquam ea cupiditate, voluptate quae iste deleniti veniam earum excepturi temporibus perspiciatis velit quas illum perferendis maiores maxime minus! Pariatur odit unde excepturi, dolorem exercitationem laudantium dicta nulla corrupti repellat maxime earum inventore sed quas voluptatem doloribus, eaque repudiandae eligendi alias facere ullam eos maiores odio. Labore fuga ad ab possimus! Omnis magni alias maxime repellendus neque, voluptate et sint voluptatem harum rerum, ullam laborum sequi fuga nesciunt debitis aut. Cupiditate alias accusamus facere rerum quas hic id labore dolorum ea atque nostrum pariatur ex praesentium ad quasi repellat, corporis ullam recusandae aspernatur vel. Dolorum reprehenderit temporibus ab quasi voluptates recusandae quisquam, quis doloremque sunt atque eveniet molestiae corrupti mollitia iusto quod corporis ratione magni ipsam eos sint ex commodi! Non eos enim laboriosam necessitatibus praesentium sit accusantium optio amet incidunt, explicabo debitis nulla minima, veritatis, natus itaque modi est totam voluptas voluptates magni reiciendis quidem ex? Excepturi quidem error iure asperiores ex minus ea nostrum, odio laborum soluta hic aperiam debitis inventore vitae tempore eaque rerum quae quasi? Deserunt ad officia nihil consequatur, eius doloribus nemo eligendi dolores pariatur eveniet dicta nostrum obcaecati natus molestiae sed. Quia ipsam tempore omnis labore error repellat facilis amet aliquid, officiis laudantium harum, at possimus sint, id laborum quaerat inventore temporibus eum? Labore sapiente id accusantium. Tempora totam dolorum dolor veritatis, nihil facilis. Iusto eius quasi quos, laudantium cum sint, beatae inventore corporis, possimus nesciunt ex harum! Obcaecati laboriosam adipisci nemo, minima magnam aperiam reprehenderit impedit assumenda sed consequuntur harum sequi esse veniam autem maiores corrupti? Pariatur iure dolor consequuntur sint commodi obcaecati natus id debitis, voluptas harum asperiores amet modi in. Ad ratione modi culpa illum commodi quos, ex quia! Ipsum inventore, eveniet voluptate nostrum adipisci, sapiente nam eaque sint dignissimos at blanditiis labore. Libero eligendi quos sequi sint architecto. Assumenda temporibus labore quaerat eaque, repellat vitae? Quidem quam dolorem ratione magni sunt nihil, molestias voluptates temporibus modi iste suscipit nostrum, debitis deserunt ipsam dolore ullam placeat soluta? Perferendis eveniet soluta similique a cum nesciunt. Sed porro placeat non facere exercitationem corrupti, eius at consequatur, asperiores, maxime est culpa assumenda animi in. Aperiam reprehenderit atque facilis quo! Doloremque sit, dolore amet id corrupti quis. Dolore, itaque enim expedita corrupti repellat eum maiores architecto odio alias? Animi blanditiis iure facilis temporibus ducimus ipsa voluptate quia deserunt, omnis ex eos numquam modi hic voluptatum obcaecati sit at, quae natus. Esse nam laborum illum quod enim magni magnam soluta. Odio aut deleniti suscipit accusamus nobis ipsum delectus aliquid, necessitatibus reiciendis dolores quo ex optio facere eum quidem! Rerum amet doloribus odit aliquam tempora repellat voluptates veritatis recusandae illum sapiente, eaque, voluptatem iusto ratione sed officiis voluptatibus. Officia labore dolore ullam, optio necessitatibus, veritatis reprehenderit eius consequuntur quisquam culpa possimus incidunt impedit. Totam repellat obcaecati asperiores ipsam veniam, provident, ipsa deleniti labore nisi iusto laborum, atque quis corporis omnis maiores facere? Quisquam a porro officiis tempora, delectus eius sapiente? Similique unde nisi possimus voluptates, tempore enim. Quidem harum officiis sequi magni! Ad expedita in molestias soluta distinctio quia quibusdam nobis eum et? Ea possimus hic amet vel alias exercitationem nobis at voluptas.</p>
+			</div>
+			
+		</main>
 
-            <h1>Сертифицированный</h1>
-            <h1>сервис Mercedes-Benz</h1>
-            <p>
-              При покупке оригинальных запасных частей и аксессуаров в Larson –
-              установка производится бесплатно!
-            </p>
-          </div>
-          <div class="header__form">
-            <form action="">
-              <!-- <p>1000 баллов Larson Bonus в подарок!</p> -->
-              <p class="bold">Записаться по акции или уточнить детали?</p>
-              <!-- <p>
-                Новый сертифицированный сервис Mercedes-Benz. При покупке
-                оригинальных запасных частей и аксессуаров в Larson – установка
-                производится бесплатно!
-              </p> -->
-              <p>
-                Просто оставьте контакты, наши консультанты свяжутся с вами и
-                ответят на все вопросы:
-              </p>
-              <!-- <p>
-                <span class="nonwrap">Вы можете</span> воспользоваться ими для
-                полной или частичной оплаты
-                <span class="nonwrap">в Larson</span>
-                <span>в любое время.</span>
-                <span cl>1 балл = 1 рубль</span>
-              </p> -->
-              <!-- <p>
-                Чтобы получить бонусные баллы, просто оставьте контакты, наши
-                консультанты свяжутся <span class="nonwrap">с вами</span>
-                <span class="nonwrap">и уточнят детали:</span>
-              </p> -->
-              <div class="label">
-                <input type="text" class="name autentific" id="name1" />
-                <label for="name1" class="nameL">Имя*</label>
-              </div>
-              <div class="label relative">
-                <p class="em">+7</p>
+		<script src="js/libs/imagesLoaded.pkgd.min.js"></script>
+		<script src="js/libs/pixi.min.js"></script>
+		<script src="js/libs/pixi-filters.min.js"></script>
+		<script src="js/libs/TweenMax.min.js"></script>
+		<script src="js/rgbKineticSlider.js"></script>
+		<script>
+            
+            // images setup
+			const images = [
+			    "img/nature-01.jpg",
+			    "img/nature-02.jpg",
+			    "img/nature-03.jpg",
+				"img/nature-03.jpg",
+			];
+            
+            // content setup
+			const texts = [
+			    ["Earth", "Surface gravity‎: ‎9.807 m/s²"],
+			    ["Mars", "Surface gravity‎: ‎3.711 m/s²"],
+			    ["Venus", "Surface gravity‎: ‎8.87 m/s²"],
+				["Venus1", "Surface gravity‎: ‎8.87 m/s²"],
+			]
 
-                <input
-                  type="text"
-                  class="phone autentific phoneBefore"
-                  id="phone"
-                />
-                <label for="phone" class="phoneL">Номер телефона*</label>
-              </div>
-              <div class="label">
-                <input type="text" class="email autentific" id="E-mail" />
-                <label for="E-mail" class="emailL"> E-mail*</label>
-              </div>
-              <div class="label">
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Комментарии"
-                  class="userText"
-                ></textarea>
-              </div>
-              <div class="btn__container" id="sendButton">
-                <a class="sender">Отправить</a>
-              </div>
-              <p class="justify margin_fin">
-                Нажимая кнопку "Отправить", Вы даёте согласие на обработку и
-                хранение персональных данных в соответствии с действующим
-                законодательством.
-              </p>
-              <p class="minySizer">* - обязательно к заполнению</p>
-            </form>
-          </div>
-        </div>
-      </header>
-      <section id="history" class="history">
-        <div class="container">
-          <div class="card__text">
-            <!-- <div class="logo_min">
-              <img src="./img/larson-1.svg" alt="" class="" />
-            </div> -->
-            <ul>
-              <li>
-                Сервисный центр Larson работает с 2012 года и выполняет
-                диагностику, техническое обслуживание и ремонт всего модельного
-                ряда автомобилей Mercedes-Benz и Volvo, а также кузовной ремонт
-                а/м всех марок.
-              </li>
-              <li>
-                Мы сотрудничаем с АО "Мерседес-Бенц РУС" по программе
-                "Независимый специалист" и имеем доступ к самому надежному
-                каналу поставки оригинальных запасных частей Mercedes-Benz.
-                Гарантия на оригинальные запасные части и аксессуары составляет
-                2 (два) года без ограничения по пробегу.
-              </li>
-              <li>
-                Благодаря опыту на рынке оптовой торговли запасными частями мы
-                можем подобрать оптимальное решение, используя оригинальные
-                детали или качественные аналоги. Ремонт всегда выполняется с
-                соблюдением стандартов и рекомендаций завода-изготовителя.
-              </li>
-              <li>
-                На время длительных работ клиенты сервисного или кузовного
-                центра имеют возможность получить подменный автомобиль
-                Volkswagen Polo 2018 модельного года.
-              </li>
-              <li>
-                Мы всегда готовы решить любую поставленную задачу, потому что
-                наша цель состоит в том, чтобы после посещения Larson каждый
-                клиент чувствовал себя максимально уверенным в своем сервисе.
-              </li>
-            </ul>
-            <!-- <div class="ul">
-              <span></span>
-              <p>
-                Сервисный центр Larson работает с 2012 года и выполняет
-                диагностику, техническое обслуживание и ремонт всего модельного
-                ряда автомобилей Mercedes-Benz и Volvo, а также кузовной ремонт
-                а/м всех марок.
-              </p>
-            </div>
-            <div class="ul">
-              <span></span>
-              <p>
-                Мы сотрудничаем с АО "Мерседес-Бенц РУС" по программе
-                "Независимый специалист" и имеем доступ к самому надежному
-                каналу поставки оригинальных запасных частей Mercedes-Benz.
-                Гарантия на оригинальные запасные части и аксессуары составляет
-                2 (два) года без ограничения по пробегу.
-              </p>
-            </div>
-            <div class="ul">
-              <span></span>
-              <p>
-                Благодаря опыту на рынке оптовой торговли запасными частями мы
-                можем подобрать оптимальное решение, используя оригинальные
-                детали или качественные аналоги. Ремонт всегда выполняется с
-                соблюдением стандартов и рекомендаций завода-изготовителя.
-              </p>
-            </div>
-            <div class="ul">
-              <span></span>
-              <p>
-                На время длительных работ клиенты сервисного или кузовного
-                центра имеют возможность получить подменный автомобиль
-                Volkswagen Polo 2018 модельного года.
-              </p>
-            </div>
-            <div class="ul">
-              <span></span>
-              <p>
-                Мы всегда готовы решить любую поставленную задачу, потому что
-                наша цель состоит в том, чтобы после посещения Larson каждый
-                клиент чувствовал себя максимально уверенным в своем сервисе.
-              </p>
-            </div> -->
-          </div>
-          <!-- <div class="card__photos">
-            <div class="picture picOne"></div>
-            <div class="card_photos-double">
-              <div class="picture picSec"></div>
-              <div class="picture picThi"></div>
-            </div>
-            <div class="btn btn-1 btn-white">
-              <a
-                href="https://yandex.ru/map-widget/v1/-/CCQh4GuthC"
-                class="miniSize"
-                >Открыть 3D-тур
-              </a>
-            </div>
-          </div> -->
-        </div>
-      </section>
-      <section class="foto_liner">
-        <div class="flex_wrapper">
-          <img src="./img/photo_wrap/IMG_7383.jpeg" alt="" />
-          <img src="./img/photo_wrap/IMG_7384.jpeg" alt="" />
-          <img src="./img/photo_wrap/IMG_7386.jpeg" alt="" />
-          <!-- <img src="./img/photo_wrap/IMG_7545.JPG" alt="" />
-          <img src="./img/photo_wrap/IMG_7549.JPG" alt="" />
-          <img src="./img/photo_wrap/IMG_7555.JPG" alt="" /> -->
-          <!-- <img src="./img/photo_wrap/" alt="" /> -->
-        </div>
-        <div class="btn-white">
-          <a
-            href="https://yandex.ru/map-widget/v1/-/CCQh4GuthC"
-            class="miniSize"
-            >Открыть 3D-тур
-          </a>
-        </div>
-      </section>
-      <section class="icons" id="service">
-        <div class="container icons_flex">
-          <div class="icons__top-item">
-            <img src="./img/star.svg" alt="" />
-            <h1>ПРЕВОСХОДНЫЙ СЕРВИС</h1>
-            <p>
-              Средняя оценка автосервиса клиентами за 2020 год:
-            </p>
-            <div class="text_l">
-              <div class="aval">
-                <!-- <p>Коломенская — 4.90</p> -->
-                <p>Кузовной — 5.00</p>
-              </div>
-            </div>
-          </div>
-          <div class="icons__top-item">
-            <img src="./img/ball.svg" alt="" />
-            <h1>ПРОГРАММА LARSON BONUS</h1>
-            <p>
-              История обслуживания автомобиля, он-лайн запись, информация о
-              доступных бонусах и многое другое для вашего удобства
-            </p>
-          </div>
-          <div class="icons__top-item">
-            <img src="./img/phone.svg" alt="" />
-            <h1>МОБИЛЬНОЕ ПРИЛОЖЕНИЕ LARSON CAR</h1>
-            <p>
-              2000 приветственных баллов за регистрацию в мобильном приложении и
-              до 15% от суммы последующих оплат запасных частей на ваш бонусный
-              счет, <span>1 балл = 1 рубль</span>
-            </p>
-          </div>
-          <div class="icons__top-item">
-            <img src="./img/cup.svg" alt="" />
-            <h1>КОМФОРТНАЯ ЗОНА ОЖИДАНИЯ</h1>
-            <p>
-              Чай/кофе, Wi-Fi, 4K Smart TV и Sony PlayStation 4
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="slider">
-        <div class="slider__aria">
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                С большим вниманием отнеслись к возникшей проблеме. Предложили
-                решение, согласовали объем работ, не навязывали ничего лишнего.
-                С ремонтом справились в оговорённые сроки. Остался доволен.
-                Рекомендую всем обращаться в сервис Larson.
-              </p>
-              <h1>Дмитрий Владимирович В.</h1>
-              <p class="date">Дата 11.07.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                Большое спасибо за качественную работу! На приемке трудятся
-                очень внимательные два Александра. Машину отремонтировали
-                профессиональные мастера, люди своего дела. Обстановка в сервисе
-                уютная и дружелюбная. Будем всегда обращаться в этот сервис.
-              </p>
-              <h1>Наталья Николаевна Ч.</h1>
-              <p class="date">Дата 10.07.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                Добрый день! Приятная атмосфера! Замечательные менеджеры,большое
-                спасибо Вам за профессионализм! Отдельная благодарность Дмитрию
-                за труд и качество выполнения поставленной задачи! Желаю Вам
-                процветания и приятных клиентов. С уважением, Аида.
-              </p>
-              <h1>Аида Борисовна Я.</h1>
-              <p class="date">Дата 05.07.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                Ваш сотрудник показал, что в "Ларсоне" работают профессионалы.
-                Молодец!!! Обслуживал Вольво с-60. И механику отдельное
-                СПАСИБО!!!
-              </p>
-              <h1>Алексей Владимирович М.</h1>
-              <p class="date">Дата 02.07.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                Спасибо за отличную работу! До новых встреч!
-              </p>
-              <h1>Алексей Александрович Т.</h1>
-              <p class="date">Дата 01.07.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-          <div class="slider__content">
-            <div class="inner_wrapper">
-              <!-- <p class="bold">Оценка: 5</p> -->
-              <p class="userReview">
-                Очень быстро все посмотрели, дали обратную связь и исправили!
-                Шикарный сервис!
-              </p>
-              <h1>Максим Сергеевич Т.</h1>
-              <p class="date">Дата 22.06.2020</p>
-              <div class="left-arrow">&#8249;</div>
-              <div class="right-arrow">&#8250;</div>
-            </div>
-          </div>
-        </div>
-        <div class="dots"></div>
-      </section>
-      <section class="instagram" id="insta">
-        <p>
-          Cледите за нами в Instagram
-          <a href="https://www.instagram.com/larsoncar/">@larsoncar</a>
-          <br />Для перехода нажмите на фото
-        </p>
-        <div class="container insta-pad">
-          <!-- LightWidget WIDGET -->
-          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-          <iframe
-            src="//lightwidget.com/widgets/24a30b049a705e8a88c0a12bfe142430.html"
-            scrolling="no"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style="width: 100%; border: 0; overflow: hidden;"
-          ></iframe>
-        </div>
-      </section>
-      <section class="map" id="contacts">
-        <div class="map__container">
-          <div class="map__element">
-            <h1>Контакты</h1>
-            <p class="bold">Ежедневно с 9 до 20</p>
-            <p class="bold">
-              Единый телефон
-              <a href="tel:+74957811081" class="nonwrap"> +7 (495) 781-10-81</a>
-            </p>
-            <p class="bold">Larson Коломенская</p>
-            <p>
-              115533, г. Москва, проспект Андропова, д. 22, стр. 2 БЦ
-              "Нагатинский"
-            </p>
-            <p>
-              <a
-                href="https://larsonv.ru/servis-mercedes-benz/contact"
-                class="blueLink"
-              >
-                Как добраться
-              </a>
-            </p>
-            <p class="bold">Larson Кузовной центр</p>
-            <p>
-              115533, г. Москва, проспект Андропова, д. 22, БЦ "Нагатинский"
-            </p>
-            <p>
-              <a
-                href="https://body.larsonv.ru/contacts/contacts.html"
-                class="blueLink"
-              >
-                Как добраться
-              </a>
-            </p>
+			rgbKineticSlider = new rgbKineticSlider({
 
-            <div class="app-store">
-              <a
-                href="https://itunes.apple.com/us/app/larson-car/id1190680675"
-                target="_blank"
-                class="app-apple"
-              >
-                <img
-                  src="./img/apple.svg"
-                  alt=""
-                  href="https://itunes.apple.com/us/app/larson-car/id1190680675" /></a
-              ><a
-                href="https://play.google.com/store/apps/details?id=com.larson.car"
-                target="_blank"
-                class="app-google"
-              >
-                <img
-                  src="./img/google.svg"
-                  alt=""
-                  href="https://itunes.apple.com/us/app/larson-car/id1190680675"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+			    slideImages: images, // array of images > must be 1920 x 1080
+			    itemsTitles: texts, // array of titles / subtitles
 
-    <script type="text/javascript">
-      function loadFrame() {
-        document.getElementById("frame").scrollTop = 310;
-        document.getElementById("frame").scrollLeft = 40;
-      }
-    </script>
-    <script src="./js/index.js"></script>
-  </body>
+			    backgroundDisplacementSprite: 'img/map-9.jpg', // slide displacement image 
+			    cursorDisplacementSprite: 'img/displace-circle.png', // cursor displacement image
+
+			    cursorImgEffect : true, // enable cursor effect
+			    cursorTextEffect : false, // enable cursor text effect
+			    cursorScaleIntensity : 0.65, // cursor effect intensity
+			    cursorMomentum : 0.14, // lower is slower
+
+			    swipe: true, // enable swipe
+			    swipeDistance : window.innerWidth * 0.4, // swipe distance - ex : 580
+			    swipeScaleIntensity: 2, // scale intensity during swipping
+
+			    slideTransitionDuration : 1, // transition duration
+			    transitionScaleIntensity : 30, // scale intensity during transition
+			    transitionScaleAmplitude : 160, // scale amplitude during transition
+
+			    nav: true, // enable navigation
+			    navElement: '.main-nav', // set nav class
+			    
+			    imagesRgbEffect : false, // enable img rgb effect
+			    imagesRgbIntensity : 0.9, // set img rgb intensity
+			    navImagesRgbIntensity : 80, // set img rgb intensity for regular nav 
+
+			    textsDisplay : true, // show title
+			    textsSubTitleDisplay : true, // show subtitles
+			    textsTiltEffect : true, // enable text tilt
+			    googleFonts : ['Playfair Display:700', 'Roboto:400'], // select google font to use
+			    buttonMode : false, // enable button mode for title
+			    textsRgbEffect : true, // enable text rgb effect
+			    textsRgbIntensity : 0.03, // set text rgb intensity
+			    navTextsRgbIntensity : 15, // set text rgb intensity for regular nav
+
+			    textTitleColor : 'white', // title color
+			    textTitleSize : 125, // title size
+			    mobileTextTitleSize : 125, // title size
+			    textTitleLetterspacing : 3, // title letterspacing
+
+			    textSubTitleColor : 'white', // subtitle color ex : 0x000000
+			    textSubTitleSize : 21, // subtitle size
+			    mobileTextSubTitleSize : 21, // mobile subtitle size
+			    textSubTitleLetterspacing : 2, // subtitle letter spacing
+			    textSubTitleOffsetTop : 90, // subtitle offset top
+			    mobileTextSubTitleOffsetTop : 90, // mobile subtitle offset top
+			});
+		</script>
+	</body>
 </html>
