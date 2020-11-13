@@ -2,19 +2,33 @@
 // @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import "chart";
 @import "servis";
-// @import "formula";
-// @import "table";
+@import "choice";
+@import "footer";
 // @import "dashboard";
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 
 :root {
 	font-size: 15px;
 }
-
+.small {
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  line-height: 31px;
+}
+.center {
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
 body {
 	margin: 0;
 	--color-text: #aaa;
@@ -173,59 +187,46 @@ a {
 
 
 
+nav {
+
+}
 
 
+nav a {
+  color: var(--color-link-hover);
+  text-decoration: none;
+  /*margin-right: 14px;*/
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
+}
 
-// nav a {
-//   color: var(--color-link-hover);
-//   text-decoration: none;
-//   /*margin-right: 14px;*/
-//   position: absolute;
-//   top: 50vh;
-//   z-index: 1;
-// }
+nav a:hover,
+nav a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
 
-// nav a:hover,
-// nav a:focus {
-//   color: var(--color-link-hover);
-//   outline: none;
-// }
+nav span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-link-hover);
+  display: block;
+  margin-top: 7px;
+  -moz-transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+nav a:hover span {
+  width: 0;
+}
+nav a.next {
+  right: 10vw;
+  z-index: 10 !important;
 
-// nav span {
-//   position: absolute;
-//   width: 100%;
-//   height: 1px;
-//   background-color: var(--color-link-hover);
-//   display: block;
-//   margin-top: 7px;
-//   -moz-transition: width 0.3s ease;
-//   -webkit-transition: width 0.3s ease;
-//   transition: width 0.3s ease;
-// }
-// nav a:hover span {
-//   width: 0;
-// }
-// nav a.next {
-//   right: 10vw;
-// }
-// nav a.prev {
-//   left: 10vw;
-// }
-// @media screen and (max-width: 53em) {
+}
 
-//   nav a {
-//       top : auto;
-//       bottom : 3rem;
-//   }
-
-//   .notice {
-//       bottom: auto;
-//       top: 2rem;
-//       left : 10vw;
-//       left: 3rem;
-//   }
-
-// }
 
 .rgbKineticSlider {
 	&::before {
@@ -240,6 +241,16 @@ a {
   }
 }
 .burger {
+  z-index: 1000;
+  position: fixed;
+  top:0;
+  left:0;
+  transform: translate(200px,50%);
+  cursor: pointer;
+  transition: .5 ease-in-out;
+  &:hover {
+    opacity: .5;
+  }
   .line {
     height: 2px;
     width: 20px;
@@ -296,7 +307,7 @@ main {
 	}
   .frame__title-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 
   }
   .main-nav {
@@ -315,12 +326,16 @@ main {
     position: relative;
     display: flex;
     z-index: 3;
-    a {
+    a{
       cursor: pointer;
       padding: 10px 20px;
+  
+    }
+    .frame__tagline {
       &:hover {
-       border-bottom: 2px solid white;
-      }
+        border-bottom: 2px solid white;
+       }
+
     }
   }
 }
@@ -332,4 +347,55 @@ canvas {
   top:0;
   left : 0;
   transform: translate(-50%, -50%) !important;
+}
+.btn-tab {
+  display: flex;
+  border:2px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  a {
+    &:hover {
+      border:none;
+    }
+
+  }
+}
+.active-tab {
+  background-color: white;
+  color: black;
+}
+
+//
+.navigation {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  color:white;
+  z-index: 100;
+  top:-100vh;
+  left:0;
+  transition: .5s ease-in-out;
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  a {
+    padding: 10px 20px;
+    border-bottom: 2px solid white;
+    // border-top: 2px solid white;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    li {
+
+    }
+  }
+}
+.nav-show {
+  top:0;
+}
+ul {
+  list-style: none;
 }

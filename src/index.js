@@ -8,4 +8,22 @@ import { Table } from "./components/table/Table";
 const excel = new Excel("#app", {
     components: [Header, Toolbar, Formula, Table],
 });
-// excel.render()
+
+
+const burger = document.querySelector(".burger")
+const menu = document.querySelector(".navigation")
+const tabLink =document.querySelectorAll(".tab-link")
+
+
+tabLink.forEach((elem, idx)=> {
+    elem.addEventListener("click", (e)=> {
+        tabLink.forEach((item)=> {
+            item.classList.remove("active-tab")
+        })
+        elem.classList.add("active-tab")
+    })
+})
+burger.addEventListener("click",()=> {
+menu.classList.toggle("nav-show")
+})
+
