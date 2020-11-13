@@ -2,9 +2,49 @@
     height: 100vh;
     background-color: white;
     img {
-        transform: translateX(-20px);
+        // transform: translateX(-20px);
         // width: 200vw;
     }
     // position: relative;
+    .servis-line {
+        padding: 50px 0 50px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70%;
+        // border:2px solid red;
+        .servis-text {
+            flex-basis: 40%;
+        }
+
+        .img {
+            position: relative;
+            flex-basis: 20%;
+            img {
+                width: 100%;
+            }
+            .whiteImg {
+                position: absolute;
+                background-color: #ebebeb;
+                top:50%;
+                left:-150px;
+                transform: translate(-50%,-50%);
+                display: flex;
+                padding: 50px;
+                align-items: flex-end;
+    
+                img {
+                    width: 150px;
+              
+
+                }
+                .img-type1 {
+        
+                    img{ width: 250px;}
+                }
+            }
+
+        }
+    }
     
 }
