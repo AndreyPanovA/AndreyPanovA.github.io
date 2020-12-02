@@ -16,12 +16,30 @@ const menu = document.querySelector(".navigation")
 const tabLink =document.querySelectorAll(".tab-link")
 const body =document.querySelector("body")
 
-
-tabLink.forEach((elem, idx)=> {
+tabLink.forEach((elem)=> {
     elem.addEventListener("click", (e)=> {
         tabLink.forEach((item)=> {
             item.classList.remove("active-tab")
         })
+        const edutype = document.getElementsByClassName('edu-type');
+        const worktype = document.getElementsByClassName('work-type');
+        console.log(worktype,edutype)
+        if (elem.dataset.id == 1) {
+          [...worktype].forEach((item) => {
+            item.classList.remove("off");
+          });
+          [...edutype].forEach((item) => {
+            item.classList.add("off");
+          })
+        } else if (elem.dataset.id == 2) {
+          [...worktype].forEach((item) => {
+            item.classList.add("off");
+          });
+          [...edutype].forEach((item) => {
+            item.classList.remove("off");
+          })
+        }
+        
         elem.classList.add("active-tab")
     })
 })
@@ -39,11 +57,9 @@ window.addEventListener('scroll', function(event) {
  
   if (pageYOffset > 1850) {
     x.classList.add("changeColor")
-    console.log(pageYOffset, "before")
   }
   else {
     x.classList.remove("changeColor")
-    console.log(pageYOffset, "after")
   }
 });
 });

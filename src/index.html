@@ -23,11 +23,16 @@
 
 	<body class="demo-1 loading1" id="app" class="container">
 		<div id="hamburger-open"><span class="spans" id="spanOne" data-span="span"></span><span class="spans" id="spanTwo" data-span="span"></span><span class="spans" id="spanThree" data-span="span"></span></div>
-		<div class="modal-menu">
+		<div class="modal-menu work-type">
 		  <h2 class="menuitem">Новости</h2>
 		  <h2 class="menuitem">Сервисы</h2>
 		  <h2 class="menuitem">Клиентам</h2>
 		  <h2 class="menuitem">Контакты</h2>
+		</div>
+		<div class="modal-menu edu-type off">
+			<h2 class="menuitem">Новости</h2>
+			<h2 class="menuitem">ВУЗам</h2>
+			<h2 class="menuitem">ЗУВ</h2>
 		</div>
 		<main>
 				<div class="header-title">
@@ -38,10 +43,15 @@
 		
 				<div class="frame">
 					<div class="frame__title-wrap">
-						<div class="navig">
-						<a class="frame__tagline">Новости</a>
-						<a class="frame__tagline">Клиентам</a>
-						<a class="frame__tagline">Сервисы</a>
+						<div class="navig work-type">
+							<a class="frame__tagline">Новости</a>
+							<a class="frame__tagline">Клиентам</a>
+							<a class="frame__tagline">Сервисы</a>
+						</div>
+						<div class="navig edu-type off">
+							<a class="frame__tagline">Новости</a>
+							<a class="frame__tagline">ВУЗам</a>
+							<a class="frame__tagline">ЗУВ</a>
 						</div>
 						<div class="btn-tab">
 							<a class="tab-link active-tab" data-id="1">Интеграторам </br>/ Перевозчикам</a>
@@ -72,7 +82,7 @@
 			
 			</div>
 			<div class="container">
-				<div class="chart">	
+				<div class="chart work-type">	
 					<h1 class="small">Карта информационных сервисов для городского пассажирского транспорта для </br> интеграторов и перевозчиков 
 					</h1>
 					<h1 class="center">Сервис «Ведение паспортов маршрутов в соответствии с ФЗ 220 с использованием встроенной ГИС»               
@@ -103,7 +113,31 @@
 						</p>
 					</div>
 				</div>
+					<div class="chart-border"></div> 
+					
+				</div>
+				<div class="chart edu-type off">	
+					<h1 class="small">Информационные сервисы по перевозкам городским </br> пассажирским транспортом для ВУЗов 
+					</h1>
+					<h1 class="center">ЗУВ: «Ведение паспортов маршрутов в соответствии с ФЗ 220»               
+					</h1>
 					<div class="chart-border"></div>
+					<div class="chart-line">
+						<p>ЗУВ: «Мониторинг поступления телематических данных от оборудования»               
+						</p>
+						<p>ЗУВ: «Сбор и ввод данных табличного обследования пассажиропотоков»               
+						</p>
+						<p>ЗУВ: «Сбор и ввод данных силуэтного метода обслудования пассажиропотоков»               
+						</p>
+					</div>
+					<div class="chart-line no-2">
+						<p></p>
+						<p>ЗУВ: «Расчет рейсовых параметров пассажиропотока по данным табличного </p> 
+							<p>ЗУВ: «Расчет и анализ параметров работы маршрута и остановочного пункта»               
+							</p>
+						</div>    
+					</div>
+					<div class="chart-border"></div> 
 					
 				</div>
 				<div class="servis">
