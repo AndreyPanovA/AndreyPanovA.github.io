@@ -146,7 +146,7 @@ hamburger.addEventListener("click", function(e) {
   modalMenu.classList.toggle("show");
   body.classList.toggle("stop");
   const arr =document.querySelectorAll('.spans').forEach((x) => {
-    x.classList.toggle("changeColor");
+    x.classList.remove("changeColor");
   });
 
 
