@@ -1,21 +1,34 @@
 @import "_variables";
 @import "_mixins";
 .choice {
-    // padding-top: ;
     height: 50vh;
     background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
     .choice-text {
         text-align: center;
         width: 50%;
         h1 {
             color: black;
         }
-      
     }
- 
+    .logo {
+        img {
+            width: 270px ;
+        }
+    }
 
+}
+
+@media (max-width: 600px) { 
+    .choice {
+        .logo {
+            img {
+                width: 170px !important;
+            }
+        }
+    }
 }

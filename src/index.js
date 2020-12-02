@@ -32,6 +32,22 @@ tabLink.forEach((elem, idx)=> {
 
 // 
 
+window.addEventListener('scroll', function(event) {
+  // console.log(event, "test", pageYOffset)
+  const arr =document.querySelectorAll('.spans').forEach((x) => {
+
+ 
+  if (pageYOffset > 1850) {
+    x.classList.add("changeColor")
+    console.log(pageYOffset, "before")
+  }
+  else {
+    x.classList.remove("changeColor")
+    console.log(pageYOffset, "after")
+  }
+});
+});
+
 var timelineOpen = new mojs.Timeline({ speed: 1.5 });
 var timelineClose = new mojs.Timeline({ speed: 2 });
 
@@ -96,6 +112,7 @@ var openBackground = new mojs.Shape({
 
 burst1.el.style.zIndex = 90000;
 openBackground.el.style.zIndex = 100;
+openBackground.el.style.position = "fixed";
 
 // check if the hamburger's been crossed
 let cross = spanOne.classList.contains("white");
@@ -134,3 +151,6 @@ hamburger.addEventListener("click", function(e) {
     spanThree.classList.add("spanThreeHide");
   }
 });
+
+
+// Рабочая кнопочка next проверить ее работу

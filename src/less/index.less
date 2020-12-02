@@ -19,10 +19,11 @@
 	font-size: 15px;
 }
 .small {
-  font-size: 15px;
+  font-size: 27px;
+  font-weight: 600;
   text-align: left;
   color: white;
-  line-height: 31px;
+  text-align: center;
 }
 .center {
   margin-top: 15vh;
@@ -273,6 +274,9 @@ main {
     left: 5%;
     max-width: 70%;
     z-index: 30;
+    h1 {
+      font-size: 35px;
+    }
     .btn {
       display: inline-block;
       margin-top: 10px;
@@ -356,7 +360,7 @@ canvas {
   border:2px solid white;
   border-radius: 15px;
   overflow: hidden;
-  // min-width: 200px;
+  min-width: 150px;
 
   a {
     padding: 10px 20px;
@@ -406,6 +410,15 @@ ul {
   list-style: none;
 }
 @media (max-width: 800px) {
+  body {
+    p, h1 {
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+    h3 {
+      padding-bottom:5px;
+    } 
+  }
   .navig {
     display: none;
     opacity: 0;
@@ -420,7 +433,18 @@ ul {
  }
 
  @media (max-width: 600px) {
+  .header-title {
+ 
+    h1 {
+      font-size: 15px !important;
+    }
+  }
   .btn-tab {
     flex-direction: column;
   }
+  }
+
+
+  .changeColor {
+    background-color: black !important;
   }

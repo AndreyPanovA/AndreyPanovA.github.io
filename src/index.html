@@ -22,7 +22,7 @@
 	</style>
 
 	<body class="demo-1 loading1" id="app" class="container">
-		<div id="hamburger-open"><span class="spans" id="spanOne"></span><span class="spans" id="spanTwo"></span><span class="spans" id="spanThree"></span></div>
+		<div id="hamburger-open"><span class="spans" id="spanOne" data-span="span"></span><span class="spans" id="spanTwo" data-span="span"></span><span class="spans" id="spanThree" data-span="span"></span></div>
 		<div class="modal-menu">
 		  <h2 class="menuitem">Новости</h2>
 		  <h2 class="menuitem">Сервисы</h2>
@@ -30,52 +30,36 @@
 		  <h2 class="menuitem">Контакты</h2>
 		</div>
 		<main>
-			<!-- <div class="navigation">
-				<ul>
-					<a href="#"><li>Новости</li></a>
-					<a href="#"><li>Сервисы</li></a>
-					<a href="#"><li>Клиентам</li></a>
-				</ul>
-			</div> -->
-			<!-- <div class="burger">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div> -->
-			<div class="header-title">
-				<h1>Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров  </h1>
-				<p>(взято из названия сервисов, а не модулей)</p>
-				<a href="#" class="btn">Подробнее...</a>
-			</div>
-			<div class="message">Some message for mobile (if needed).</div>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<div class="navig">
-					<a class="frame__tagline">Новости</a>
-					<a class="frame__tagline">Клиентам</a>
-					<a class="frame__tagline">Сервисы</a>
-					</div>
-					<div class="btn-tab">
-						<a class="tab-link active-tab" data-id="1">Интеграторам </br>/ Перевозчикам</a>
-						<a class="tab-link" data-id="2">ВУЗам</a>
-					</div>
+				<div class="header-title">
+					<h1>Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров  </h1>
+					<p>(взято из названия сервисов, а не модулей)</p>
+					<a href="#" class="btn">Подробнее...</a>
 				</div>
+		
+				<div class="frame">
+					<div class="frame__title-wrap">
+						<div class="navig">
+						<a class="frame__tagline">Новости</a>
+						<a class="frame__tagline">Клиентам</a>
+						<a class="frame__tagline">Сервисы</a>
+						</div>
+						<div class="btn-tab">
+							<a class="tab-link active-tab" data-id="1">Интеграторам </br>/ Перевозчикам</a>
+							<a class="tab-link" data-id="2">ВУЗам</a>
+						</div>
+					</div>
 				</div>
 			
 				<div class="frame__demos">
 					<div class="frame__links">
 						<a class="notice" href="mailto:info@transit-db.com">info@transit-db.com</a>
-						<!-- <a href="https://github.com/hmongouachon/rgbKineticSlider">GitHub</a> -->
 					</div>
 					<div class="madi">
-					<p>Технологии, разработанные при участии кафедры «Транспортная телематика» МАДИ</p>
-					<div class="logo">
-						<img src="/img/madi.png" alt="">
+						<p>Технологии, разработанные при участии кафедры «Транспортная телематика» МАДИ</p>
+						<div class="logo">
+							<img src="/img/madi.png" alt="">
+						</div>
 					</div>
-				</div>
-					<!-- <a href="index.html" class="frame__demo frame__demo--current">demo 1</a>
-					<a href="index2.html" class="frame__demo">demo 2</a>
-					<a href="index3.html" class="frame__demo">demo 3</a> -->
 				</div>
 			</div>
 			<div class="content">
@@ -149,11 +133,11 @@
 						<img src="./img/bus-huge.png" alt="">
 						<div class="whiteImg">
 							<div class="img-type1">
-							<img src="./img/bus.png" alt="">
-						</div>
-						<div class="img-type2">
-							<img src="./img/bus1.png" alt="">
-						</div>
+								<img src="./img/bus.png" alt="">
+							</div>
+							<div class="img-type2">
+								<img src="./img/bus1.png" alt="">
+							</div>
 						</div>
 					</div>
 					</div>
@@ -166,9 +150,6 @@
 							<img src="./img/logo.png" alt="Транспортные данные">
 						</div>
 					</div>
-				
-
-
 				</div>
 				<div class="footer"></div>
 			</div>
