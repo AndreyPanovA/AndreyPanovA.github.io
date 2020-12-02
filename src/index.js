@@ -55,7 +55,7 @@ window.addEventListener('scroll', function(event) {
   const arr =document.querySelectorAll('.spans').forEach((x) => {
 
  
-  if (pageYOffset > 1850) {
+  if (pageYOffset > 1800) {
     x.classList.add("changeColor")
   }
   else {
@@ -144,7 +144,10 @@ hamburger.addEventListener("click", function(e) {
   var cross = spanOne.classList.contains("white");
 
   modalMenu.classList.toggle("show");
-  body.classList.toggle("stop")
+  body.classList.toggle("stop");
+  const arr =document.querySelectorAll('.spans').forEach((x) => {
+    x.classList.toggle("changeColor");
+  });
 
 
   if (cross) {
