@@ -1,8 +1,8 @@
 import { workList, eduList, nextMenu, sitetype, circle, headCont, head } from "../module"; 
 
-nextMenu.addEventListener('onclick', (e) => {
+nextMenu.addEventListener('click', (e) => {
     let list = ""; 
-    circle++; 
+    this.circle++; 
 
      if (sitetype == 0) {
         if (circle > 6) {
