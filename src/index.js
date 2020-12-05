@@ -10,6 +10,19 @@ const excel = new Excel("#app", {
     components: [Header, Toolbar, Formula, Table],
 });
 
+const servMenu = document.getElementsByClassName('frame__tagline')[2];
+const drop = document.getElementsByClassName('dropdown')[0];
+servMenu.addEventListener('mouseover',(e) => {
+  drop.classList.add('on');
+})
+drop.addEventListener('mouseover',(e) => {
+  drop.classList.add('on');
+})
+drop.addEventListener('mouseout',(e) => {
+  drop.classList.remove('on');
+})
+
+
 
 // const burger = document.querySelector(".burger")
 const menu = document.querySelector(".navigation")
