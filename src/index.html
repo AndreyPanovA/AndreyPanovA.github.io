@@ -11,8 +11,6 @@
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 	</head>
-	
-
 	<body class="demo-1 loading1" id="app" class="container">
 		<div id="hamburger-open"><span class="spans" id="spanOne" data-span="span"></span><span class="spans" id="spanTwo" data-span="span"></span><span class="spans" id="spanThree" data-span="span"></span></div>
 		<div class="modal-menu">
@@ -34,7 +32,8 @@
 		<main>
 			<div class="header-title">
 					<h1>Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров  </h1>
-					<p>(взято из названия сервисов, а не модулей)</p>
+					<p class="chenge-module" id=0> «Коммуникационные службы»</p>
+					<p class="chenge-module off" id=1>«Ведение нормативно-справочной информации»</p>
 					<a href="index2.html" class="btn">Подробнее...</a>
 			</div>
 				<div class="frame">
@@ -42,7 +41,10 @@
 						<div class="navig work-type">
 							<a class="frame__tagline">Новости</a>
 							<a class="frame__tagline">Клиентам</a>
-							<a class="frame__tagline">Сервисы</a>
+							<a class="frame__tagline dropdown">Сервисы</a>
+							<div class="dropdownItem offItem" data-id="1">
+								<a href="#" class="menuitem">Тестовая ссылка 1</a>
+							  </div>
 						</div>
 						<div class="navig edu-type off">
 							<a class="frame__tagline">Новости</a>
