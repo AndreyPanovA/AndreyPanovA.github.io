@@ -3,8 +3,11 @@ import {timelineOpen, timelineClose,_strokeWidth,RADIUS,hamburger,spans,spanOne,
 import {tabLink} from "./js/tabs"
 import Scroll from "./js/scroll"
 window.addEventListener('scroll',Scroll);
-import {dropdown,dropdownItem} from "./js/dropdown"
-import Burger from "./js/hamburger"
+import {dropdown,dropdownItem} from "./js/dropdown";
+import {workList, eduList, nextMenu, sitetype, circle, headCont, head} from "./js/menu-circle";
+import Burger from "./js/hamburger";
+
+
 
 (function Circle(e) {
   var burst1 = new mojs.Burst({
