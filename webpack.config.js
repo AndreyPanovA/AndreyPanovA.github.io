@@ -9,7 +9,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // css modules
 const isProd = process.env.NODE_ENV === "production"; // системная переменная для определения текущего режима сборки
 const isDev = !isProd;
 
-const filename = (ext) => (isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`); // если в режиме build, то видим хеши
+const filename = (ext) => (isDev ? `bundle.${ext}` : `bundle.${ext}`); // если в режиме build, то видим хеши
 module.exports = {
   context: path.resolve(__dirname, "src"), // следит за всем в этой папке
   mode: "development", // режим разработки
@@ -50,6 +50,7 @@ module.exports = {
         collapseWhitespace: isProd,
       },
     }),
+    
     new CopyPlugin({
       patterns: [
         {
