@@ -62,16 +62,14 @@ import Burger from "./js/hamburger"
     hamburger.addEventListener("click", Burger);
 })()
 
-// 
+const textArr = ["«Коммуникационные службы»", "«Ведение нормативно-справочной информации»", "«Коммуникационные службы1»", "«Ведение нормативно-справочной информации1»"]
+const moduleText = document.querySelector(".module-text")
 const next = document.querySelector(".next")
 const chengeModule = document.querySelectorAll(".chenge-module")
-let i = 0
-next.addEventListener("click", (e)=> {
-  chengeModule.forEach((el,idx)=> {
-    i++
-    el.classList.add("off")
-    if (el.id==idx) {
-      el.classList.remove("off")
-    }
-  })
-})
+const changeText =({target, target:{ dataset:{id}}}, el=id)=> {
+  el++
+  if (el>textArr.length-1) el=0
+  target.setAttribute("data-id", el)
+  moduleText.innerText= textArr[el]
+}
+next.addEventListener("click",changeText)
