@@ -14,12 +14,13 @@ var modalMenu = document.querySelector(".modal-menu");
 const dropdown = document.querySelectorAll(".dropdown");
 const dropdownItem = document.querySelectorAll(".dropdownItem");
 const servMenu = document.getElementsByClassName('frame__tagline')[2];
-const drop = document.getElementsByClassName('dropdown')[0];
+const drop = document.getElementsByClassName('dropdown');
 const nextMenu = document.getElementsByClassName('next')[0];
 const edutype = document.getElementsByClassName('edu-type');
 const worktype = document.getElementsByClassName('work-type');
 const headCont = document.getElementsByClassName('head-container')[0];
 const head = document.querySelector(".header-title h1");
+const hamMenu = document.getElementsByClassName('menuitem');
 const workList = [
   [
       "Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров", [
@@ -120,5 +121,6 @@ export {
   sitetype, 
   circle, 
   headCont, 
-  head
+  head, 
+  hamMenu
 }
