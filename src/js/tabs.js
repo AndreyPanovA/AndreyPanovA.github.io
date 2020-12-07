@@ -1,10 +1,12 @@
-import {tabLink, worktype, edutype, sitetype} from "../module"
+import {tabLink, worktype, edutype} from "../module"
+let sitetype = 0;
+
 tabLink.forEach((elem)=> {
     elem.addEventListener("click", (e)=> {
         tabLink.forEach((item)=> {
             item.classList.remove("active-tab")
         })
-
+        
         if (elem.dataset.id == 1) {
           sitetype = 0; 
           [...worktype].forEach((item) => {

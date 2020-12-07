@@ -1,6 +1,6 @@
 import "./less/index.less";
 import {timelineOpen, timelineClose,_strokeWidth,RADIUS,hamburger,spans,spanOne,spanTwo,spanThree,modalMenu } from "./module"
-import {tabLink} from "./js/tabs"
+import {tabLink, sitetype} from "./js/tabs"
 import Scroll from "./js/scroll"
 window.addEventListener('scroll',Scroll);
 import {dropdown,dropdownItem} from "./js/dropdown";
@@ -142,33 +142,32 @@ const eduList = [
   'Получение навыков сбора и заполнения данных силуэтного метода обследования пассажиропотока.',
   'Получение навыков анализа параметров работы маршрута и остановочного пункта по периодам суток на основе данных силуэтного обследования пассажиропотока.'
 ];
-let sitetype = 0; 
 let circle = 0; 
 const chengeModule = document.querySelectorAll(".chenge-module")
 let i = 0
 nextMenu.addEventListener("click", (e)=> {
   let list = ""; 
   circle++; 
-
-    if (sitetype == 0) {
-      if (circle > 6) {
-          circle = 0; 
-      }
-
-      head.textContent = workList[circle][0]; 
-
-      workList[circle][1].forEach((item) => {
-          list += "<p>"+item+"</p>";
-      });
-
-      headCont.innerHTML = list; 
-  } else {
-      if (circle > 5) {
-          circle = 0; 
-      }
-
-      head.textContent = eduList[circle]; 
+  console.log(sitetype);
+  if (sitetype == 0) {
+    if (circle > 6) {
+        circle = 0; 
     }
+    
+    head.textContent = workList[circle][0]; 
+
+    workList[circle][1].forEach((item) => {
+        list += "<p>"+item+"</p>";
+    });
+
+    headCont.innerHTML = list; 
+  } else {
+    if (circle > 5) {
+        circle = 0; 
+    }
+
+    head.textContent = eduList[circle]; 
+  }
 
   chengeModule.forEach((el,idx)=> {
     i++
