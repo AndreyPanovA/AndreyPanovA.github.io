@@ -11,8 +11,10 @@ var spanOne = document.querySelector("#spanOne");
 var spanTwo = document.querySelector("#spanTwo");
 var spanThree = document.querySelector("#spanThree");
 var modalMenu = document.querySelector(".modal-menu");
-const dropdown = document.querySelectorAll(".dropdown")
-const dropdownItem = document.querySelectorAll(".dropdownItem")
+const dropdown = document.querySelectorAll(".dropdown");
+const dropdownItem = document.querySelectorAll(".dropdownItem");
+const edutype = document.getElementsByClassName('edu-type');
+const worktype = document.getElementsByClassName('work-type');
 // 
 export {
   body,
@@ -28,5 +30,7 @@ export {
   modalMenu,
   dropdown,
   dropdownItem,
-  tabLink
+  tabLink,
+  worktype,
+  edutype
 }

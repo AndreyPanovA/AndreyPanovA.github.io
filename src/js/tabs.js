@@ -1,12 +1,14 @@
-import {tabLink} from "../module"
+import {tabLink, worktype, edutype} from "../module"; 
+
+let sitetype = 0; 
+
 tabLink.forEach((elem)=> {
     elem.addEventListener("click", (e)=> {
         tabLink.forEach((item)=> {
             item.classList.remove("active-tab")
         })
-        const edutype = document.getElementsByClassName('edu-type');
-        const worktype = document.getElementsByClassName('work-type');
         if (elem.dataset.id == 1) {
+          sitetype = 0; 
           [...worktype].forEach((item) => {
             item.classList.remove("off");
           });
@@ -14,6 +16,7 @@ tabLink.forEach((elem)=> {
             item.classList.add("off");
           })
         } else if (elem.dataset.id == 2) {
+          sitetype = 1; 
           [...worktype].forEach((item) => {
             item.classList.add("off");
           });
@@ -25,5 +28,5 @@ tabLink.forEach((elem)=> {
     })
 })
 export {
-    tabLink
+    tabLink, worktype, edutype, sitetype
 }
