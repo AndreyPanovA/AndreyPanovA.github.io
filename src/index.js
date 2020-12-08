@@ -1,8 +1,8 @@
 import "./less/index.less";
-import {timelineOpen, timelineClose,_strokeWidth,RADIUS,hamburger,spans,spanOne,spanTwo,spanThree,modalMenu } from "./module"
-import {tabLink} from "./js/tabs"
+import {timelineOpen, timelineClose,_strokeWidth,RADIUS,hamburger,spans,spanOne,spanTwo,spanThree,modalMenu,  moduleText,next,chengeModule, workList,eduList } from "./module"
+import {start} from "./js/load"
+import {tabLink, sitetype} from "./js/tabs"
 import Scroll from "./js/scroll"
-window.addEventListener('scroll',Scroll);
 import {dropdown,dropdownItem} from "./js/dropdown"
 import Burger from "./js/hamburger"
 
@@ -61,15 +61,3 @@ import Burger from "./js/hamburger"
     timelineClose.add(openBackground);
     hamburger.addEventListener("click", Burger);
 })()
-
-const textArr = ["«Коммуникационные службы»", "«Ведение нормативно-справочной информации»", "«Коммуникационные службы1»", "«Ведение нормативно-справочной информации1»"]
-const moduleText = document.querySelector(".module-text")
-const next = document.querySelector(".next")
-const chengeModule = document.querySelectorAll(".chenge-module")
-const changeText =({target, target:{ dataset:{id}}}, el=id)=> {
-  el++
-  if (el>textArr.length-1) el=0
-  target.setAttribute("data-id", el)
-  moduleText.innerText= textArr[el]
-}
-next.addEventListener("click",changeText)

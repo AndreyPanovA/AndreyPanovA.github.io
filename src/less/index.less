@@ -45,7 +45,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .frame {
   width: 100vw !important;
   padding: 3rem 5vw;
@@ -63,8 +62,6 @@ a {
   // width: 100vw !important;  border:2px solid red;
   // overflow: hidden;
 }
-
-
 
 nav {
 }
@@ -164,6 +161,17 @@ main {
   }
   .madi {
     border-bottom: 2px solid white;
+    align-items: center;
+    padding: 10px 20px;
+    p {
+      margin-right: 15px;
+    }
+  }
+  .frame__demos {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .frame__demos,
   .madi {
@@ -299,6 +307,9 @@ ul {
 }
 
 @media (max-width: 600px) {
+  .madi {
+    display: none !important;
+  }
   .header-title {
     h1 {
       font-size: 15px !important;
@@ -313,9 +324,6 @@ ul {
   background-color: black !important;
 }
 
-
-
-
 .off {
   display: none !important;
 }
@@ -329,42 +337,45 @@ ul {
 }
 .dropdownItem {
   position: absolute;
-  top:25px;
+  top: 25px;
   background-color: white;
   padding: 10px 20px;
   border-radius: 5px;
   min-height: 100px;
   color: black;
   transition: 0.2s ease-in-out;
-  border:1px solid white;
+  border: 1px solid white;
   overflow-y: auto;
   z-index: 9999;
   min-width: 150px;
   box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
-  
+
   a {
     text-align: center;
     display: block;
     color: black;
     &:hover {
-      box-shadow: 0px 0px 14px 0px   rgb(0,0,0);
-      -moz-box-shadow: 0px 0px 14px 0px   rgb(0,0,0);
-      -webkit-box-shadow: 0px 0px 14px 0px   rgb(0,0,0);
+      box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
+      -moz-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
+      -webkit-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
     }
-
   }
 }
 
 @keyframes unmount {
-  from { opacity: 1; }
-  to { opacity: 0;}
- }
-//  
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+//
 .tester {
   position: absolute;
-  top:100vh;
+  top: 100vh;
 }
 body {
   background-color: black;
