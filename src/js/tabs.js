@@ -30,6 +30,16 @@ tabLink.forEach((elem)=> {
         elem.classList.add("active-tab")
     })
 })
+
+const changeText =({target, target:{ dataset:{id}}}, el=id)=> {
+  let textArr = workList; 
+  if (sitetype == 1) textArr = eduList; 
+  el++
+  if (el>textArr.length-1) el=0
+  target.setAttribute("data-id", el)
+  moduleText.innerHTML= textArr[el]
+}
+next.addEventListener("click",changeText)
 export {
-    tabLink, worktype, edutype, sitetype
+    tabLink, worktype, edutype, sitetype, next
 }

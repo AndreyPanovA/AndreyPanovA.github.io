@@ -5,9 +5,7 @@ import {tabLink, sitetype} from "./js/tabs"
 import Scroll from "./js/scroll"
 import {dropdown,dropdownItem} from "./js/dropdown"
 import Burger from "./js/hamburger"
-// import Circle from "./js/menu-circle"
-// Circle()
-// import circle from "./js/"
+
 (function Circle(e) {
   var burst1 = new mojs.Burst({
       parent: hamburger,
@@ -63,13 +61,3 @@ import Burger from "./js/hamburger"
     timelineClose.add(openBackground);
     hamburger.addEventListener("click", Burger);
 })()
-
-const changeText =({target, target:{ dataset:{id}}}, el=id)=> {
-  let textArr = workList; 
-  if (sitetype == 1) textArr = eduList; 
-  el++
-  if (el>textArr.length-1) el=0
-  target.setAttribute("data-id", el)
-  moduleText.innerHTML= textArr[el]
-}
-next.addEventListener("click",changeText)
