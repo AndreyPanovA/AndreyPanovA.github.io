@@ -8,4 +8,6 @@ function Scroll (event) {
     }
   });
   }
-export default Scroll
+
+const scroll =window.addEventListener('scroll',Scroll);
+export default scroll
