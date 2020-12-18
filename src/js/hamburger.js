@@ -1,6 +1,9 @@
 
-import {  body,timelineOpen, timelineClose,_strokeWidth,spans,spanOne,spanTwo,spanThree,modalMenu } from "../module"
+import {  body,timelineOpen, timelineClose,_strokeWidth,spans,spanOne,spanTwo,spanThree,modalMenu, dropdownItem } from "../module"
  function Burger(e)  {
+  dropdownItem.forEach((el, idx)=> {
+    el.style.maxHeight="50vh"
+  })
     var cross = spanOne.classList.contains("white");
     modalMenu.classList.toggle("show");
     body.classList.toggle("stop");
