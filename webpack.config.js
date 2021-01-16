@@ -1,4 +1,5 @@
 const path = require("path"); // просто для определения путей, можно и без него прописать нативно
+const fs = require('fs')
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); // минификация css
 const TerserPlugin = require("terser-webpack-plugin"); // минификация js
 // __dirname -  путь до текущей папки
@@ -8,7 +9,13 @@ const CopyPlugin = require("copy-webpack-plugin"); // favicon переносит
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // css modules
 const isProd = process.env.NODE_ENV === "production"; // системная переменная для определения текущего режима сборки
 const isDev = !isProd;
+const PATHS = {
+  src: path.join(__dirname, 'src/pages'),
+  dist: path.join(__dirname, '../dist'),
 
+}
+const PAGES_DIR = `${PATHS.src}/`
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.html'))
 const filename = (ext) => (isDev ? `bundle.${ext}` : `bundle.${ext}`); // если в режиме build, то видим хеши
 module.exports = {
   context: path.resolve(__dirname, "src"), // следит за всем в этой папке
@@ -43,6 +50,10 @@ module.exports = {
     new CleanWebpackPlugin({
       //   filename: "bundle.[hash].css",
     }),
+    // ...PAGES.map(page => new HtmlWebpackPlugin ({
+    //   template: `${PAGES_DIR}/${page}`,
+    //   filename: `./${page.replace(/\.html/,'.html')}`
+    // })),
     new HTMLWebpackPlugin({
       template: "index.html", // создает шаблон для html, чтобы самостоятельно его не генерировать (создавать) в папке dist
       minify: {

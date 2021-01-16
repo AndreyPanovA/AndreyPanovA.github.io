@@ -1,4 +1,4 @@
-import {tabLink, worktype, edutype, moduleText,next,chengeModule, workList,eduList} from "../module"; 
+import {tabLink, worktype, edutype, moduleText,next,chengeModule, workList,eduList, } from "../module"; 
 
 let sitetype = 0; 
 
@@ -8,7 +8,7 @@ tabLink.forEach((elem)=> {
             item.classList.remove("active-tab")
         })
         if (elem.dataset.id == 1) {
-          moduleText.innerHTML= workList[0]
+          moduleText.innerHTML= workList.index[0]
          
           sitetype = 0; 
           [...worktype].forEach((item) => {
@@ -32,7 +32,7 @@ tabLink.forEach((elem)=> {
 })
 
 const changeText =({target, target:{ dataset:{id}}}, el=id)=> {
-  let textArr = workList; 
+  let textArr = workList.index; 
   if (sitetype == 1) textArr = eduList; 
   el++
   if (el>textArr.length-1) el=0
