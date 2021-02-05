@@ -51,7 +51,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 1000;
-  overflow: hidden;
+  // overflow: hidden;
 }
 a {
   color: white;
@@ -108,7 +108,7 @@ nav a.next {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/img/shadow-left.png") center center/cover;
+    background: url("../img/shadow-left.png") center center/cover;
     z-index: 1;
   }
 }
@@ -142,11 +142,11 @@ main {
     top: 40%;
     left: 5%;
     max-width: 70%;
-    z-index: 30;
+    z-index: 2;
     h1 {
       font-size: 35px;
     }
-    .btn {
+    .btn-custom {
       display: inline-block;
       margin-top: 10px;
       border: 2px solid white;
@@ -188,7 +188,7 @@ main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
     justify-content: space-between;
     z-index: 2;
   }
@@ -212,6 +212,10 @@ main {
     position: relative;
     display: flex;
     z-index: 3;
+
+
+    margin-right: 20px;
+    padding-right: 20px;
     a {
       cursor: pointer;
       padding: 10px 20px;
@@ -232,7 +236,7 @@ canvas {
   left: 0;
   transform: translate(-50%, -50%) !important;
 }
-.btn-tab {
+.btn-custom-tab {
   display: flex;
   border: 2px solid white;
   border-radius: 15px;
@@ -315,7 +319,7 @@ ul {
       font-size: 15px !important;
     }
   }
-  .btn-tab {
+  .btn-custom-tab {
     flex-direction: column;
   }
 }
@@ -327,39 +331,80 @@ ul {
 .off {
   display: none !important;
 }
-.offItem {
-  opacity: 0;
-  height: 0 !important;
-  transition: 0.2s ease-in-out;
-  // display: none;
-  overflow: hidden;
-  visibility: hidden;
+// .offItem {
+//   opacity: 0;
+//   height: 0 !important;
+//   transition: 0.2s ease-in-out;
+//   // display: none;
+//   overflow: hidden;
+//   visibility: hidden;
+// }
+.final-drop {
+  &:hover {
+    .dropdownItem  {
+      display: block;
+      width: 250px;
+    }
+  }
 }
+.dropdown:hover +.dropdownItem {
+
+  display: block;
+}
+
+
 .dropdownItem {
   position: absolute;
-  top: 25px;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  top: 35px;
+  // padding: 10px 20px;
+  // border-radius: 5px;
   min-height: 100px;
   color: black;
   transition: 0.2s ease-in-out;
-  border: 1px solid white;
-  overflow-y: auto;
-  z-index: 9999;
-  min-width: 150px;
-  box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+  // border: 1px solid white;
+  overflow-y: scroll;
+  // max-height: 200px;
+  overflow: -moz-scrollbars-vertical; 
 
+  z-index: 99999;
+  min-width: 100px;
+  // box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+  // -moz-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+  // -webkit-box-shadow: 0px 0px 14px 0px rgba(255, 255, 255, 0.75);
+  background-color: #333;
+  display: none;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+  &:hover {
+    display: block !important;
+  }
   a {
-    text-align: center;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align:left;
+    max-width: 250px;
+    font-size: 10px !important;
+    letter-spacing: normal;
     display: block;
-    color: black;
+    padding: 5px;
+    font-weight: "400";
+    // height: 10px;
+    background-color: #333;
+    margin-bottom: 15px;
+
     &:hover {
-      box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
-      -moz-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
-      -webkit-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
+      display: block;
+      opacity: .5;
+      // box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
+      // -moz-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
+      // -webkit-box-shadow: 0px 0px 14px 0px rgb(0, 0, 0);
     }
   }
 }
@@ -382,4 +427,31 @@ body {
 }
 .black-Link {
   color: black;
+}
+
+
+
+// 
+
+.dropdown {
+
+  .dropdownItem {
+    // display: none;
+   
+  }
+  &:hover {
+    .dropdownItem {
+      display: block;
+     
+    }
+   
+  }
+
+}
+.block {
+  display: block !important;
+  width: 180px;
+}
+.header-title-block {
+  color: red;
 }
