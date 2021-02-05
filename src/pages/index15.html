@@ -1,114 +1,356 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>rgbKinetciSlider | Demo 3</title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
-	</head>
-	<body class="demo-1 loading">
-		<main>
-			<div class="message">Some message for mobile (if needed).</div>
-			<div class="frame">
-				<div class="frame__title-wrap">
-					<h1 class="frame__title">rgbKineticSlider</h1>
-					<p class="frame__tagline">Demo 3</a></p>
-				</div>
-				<div class="frame__links">
-					<a href="https://github.com/hmongouachon/rgbKineticSlider">GitHub</a>
-				</div>
-				<div class="frame__demos">
-					<a href="index.html" class="frame__demo">demo 1</a>
-					<a href="index2.html" class="frame__demo">demo 2</a>
-					<a href="index3.html" class="frame__demo frame__demo--current">demo 3</a>
-				</div>
-			</div>
-			<div class="content">
-				<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-				<nav>
-			        <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
-			        <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
-                </nav>
-                <span class="notice">Swipe left... or right</span>
-			</div>
-		</main>
+<div class="burger-menu-start"></div>
+<main>
+	<div class="header-title">
+			<h1 class='work-type work-type-title'>
+				Ведение паспортов маршрутов в соответствии с ФЗ 220 с использованием встроенной ГИС  
+			</h1>
+			<h1 class='edu-type off'>
+				Получение навыков по заполнению справочной информации по подвижному составу, телематическому оборудованию, маршрутной сети.
+			</h1>
+			<p class="chenge-module module-text" id=0>«Коммуникационные службы111»</p>
+			<p class="chenge-module off" id=1>«Ведение нормативно-справочной информации»</p>
+	</div>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<div class="navig work-type">
+					<div class="final-drop">
+					<a class="frame__tagline">Новости</a>
+					<div class="dropdownItem offItem" data-id="2">
+					</div>
+					</div>
+					<div class="final-drop">
+					<a class="frame__tagline">Клиентам</a>
+						<div class="dropdownItem offItem" data-id="2">
+						</div>
+					</div>
+					<div class="final-drop">
+						<a class="frame__tagline dropdown">Сервисы</a>
+						<!-- ТУТ основные сервисы ы маленьком меню -->
+						<div class="dropdownItem offItem" data-id="2">
+							<a href="/services/monitor.html" class="menuitem">Сервис «Ведение паспортов маршрутов в соответствии с ФЗ 220 с использованием встроенной ГИС»</a>
+							<a href="/services/monitor.html" class="menuitem">Сервис «Мониторинг качества телематических данных и работоспособности оборудования»</a>
+							<a href="/index4.html" class="menuitem">Сервис «Формирование интервальных расписаний»</a>
+							<a href="/modules/gis.html" class="menuitem">Сервис «Формирование объявленных расписаний»</a>
+							<a href="/index6.html" class="menuitem">Сервис «Расчет транспортной работы по данным навигационных треков»</a>
+							<a href="/index7.html" class="menuitem">Сервис «Мониторинг пассажиропотока на маршрутах ГПТ по данным от датчиков» в соответствии с ГОСТ 54-723-2019								</a>
+							<a href="/index8.html" class="menuitsem">Сервис «Расчет и анализ маршрутного модельного пассажиропотока»								</a>
+							<a href="/index9.html" class="menuitem">Сервис «Расчет и анализ пассажиропотока по данным валидаций АСОП и навигационным трекам» соответствии с ГОСТ 54-723-2019								</a>
+							<a href="/index10.html" class="menuitem">Сервис «Анализ модельного пассажиропотока на маршрутной сети»</a>
+						</div>
+					</div>
 		
-		<script src="js/libs/imagesLoaded.pkgd.min.js"></script>
-		<script src="js/libs/pixi.min.js"></script>
-		<script src="js/libs/pixi-filters.min.js"></script>
-		<script src="js/libs/TweenMax.min.js"></script>
-		<script src="js/rgbKineticSlider.js"></script>
-		<script>
-            
-            // images setup
-            // uniforms backgrounds color
-			const images = [
-			    "img/color-01.jpg",
-			    "img/color-02.jpg",
-			    "img/color-03.jpg",
-			];
-            
-            // content setup
-			const texts = [
-			    ["ЗУВ: «Расчет и анализ параметров работы маршрута и остановочного пункта»"]
-			]
-//
-			rgbKineticSlider = new rgbKineticSlider({
+				</div>
+				<div class="navig edu-type off">
+					<a class="frame__tagline">Новости</a>
+					<a class="frame__tagline">ВУЗам</a>
+					<a class="frame__tagline dropdown">ЗУВ</a>
+					<div class="dropdownItem offItem" data-id="3">
+						<a href="/index11.html" class="menuitem">ЗУВ: «Мониторинг поступления телематических данных от оборудования»								</a>
+						<a href="/index12.html" class="menuitem">ЗУВ: «Сбор и ввод данных табличного обследования пассажиропотоков»								</a>
+						<a href="/index13.html" class="menuitem">ЗУВ: «Сбор и ввод данных силуэтного метода обслудования пассажиропотоков»								</a>
+						<a href="/index14.html" class="menuitem">ЗУВ: «Расчет рейсовых параметров пассажиропотока по данным табличного»								</a>
+						<a href="/index15.html" class="menuitem">ЗУВ: «Расчет и анализ параметров работы маршрута и остановочного пункта»								</a>
+					</div>
+					
+				</div>
+				<div class="btn-custom-tab">
+					<a class="tab-link active-tab" data-id="1">Интеграторам </br>/ Перевозчикам</a>
+					<a class="tab-link" data-id="2">ВУЗам</a>
+				</div>
+			</div>
+		</div>
+		<div class="frame__demos">
+			<div class="madi">
+				<p>Технологии, разработанные при участии кафедры «Транспортная телематика» МАДИ</p>
+				<div class="logo">
+					<img src="src/img/madi.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 
-			    slideImages: images, // array of images > must be 1920 x 1080
-			    itemsTitles: texts, // array of titles / subtitles
 
-			    backgroundDisplacementSprite: 'img/map-3.jpg', // slide displacement image 
-			    cursorDisplacementSprite: 'img/map-7.jpg', // cursor displacement image 
+	<!-- Текстовые элементы -->
+	<div class="content">
+		<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+		<nav style="background-color: transparent;">
+			<!-- <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a> -->
+			<a href="#" class="main-nav next" data-nav="next" data-id=0>Next <span></span></a>
+		</nav>
+	</div>
+	<!-- Основные блоки -->
+	<div class="custom-container">
+		<div class="chart work-type">	
+			<h1 class="small">Карта информационных сервисов для городского пассажирского транспорта для </br> интеграторов и перевозчиков 
+			</h1>
+			<h1 class="center">Сервис «Ведение паспортов маршрутов в соответствии с ФЗ 220 с использованием встроенной ГИС»               
+			</h1>
+			<div class="chart-border"></div>
+			<div class="rotation">
+			<div class="rotation-1">
+			<div class="chart-line">
+				<p>Сервис «Мониторинг качества телематических данных и работоспособности оборудования»               
+				</p>
+				<p>Сервис «Формирование интервальных расписаний»               
+				</p>
+				<p>Сервис «Формирование объявленных расписаний»               
+				</p>
+				<p>Сервис «Расчет транспортной работы по данным навигационных треков»           
+				</p>
+			</div>
+			<div class="chart-line no-2">
+				<p>Сервис «Мониторинг пассажиропотока на маршрутах ГПТ по данным от датчиков» в соответствии с ГОСТ 54-723-2019 </p> 
+				<p>Сервис «Расчет и анализ маршрутного модельного пассажиропотока»               
+				</p>      
+				<div class=""><p>Сервис «Расчет и анализ пассажиропотока по данным валидаций АСОП и навигационным трекам»  соответствии с ГОСТ 54-723-2019                           
+				</p></div>    
+			</div>
+		</div>
+			<div class="chart-line no-3">
+				<p>Сервис «Анализ модельного пассажиропотока на маршрутной сети»               
+				</p>
+			</div>
+		</div>
+			<div class="chart-border"></div> 
+			
+		</div>
+		<div class="chart edu-type off">	
+			<h1 class="small">Информационные сервисы по перевозкам городским </br> пассажирским транспортом для ВУЗов 
+			</h1>
+			<h1 class="center">ЗУВ: «Ведение паспортов маршрутов в соответствии с ФЗ 220»               
+			</h1>
+			<div class="chart-border"></div>
+			<div class="chart-line">
+				<p>ЗУВ: «Мониторинг поступления телематических данных от оборудования»               
+				</p>
+				<p>ЗУВ: «Сбор и ввод данных табличного обследования пассажиропотоков»               
+				</p>
+				<p>ЗУВ: «Сбор и ввод данных силуэтного метода обслудования пассажиропотоков»               
+				</p>
+			</div>
+			<div class="chart-line no-2">
+				<p></p>
+				<p>ЗУВ: «Расчет рейсовых параметров пассажиропотока по данным табличного </p> 
+											<p>ЗУВ: «Расчет и анализ параметров работы маршрута и остановочного пункта»               
+					</p>
+				</div>    
+		</div>
+		<div class="chart-border"></div> 
+		<div class="servis">
+			<div class="wave">
+				<img src="./src/img/wave.png" alt="">
+			</div>
+			<!-- First -->
+			<div class="servis-line edu-type off">
+				<div class="servis-text">
+				<p>Транспортная БД</p>
+				<h1 style="margin-bottom: 15px; font-size: 20px;"> ЗУВ: «Ведение паспортов маршрутов в соответствии с ФЗ 220» </h1>
+				<h3>Состав модулей:</h3>
+				<div class="text-cont ">
+					<p>- модуль ведения нормативно-справочной информации (активная ссылка на отдельную страницу с описанием модуля);</p>
+					<p> - ГИС-редактор улично-дорожной сети и маршрутов (активная ссылка на отдельную страницу с описанием модуля);.</p>
+				</div>
+				<h3>Перечень решаемых задач:</h3>
+				<div class="text-cont ">
+					<p>- ведение справочника предприятий/филиалов;</p>
+					<p>- ведение справочников подвижного состава и телематического оборудования;</p>
+					<p>- ведение справочника реестра остановочных пунктов;</p>
+					<p>- ведение справочников маршрутов и их трасс;</p>
+					<p>- рисование графа дорог, линий маршрутов;</p>
+					<p>- ведение дополнительных справочников.</p>
+				</div>
+			</div>
+			<div class="img">
+				<img src="./src/img/bus-huge.png" alt="">
+				<div class="whiteImg">
+					<div class="img-type1">
+						<img src="./src/img/bus.png" alt="">
+					</div>
+					<div class="img-type2">
+						<img src="./src/img/bus1.png" alt="">
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- Second FIN -->
+			<div class="servis-line work-type">
+				<div class="servis-text">
+				<p>Транспортная БД</p>
+				<h1 style="margin-bottom: 15px; font-size: 20px;" > Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров </h1>
+				<h3>Состав модулей:</h3>
+				<div class="text-cont ">
+					<p>- Информаци</p>
+					<p> - ГИС-редактор улично-дорожной сети и маршрутов (активная ссылка на отдельную страницу с описанием модуля);.</p>
+				</div>
+				<h3>Перечень решаемых задач:</h3>
+				<div class="text-cont ">
+					<p>- ведение справочника предприятий/филиалов;</p>
+					<p>- ведение справочников подвижного состава и телематического оборудования;</p>
+					<p>- ведение справочника реестра остановочных пунктов;</p>
+					<p>- ведение справочников маршрутов и их трасс;</p>
+					<p>- рисование графа дорог, линий маршрутов;</p>
+					<p>- ведение дополнительных справочников.</p>
+				</div>
+			</div>
+			<div class="img">
+				<img src="./src/img/bus-huge.png" alt="">
+				<div class="whiteImg">
+					<div class="img-type1">
+						<img src="./src/img/bus.png" alt="">
+					</div>
+					<div class="img-type2">
+						<img src="./src/img/bus1.png" alt="">
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="choice">
+			<div class="choice-text">
+				<h1>Выбирайте нас!</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dicta quidem, ad pariatur laudantium, error dolor exercitationem maxime cupiditate dignissimos ullam, maiores quibusdam ab sunt qui. Accusamus assumenda soluta voluptas quia. Explicabo totam aut commodi!</p>
+				<div class="logo">
+					<img src="./src/img/logo.png" alt="Транспортные данные">
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</main>
 
-			    cursorImgEffect : true, // enable cursor img effect
-			    cursorTextEffect : true, // enable cursor text effect
-			    cursorScaleIntensity : 0.35, // cursor effect intensity
-			    cursorMomentum : 0.14, // lower is slower
 
-			    swipe: true, // enable swipe
-			    swipeDistance : window.innerWidth * 0.5, // swipe distance - ex : 580
-			    swipeScaleIntensity:5, // scale intensity during swipping
+	<!-- <div class="chart work-type">	
+					<h1 class="small">Карта информационных сервисов для городского пассажирского транспорта для </br> интеграторов и перевозчиков 
+					</h1>
+					<h1 class="center">Сервис «Ведение паспортов маршрутов в соответствии с ФЗ 220 с использованием встроенной ГИС»               
+					</h1>
+					<div class="chart-border"></div>
+					<div class="rotation">
+					<div class="rotation-1">
+					<div class="chart-line">
+						<p>Сервис «Мониторинг качества телематических данных и работоспособности оборудования»               
+						</p>
+						<p>Сервис «Формирование интервальных расписаний»               
+						</p>
+						<p>Сервис «Формирование объявленных расписаний»               
+						</p>
+						<p>Сервис «Расчет транспортной работы по данным навигационных треков»           
+						</p>
+					</div>
+					<div class="chart-line no-2">
+						<p>Сервис «Мониторинг пассажиропотока на маршрутах ГПТ по данным от датчиков» в соответствии с ГОСТ 54-723-2019 </p> 
+						<p>Сервис «Расчет и анализ маршрутного модельного пассажиропотока»               
+						</p>      
+						<div class=""><p>Сервис «Расчет и анализ пассажиропотока по данным валидаций АСОП и навигационным трекам»  соответствии с ГОСТ 54-723-2019                           
+						</p></div>    
+					</div>
+				</div>
+					<div class="chart-line no-3">
+						<p>Сервис «Анализ модельного пассажиропотока на маршрутной сети»               
+						</p>
+					</div>
+				</div>
+					<div class="chart-border"></div> 
+					
+				</div>
+				<div class="chart edu-type off">	
+					<h1 class="small">Информационные сервисы по перевозкам городским </br> пассажирским транспортом для ВУЗов 
+					</h1>
+					<h1 class="center">ЗУВ: «Ведение паспортов маршрутов в соответствии с ФЗ 220»               
+					</h1>
+					<div class="chart-border"></div>
+					<div class="chart-line">
+						<p>ЗУВ: «Мониторинг поступления телематических данных от оборудования»               
+						</p>
+						<p>ЗУВ: «Сбор и ввод данных табличного обследования пассажиропотоков»               
+						</p>
+						<p>ЗУВ: «Сбор и ввод данных силуэтного метода обслудования пассажиропотоков»               
+						</p>
+					</div>
+					<div class="chart-line no-2">
+						<p></p>
+						<p>ЗУВ: «Расчет рейсовых параметров пассажиропотока по данным табличного </p> 
+													<p>ЗУВ: «Расчет и анализ параметров работы маршрута и остановочного пункта»               
+							</p>
+						</div>    
+				</div>
+				<div class="chart-border"></div> 
+				<div class="servis">
+					<div class="wave">
+						<img src="./src/img/wave.png" alt="">
+					</div>
 
-			    slideTransitionDuration : 0.75, // transition duration
-			    transitionScaleIntensity : 80, // scale intensity during transition
-			    transitionScaleAmplitude : 100, // scale amplitude during transition
-
-			    nav: true, // enable navigation
-			    navElement: '.main-nav', // set nav class
-			    
-			    imagesRgbEffect : false, // enable img rgb effect
-			    // imagesRgbIntensity : 0.9, // set img rgb intensity
-			    // navImagesRgbIntensity : 80, // set img rgb intensity for regular nav
-
-			    textsDisplay : true, // show title
-			    textsSubTitleDisplay : false, // show subtitles
-			    textsTiltEffect : true, // enable text tilt
-			    googleFonts : ['Poppins:700', ''], // select google font to use
-			    buttonMode : true, // enable button mode for title
-			    textsRgbEffect : true, // enable text rgb effect
-			    textsRgbIntensity : 0.05, // set text rgb intensity
-			    navTextsRgbIntensity : 15, // set text rgb intensity for regular nav
-
-			    textTitleColor : 'white', // title color
-			    textTitleSize : 80, // title size
-			    mobileTextTitleSize : 80, // title size
-			    textTitleLetterspacing : 2, // title letterspacing
-
-			    // textSubTitleColor : 'white', // subtitle color ex : 0x000000
-			    // textSubTitleSize : 21, // subtitle size
-			    // mobileTextSubTitleSize : 14,
-			    // textSubTitleLetterspacing : 3, // subtitle letter spacing
-			    // textSubTitleOffsetTop : 90, // subtitle offset top
-			    // mobileTextSubTitleOffsetTop : 40,
-			});
-		</script>
-	</body>
-</html>
+					<div class="servis-line edu-type off">
+						<div class="servis-text">
+						<p>Транспортная БД</p>
+						<h1 style="margin-bottom: 15px; font-size: 20px;"> ЗУВ: «Ведение паспортов маршрутов в соответствии с ФЗ 220» </h1>
+						<h3>Состав модулей:</h3>
+						<div class="text-cont ">
+							<p>- модуль ведения нормативно-справочной информации (активная ссылка на отдельную страницу с описанием модуля);</p>
+							<p> - ГИС-редактор улично-дорожной сети и маршрутов (активная ссылка на отдельную страницу с описанием модуля);.</p>
+						</div>
+						<h3>Перечень решаемых задач:</h3>
+						<div class="text-cont ">
+							<p>- ведение справочника предприятий/филиалов;</p>
+							<p>- ведение справочников подвижного состава и телематического оборудования;</p>
+							<p>- ведение справочника реестра остановочных пунктов;</p>
+							<p>- ведение справочников маршрутов и их трасс;</p>
+							<p>- рисование графа дорог, линий маршрутов;</p>
+							<p>- ведение дополнительных справочников.</p>
+						</div>
+					</div>
+					<div class="img">
+						<img src="./src/img/bus-huge.png" alt="">
+						<div class="whiteImg">
+							<div class="img-type1">
+								<img src="./src/img/bus.png" alt="">
+							</div>
+							<div class="img-type2">
+								<img src="./src/img/bus1.png" alt="">
+							</div>
+						</div>
+					</div>
+					</div>
+			
+					<div class="servis-line work-type">
+						<div class="servis-text">
+						<p>Транспортная БД</p>
+						<h1 style="margin-bottom: 15px; font-size: 20px;" > Контроль качества работы навигационного оборудования и оборудования автоматического подсчета пассажиров </h1>
+						<h3>Состав модулей:</h3>
+						<div class="text-cont ">
+							<p>- Информаци</p>
+							<p> - ГИС-редактор улично-дорожной сети и маршрутов (активная ссылка на отдельную страницу с описанием модуля);.</p>
+						</div>
+						<h3>Перечень решаемых задач:</h3>
+						<div class="text-cont ">
+							<p>- ведение справочника предприятий/филиалов;</p>
+							<p>- ведение справочников подвижного состава и телематического оборудования;</p>
+							<p>- ведение справочника реестра остановочных пунктов;</p>
+							<p>- ведение справочников маршрутов и их трасс;</p>
+							<p>- рисование графа дорог, линий маршрутов;</p>
+							<p>- ведение дополнительных справочников.</p>
+						</div>
+					</div>
+					<div class="img">
+						<img src="./src/img/bus-huge.png" alt="">
+						<div class="whiteImg">
+							<div class="img-type1">
+								<img src="./src/img/bus.png" alt="">
+							</div>
+							<div class="img-type2">
+								<img src="./src/img/bus1.png" alt="">
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="choice">
+					<div class="choice-text">
+						<h1>Выбирайте нас!</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dicta quidem, ad pariatur laudantium, error dolor exercitationem maxime cupiditate dignissimos ullam, maiores quibusdam ab sunt qui. Accusamus assumenda soluta voluptas quia. Explicabo totam aut commodi!</p>
+						<div class="logo">
+							<img src="./src/img/logo.png" alt="Транспортные данные">
+						</div>
+					</div>
+				</div>
+				<div class="footer"></div> -->
